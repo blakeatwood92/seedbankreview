@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Star, ExternalLink, MapPin, Truck, CreditCard } from "lucide-react"
+import { Star, ExternalLink, MapPin, Truck, CreditCard, Globe } from "lucide-react"
 
 export function FeaturedBanks() {
   const canadianBanks = [
@@ -56,6 +56,23 @@ export function FeaturedBanks() {
       shippingTime: "2-5 days",
       provinces: ["AB", "BC", "SK", "MB"],
       affiliate: true,
+    },
+  ]
+
+  const internationalBanks = [
+    {
+      name: "Seedsman",
+      logo: "/images/seedsman-logo.png",
+      rating: 4.6,
+      reviews: 2847,
+      location: "International",
+      specialties: ["Huge Selection", "Autoflowering Specialists", "Global Shipping"],
+      description: "World's largest cannabis seed bank with over 4000+ strains and global shipping to Canada.",
+      paymentMethods: ["Credit Card", "Bitcoin", "Bank Transfer"],
+      shippingTime: "7-14 days to Canada",
+      provinces: ["All Provinces"],
+      affiliate: true,
+      affiliateUrl: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432",
     },
   ]
 
@@ -134,7 +151,7 @@ export function FeaturedBanks() {
                       <CreditCard className="w-4 h-4 text-red-600" />
                       <span className="font-medium">Payment</span>
                     </div>
-                    <p className="text-gray-600">Interac E-Transfer</p>
+                    <p className="text-gray-600">{bank.paymentMethods.join(", ")}</p>
                   </div>
                 </div>
 
@@ -169,6 +186,103 @@ export function FeaturedBanks() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl font-bold mb-4">International Options</h3>
+            <p className="text-gray-600">
+              While we focus on Canadian seed banks, here are trusted international options that ship to Canada
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-1 gap-8 max-w-2xl mx-auto">
+            {internationalBanks.map((bank, index) => (
+              <Card
+                key={bank.name}
+                className="relative group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-100"
+              >
+                <CardHeader className="pb-4">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex items-center gap-4">
+                      <div className="relative">
+                        <Badge className="absolute -top-2 -left-2 bg-blue-600 text-white z-10">International</Badge>
+                        <div className="w-16 h-16 bg-white rounded-lg border-2 border-gray-100 flex items-center justify-center overflow-hidden">
+                          <img
+                            src={bank.logo || "/placeholder.svg"}
+                            alt={`${bank.name} logo`}
+                            className="w-12 h-12 object-contain"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <CardTitle className="text-xl mb-1">{bank.name}</CardTitle>
+                        <div className="flex items-center gap-2 mb-2">
+                          <Globe className="w-3 h-3 text-blue-600" />
+                          <span className="text-sm text-gray-600">{bank.location}</span>
+                          <span className="text-blue-600 text-sm">🌍</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="flex items-center">
+                            {[...Array(5)].map((_, i) => (
+                              <Star
+                                key={i}
+                                className={`w-4 h-4 ${
+                                  i < Math.floor(bank.rating) ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
+                                }`}
+                              />
+                            ))}
+                          </div>
+                          <span className="font-medium">{bank.rating}</span>
+                          <span className="text-gray-500 text-sm">({bank.reviews} reviews)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 text-sm mb-4">{bank.description}</p>
+                </CardHeader>
+
+                <CardContent className="pt-0">
+                  <div className="grid grid-cols-2 gap-4 mb-6 text-sm">
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <Truck className="w-4 h-4 text-blue-600" />
+                        <span className="font-medium">Shipping</span>
+                      </div>
+                      <p className="text-gray-600">{bank.shippingTime}</p>
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <CreditCard className="w-4 h-4 text-blue-600" />
+                        <span className="font-medium">Payment</span>
+                      </div>
+                      <p className="text-gray-600">{bank.paymentMethods.join(", ")}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {bank.specialties.map((specialty) => (
+                      <Badge key={specialty} variant="outline" className="text-xs border-blue-200 text-blue-700">
+                        {specialty}
+                      </Badge>
+                    ))}
+                  </div>
+
+                  <div className="flex gap-3">
+                    <Button asChild className="flex-1 bg-blue-600 hover:bg-blue-700 text-white">
+                      <a href={bank.affiliateUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Visit Seedsman
+                      </a>
+                    </Button>
+                    <Button variant="outline" className="border-blue-200 text-blue-700 hover:bg-blue-50 bg-transparent">
+                      Full Review
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
         <div className="text-center mt-12">

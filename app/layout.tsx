@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Discover comprehensive reviews and rankings of top Canadian cannabis seed banks. Find trusted genetics, secure payments, and reliable shipping within Canada.",
   keywords:
     "Canadian cannabis seed banks, cannabis genetics, secure payments, reliable shipping, Canada-focused reviews",
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
