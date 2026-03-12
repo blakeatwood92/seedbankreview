@@ -39,7 +39,7 @@ export function FeaturedBanks() {
     {
       name: "Quebec Cannabis Seeds",
       slug: "quebec-cannabis-seeds",
-      logo: "https://quebeccannabisseeds.com/img/logo.png",
+      logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-wyoXlcHaLEtobhRtGiIzCnFwxo1oKI.png",
       rating: 4.6,
       reviews: 578,
       location: "Quebec",

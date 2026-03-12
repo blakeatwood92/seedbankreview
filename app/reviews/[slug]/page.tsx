@@ -242,7 +242,7 @@ const seedBankData: Record<string, {
   },
   "quebec-cannabis-seeds": {
     name: "Quebec Cannabis Seeds",
-    logo: "https://quebeccannabisseeds.com/img/logo.png",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-wyoXlcHaLEtobhRtGiIzCnFwxo1oKI.png",
     rating: 4.5,
     reviews: 578,
     location: "Quebec, Canada",
