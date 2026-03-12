@@ -18,6 +18,18 @@ export default function ReviewsPage() {
       shipping: "2-4 days",
     },
     {
+      name: "Quebec Cannabis Seeds",
+      slug: "quebec-cannabis-seeds",
+      rating: 4.6,
+      location: "Quebec, Canada",
+      flag: "🇨🇦",
+      summary: "Quebec-based seed bank built for Canadian hobbyists with easy-to-grow genetics for northern climates and first-time growers.",
+      reviewed: false,
+      payments: ["Credit Card", "Interac e-Transfer"],
+      shipping: "3-7 days",
+      website: "quebeccannabisseeds.com",
+    },
+    {
       name: "Toronto Cannabis Seeds (TCS)",
       slug: "toronto-cannabis-seeds",
       rating: 4.5,

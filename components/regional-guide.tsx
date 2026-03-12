@@ -25,7 +25,7 @@ export function RegionalGuide() {
       description: "Cold winters, short growing seasons",
       icon: Snowflake,
       recommendations: ["Autoflowering varieties", "Fast-finishing strains", "Cold-resistant genetics"],
-      seedBanks: ["True North Seed Bank", "Jordan of the Islands"],
+      seedBanks: ["Quebec Cannabis Seeds", "True North Seed Bank"],
       growingTips: ["Use grow lights during winter", "Maintain indoor humidity"],
     },
     {

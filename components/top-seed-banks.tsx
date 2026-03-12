@@ -22,8 +22,16 @@ export function TopSeedBanks() {
       affiliate: true,
     },
     {
-      name: "GoBack Seed Bank",
+      name: "Quebec Cannabis Seeds",
       rating: 4.6,
+      location: "Canada",
+      specialties: ["Beginner Friendly", "Outdoor Genetics", "Northern Climate"],
+      description: "Quebec-based seed bank specializing in easy-to-grow genetics for Canadian hobbyists and first-time growers.",
+      affiliate: true,
+    },
+    {
+      name: "GoBack Seed Bank",
+      rating: 4.5,
       location: "Canada",
       specialties: ["Competitive Prices", "Bulk Orders", "Regular Promotions"],
       description: "Value-focused Canadian seed bank with competitive pricing and quality genetics.",
