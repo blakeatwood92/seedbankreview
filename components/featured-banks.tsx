@@ -2,12 +2,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Star, ExternalLink, MapPin, Truck, CreditCard, Globe } from "lucide-react"
+import Link from "next/link"
 
 export function FeaturedBanks() {
   const canadianBanks = [
     {
       name: "True North Seed Bank",
-      logo: "/images/truenorth-logo.png",
+      slug: "true-north",
+      logo: "https://truenorthseedbank.com/skin/frontend/flavor/flavor/images/truenorth-seed-bank-logo.png",
       rating: 4.8,
       reviews: 1247,
       location: "Ontario",
@@ -21,7 +23,8 @@ export function FeaturedBanks() {
     },
     {
       name: "Jordan of the Islands",
-      logo: "/images/jordan-islands-logo.png",
+      slug: "jordan-of-the-islands",
+      logo: "https://jordanoftheislands.com/wp-content/uploads/2023/03/joti-logo.png",
       rating: 4.7,
       reviews: 892,
       location: "British Columbia",
@@ -35,7 +38,8 @@ export function FeaturedBanks() {
     },
     {
       name: "Quebec Cannabis Seeds",
-      logo: "/images/qcs-logo.png",
+      slug: "quebec-cannabis-seeds",
+      logo: "https://quebeccannabisseeds.com/img/logo.png",
       rating: 4.6,
       reviews: 578,
       location: "Quebec",
@@ -49,6 +53,7 @@ export function FeaturedBanks() {
     },
     {
       name: "GoBack Seed Bank",
+      slug: "goback-seed-bank",
       logo: "/images/goback-logo.png",
       rating: 4.5,
       reviews: 423,
@@ -66,7 +71,8 @@ export function FeaturedBanks() {
   const internationalBanks = [
     {
       name: "Seedsman",
-      logo: "/images/seedsman-logo.png",
+      slug: "seedsman",
+      logo: "https://www.seedsman.com/media/logo/stores/1/seedsman-logo.png",
       rating: 4.6,
       reviews: 2847,
       location: "International",
@@ -185,8 +191,8 @@ export function FeaturedBanks() {
                       Visit Site
                     </a>
                   </Button>
-                  <Button variant="outline" className="border-red-200 text-red-700 hover:bg-red-50 bg-transparent">
-                    Full Review
+                  <Button asChild variant="outline" className="border-red-200 text-red-700 hover:bg-red-50 bg-transparent">
+                    <Link href={`/reviews/${bank.slug}`}>Full Review</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -281,8 +287,8 @@ export function FeaturedBanks() {
                         Visit Seedsman
                       </a>
                     </Button>
-                    <Button variant="outline" className="border-blue-200 text-blue-700 hover:bg-blue-50 bg-transparent">
-                      Full Review
+                    <Button asChild variant="outline" className="border-blue-200 text-blue-700 hover:bg-blue-50 bg-transparent">
+                      <Link href={`/reviews/${bank.slug}`}>Full Review</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -292,8 +298,8 @@ export function FeaturedBanks() {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="border-red-200 text-red-700 hover:bg-red-50 bg-transparent">
-            View All Canadian Seed Banks
+          <Button asChild variant="outline" size="lg" className="border-red-200 text-red-700 hover:bg-red-50 bg-transparent">
+            <Link href="/seed-banks">View All Canadian Seed Banks</Link>
           </Button>
         </div>
       </div>

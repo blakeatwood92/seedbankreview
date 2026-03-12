@@ -2,11 +2,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Star, ExternalLink, MapPin } from "lucide-react"
+import Link from "next/link"
 
 export function TopSeedBanks() {
   const canadianBanks = [
     {
       name: "True North Seed Bank",
+      slug: "true-north",
       rating: 4.8,
       location: "Canada",
       specialties: ["Established Reputation", "Wide Selection", "Secure Payment"],
@@ -16,6 +18,7 @@ export function TopSeedBanks() {
     },
     {
       name: "Jordan of the Islands",
+      slug: "jordan-of-the-islands",
       rating: 4.7,
       location: "Canada",
       specialties: ["Original Genetics", "Breeder Direct", "Island Genetics"],
@@ -25,6 +28,7 @@ export function TopSeedBanks() {
     },
     {
       name: "Quebec Cannabis Seeds",
+      slug: "quebec-cannabis-seeds",
       rating: 4.6,
       location: "Canada",
       specialties: ["Beginner Friendly", "Outdoor Genetics", "Free Express $200+"],
@@ -34,6 +38,7 @@ export function TopSeedBanks() {
     },
     {
       name: "GoBack Seed Bank",
+      slug: "goback-seed-bank",
       rating: 4.5,
       location: "Canada",
       specialties: ["Competitive Prices", "Bulk Orders", "Regular Promotions"],
@@ -101,8 +106,8 @@ export function TopSeedBanks() {
                       Visit Site
                     </a>
                   </Button>
-                  <Button variant="outline" size="sm">
-                    Read Review
+                  <Button asChild variant="outline" size="sm">
+                    <Link href={`/reviews/${bank.slug}`}>Read Review</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -111,8 +116,8 @@ export function TopSeedBanks() {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg">
-            View All Canadian Seed Banks
+          <Button asChild variant="outline" size="lg">
+            <Link href="/seed-banks">View All Canadian Seed Banks</Link>
           </Button>
         </div>
       </div>

@@ -2,13 +2,15 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Star, ExternalLink, MapPin, Truck, CreditCard, Package } from "lucide-react"
+import Link from "next/link"
 
 export default function SeedBanksPage() {
   const seedBanks = [
     {
       rank: 1,
       name: "True North Seed Bank",
-      logo: "/images/truenorth-logo.png",
+      slug: "true-north",
+      logo: "https://truenorthseedbank.com/skin/frontend/flavor/flavor/images/truenorth-seed-bank-logo.png",
       rating: 4.8,
       reviews: 1247,
       location: "Ontario, Canada",
@@ -24,7 +26,8 @@ export default function SeedBanksPage() {
     {
       rank: 2,
       name: "Jordan of the Islands",
-      logo: "/images/jordan-islands-logo.png",
+      slug: "jordan-of-the-islands",
+      logo: "https://jordanoftheislands.com/wp-content/uploads/2023/03/joti-logo.png",
       rating: 4.7,
       reviews: 892,
       location: "British Columbia, Canada",
@@ -40,7 +43,8 @@ export default function SeedBanksPage() {
     {
       rank: 3,
       name: "Quebec Cannabis Seeds",
-      logo: "/images/qcs-logo.png",
+      slug: "quebec-cannabis-seeds",
+      logo: "https://quebeccannabisseeds.com/img/logo.png",
       rating: 4.6,
       reviews: 578,
       location: "Quebec, Canada",
@@ -56,6 +60,7 @@ export default function SeedBanksPage() {
     {
       rank: 4,
       name: "GoBack Seed Bank",
+      slug: "goback-seed-bank",
       logo: "/images/goback-logo.png",
       rating: 4.5,
       reviews: 423,
@@ -72,7 +77,8 @@ export default function SeedBanksPage() {
     {
       rank: 5,
       name: "Seedsman",
-      logo: "/images/seedsman-logo.png",
+      slug: "seedsman",
+      logo: "https://www.seedsman.com/media/logo/stores/1/seedsman-logo.png",
       rating: 4.6,
       reviews: 2847,
       location: "International",
@@ -88,7 +94,8 @@ export default function SeedBanksPage() {
     {
       rank: 6,
       name: "Crop King Seeds",
-      logo: "/images/cropking-logo.png",
+      slug: "crop-king-seeds",
+      logo: "https://www.cropkingseeds.com/wp-content/uploads/2021/06/crop-king-seeds-logo.png",
       rating: 4.4,
       reviews: 756,
       location: "British Columbia, Canada",
@@ -104,7 +111,8 @@ export default function SeedBanksPage() {
     {
       rank: 7,
       name: "Herbies Seeds",
-      logo: "/images/herbies-logo.png",
+      slug: "herbies-headshop",
+      logo: "https://herbiesheadshop.com/images/herbies-logo.svg",
       rating: 4.3,
       reviews: 1234,
       location: "International",
@@ -120,7 +128,8 @@ export default function SeedBanksPage() {
     {
       rank: 8,
       name: "ILGM (I Love Growing Marijuana)",
-      logo: "/images/ilgm-logo.png",
+      slug: "ilgm",
+      logo: "https://www.ilovegrowingmarijuana.com/wp-content/themes/flavor/images/ilgm-logo.svg",
       rating: 4.2,
       reviews: 987,
       location: "International",
@@ -136,7 +145,8 @@ export default function SeedBanksPage() {
     {
       rank: 9,
       name: "Growers Choice Seeds",
-      logo: "/images/growers-choice-logo.png",
+      slug: "growers-choice-seeds",
+      logo: "https://www.growerschoiceseeds.com/wp-content/uploads/2020/08/growers-choice-seeds-logo.png",
       rating: 4.1,
       reviews: 543,
       location: "International",
@@ -152,6 +162,7 @@ export default function SeedBanksPage() {
     {
       rank: 10,
       name: "Rocket Seeds",
+      slug: "rocket-seeds",
       logo: "/images/rocket-seeds-logo.png",
       rating: 4.0,
       reviews: 321,
@@ -227,7 +238,9 @@ export default function SeedBanksPage() {
                         Visit Site
                       </a>
                     </Button>
-                    <Button variant="outline">Read Review</Button>
+                    <Button asChild variant="outline">
+                      <Link href={`/reviews/${bank.slug}`}>Read Review</Link>
+                    </Button>
                   </div>
                 </div>
               </CardHeader>
