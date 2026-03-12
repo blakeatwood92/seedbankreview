@@ -7,26 +7,27 @@ import Link from "next/link"
 export default function ReviewsPage() {
   const canadianReviews = [
     {
-      name: "FastBuzz.com",
-      slug: "fastbuzz",
-      rating: 4.8,
-      location: "British Columbia, Canada",
-      flag: "🇨🇦",
-      summary: "Leading Canadian seed bank with exceptional customer service and premium West Coast genetics.",
-      reviewed: false,
-      payments: ["Interac e-Transfer", "Credit Card", "Bitcoin"],
-      shipping: "1-2 days",
-    },
-    {
       name: "True North Seed Bank",
       slug: "true-north",
-      rating: 4.7,
+      rating: 4.8,
       location: "Ontario, Canada",
       flag: "🇨🇦",
       summary: "Trusted Canadian source with years of experience and verified genetics from coast to coast.",
       reviewed: false,
       payments: ["Interac e-Transfer", "Credit Card", "Cash"],
       shipping: "2-4 days",
+    },
+    {
+      name: "Quebec Cannabis Seeds",
+      slug: "quebec-cannabis-seeds",
+      rating: 4.6,
+      location: "Quebec, Canada",
+      flag: "🇨🇦",
+      summary: "Quebec-based seed bank built for Canadian hobbyists with easy-to-grow genetics for northern climates and first-time growers.",
+      reviewed: false,
+      payments: ["Credit Card", "Interac e-Transfer"],
+      shipping: "3-7 days",
+      website: "quebeccannabisseeds.com",
     },
     {
       name: "Toronto Cannabis Seeds (TCS)",
@@ -204,7 +205,7 @@ export default function ReviewsPage() {
       <div className="bg-gradient-to-br from-red-50 to-red-100 py-16">
         <div className="container px-4 mx-auto text-center">
           <Badge variant="secondary" className="mb-4 bg-red-100 text-red-800">
-            🇨🇦 Comprehensive Reviews
+            ��🇦 Comprehensive Reviews
           </Badge>
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">Cannabis Seed Bank Reviews</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

@@ -7,25 +7,10 @@ export default function SeedBanksPage() {
   const seedBanks = [
     {
       rank: 1,
-      name: "FastBuzz.com",
-      logo: "/images/fastbuzz-logo.png",
-      rating: 4.8,
-      reviews: 1247,
-      location: "British Columbia, Canada",
-      description: "Leading Canadian seed bank with exceptional customer service and premium West Coast genetics.",
-      paymentMethods: ["Interac E-Transfer", "Credit Card", "Bitcoin", "Cash"],
-      deliveryTime: "1-2 business days",
-      shippingCost: "Free over $100",
-      specialties: ["Same-Day Processing", "Discreet Packaging", "BC Genetics", "24/7 Support"],
-      strainCount: "500+",
-      affiliate: true,
-    },
-    {
-      rank: 2,
       name: "True North Seed Bank",
       logo: "/images/truenorth-logo.png",
-      rating: 4.7,
-      reviews: 892,
+      rating: 4.8,
+      reviews: 1247,
       location: "Ontario, Canada",
       description: "Trusted Canadian source with years of experience and verified genetics from coast to coast.",
       paymentMethods: ["Interac E-Transfer", "Credit Card", "Cash", "Money Order"],
@@ -34,13 +19,14 @@ export default function SeedBanksPage() {
       specialties: ["Established Reputation", "Wide Selection", "Secure Payment", "Quality Guarantee"],
       strainCount: "800+",
       affiliate: true,
+      affiliateUrl: "https://truenorthseedbank.com",
     },
     {
-      rank: 3,
+      rank: 2,
       name: "Jordan of the Islands",
       logo: "/images/jordan-islands-logo.png",
-      rating: 4.6,
-      reviews: 634,
+      rating: 4.7,
+      reviews: 892,
       location: "British Columbia, Canada",
       description: "Renowned Canadian breeder offering unique island-bred cannabis genetics since the 90s.",
       paymentMethods: ["Interac E-Transfer", "Cash", "Money Order"],
@@ -49,6 +35,23 @@ export default function SeedBanksPage() {
       specialties: ["Original Genetics", "Breeder Direct", "Island Strains", "Organic Seeds"],
       strainCount: "200+",
       affiliate: true,
+      affiliateUrl: "https://jordanoftheislands.ca",
+    },
+    {
+      rank: 3,
+      name: "Quebec Cannabis Seeds",
+      logo: "/images/qcs-logo.png",
+      rating: 4.6,
+      reviews: 578,
+      location: "Quebec, Canada",
+      description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-grow genetics suited for northern climates and first-time growers.",
+      paymentMethods: ["Credit Card", "Interac E-Transfer"],
+      deliveryTime: "3-7 business days",
+      shippingCost: "Free over $200",
+      specialties: ["Beginner Friendly", "Outdoor Genetics", "Northern Climate", "Autoflowering"],
+      strainCount: "300+",
+      affiliate: true,
+      affiliateUrl: "https://quebeccannabisseeds.com",
     },
     {
       rank: 4,
@@ -64,6 +67,7 @@ export default function SeedBanksPage() {
       specialties: ["Competitive Prices", "Bulk Orders", "Prairie Genetics", "Student Discounts"],
       strainCount: "400+",
       affiliate: true,
+      affiliateUrl: "https://gobackseedbank.com",
     },
     {
       rank: 5,
@@ -95,6 +99,7 @@ export default function SeedBanksPage() {
       specialties: ["Germination Guarantee", "Feminized Seeds", "Customer Support", "Beginner Friendly"],
       strainCount: "300+",
       affiliate: false,
+      affiliateUrl: "https://cropkingseeds.com",
     },
     {
       rank: 7,
@@ -110,6 +115,7 @@ export default function SeedBanksPage() {
       specialties: ["Stealth Shipping", "Customer Service", "Variety Packs", "Freebies"],
       strainCount: "2500+",
       affiliate: false,
+      affiliateUrl: "https://herbiesheadshop.com",
     },
     {
       rank: 8,
@@ -125,6 +131,7 @@ export default function SeedBanksPage() {
       specialties: ["Growing Guides", "Guaranteed Delivery", "Beginner Strains", "24/7 Support"],
       strainCount: "150+",
       affiliate: false,
+      affiliateUrl: "https://ilgm.com",
     },
     {
       rank: 9,
@@ -140,6 +147,7 @@ export default function SeedBanksPage() {
       specialties: ["Premium Genetics", "Fast Shipping", "Lab Tested", "High THC Strains"],
       strainCount: "200+",
       affiliate: false,
+      affiliateUrl: "https://growerschoiceseeds.com",
     },
     {
       rank: 10,
@@ -155,6 +163,7 @@ export default function SeedBanksPage() {
       specialties: ["Quality Genetics", "Canadian Service", "Fast Processing", "Discreet Shipping"],
       strainCount: "250+",
       affiliate: false,
+      affiliateUrl: "https://rfrk.net/rocketseeds",
     },
   ]
 
@@ -212,19 +221,12 @@ export default function SeedBanksPage() {
                     </div>
                   </div>
                   <div className="flex gap-3">
-                    {bank.affiliateUrl ? (
-                      <Button asChild className="bg-red-600 hover:bg-red-700">
-                        <a href={bank.affiliateUrl} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="w-4 h-4 mr-2" />
-                          Visit Site
-                        </a>
-                      </Button>
-                    ) : (
-                      <Button className="bg-red-600 hover:bg-red-700">
+                    <Button asChild className="bg-red-600 hover:bg-red-700">
+                      <a href={bank.affiliateUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Visit Site
-                      </Button>
-                    )}
+                      </a>
+                    </Button>
                     <Button variant="outline">Read Review</Button>
                   </div>
                 </div>

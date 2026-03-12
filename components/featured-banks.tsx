@@ -6,23 +6,10 @@ import { Star, ExternalLink, MapPin, Truck, CreditCard, Globe } from "lucide-rea
 export function FeaturedBanks() {
   const canadianBanks = [
     {
-      name: "FastBuzz.com",
-      logo: "/images/fastbuzz-logo.png",
-      rating: 4.8,
-      reviews: 1247,
-      location: "British Columbia",
-      specialties: ["Same-Day Shipping", "Discreet Packaging", "BC Genetics"],
-      description: "Leading Canadian seed bank with exceptional customer service and premium West Coast genetics.",
-      paymentMethods: ["Interac E-Transfer", "Credit Card", "Bitcoin"],
-      shippingTime: "1-2 days",
-      provinces: ["BC", "AB", "ON", "QC"],
-      affiliate: true,
-    },
-    {
       name: "True North Seed Bank",
       logo: "/images/truenorth-logo.png",
-      rating: 4.7,
-      reviews: 892,
+      rating: 4.8,
+      reviews: 1247,
       location: "Ontario",
       specialties: ["Established Reputation", "Wide Selection", "Secure Payment"],
       description: "Trusted Canadian source with years of experience and verified genetics from coast to coast.",
@@ -30,12 +17,13 @@ export function FeaturedBanks() {
       shippingTime: "2-4 days",
       provinces: ["ON", "QC", "BC", "AB"],
       affiliate: true,
+      affiliateUrl: "https://truenorthseedbank.com",
     },
     {
       name: "Jordan of the Islands",
       logo: "/images/jordan-islands-logo.png",
-      rating: 4.6,
-      reviews: 634,
+      rating: 4.7,
+      reviews: 892,
       location: "British Columbia",
       specialties: ["Original Genetics", "Breeder Direct", "Island Strains"],
       description: "Renowned Canadian breeder offering unique island-bred cannabis genetics since the 90s.",
@@ -43,6 +31,21 @@ export function FeaturedBanks() {
       shippingTime: "3-5 days",
       provinces: ["BC", "AB", "ON"],
       affiliate: true,
+      affiliateUrl: "https://jordanoftheislands.ca",
+    },
+    {
+      name: "Quebec Cannabis Seeds",
+      logo: "/images/qcs-logo.png",
+      rating: 4.6,
+      reviews: 578,
+      location: "Quebec",
+      specialties: ["Beginner Friendly", "Outdoor Genetics", "Northern Climate"],
+      description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-grow genetics suited for northern climates.",
+      paymentMethods: ["Credit Card", "Interac E-Transfer"],
+      shippingTime: "3-7 days",
+      provinces: ["QC", "ON", "NB", "NS"],
+      affiliate: true,
+      affiliateUrl: "https://quebeccannabisseeds.com",
     },
     {
       name: "GoBack Seed Bank",
@@ -56,6 +59,7 @@ export function FeaturedBanks() {
       shippingTime: "2-5 days",
       provinces: ["AB", "BC", "SK", "MB"],
       affiliate: true,
+      affiliateUrl: "https://gobackseedbank.com",
     },
   ]
 
@@ -175,9 +179,11 @@ export function FeaturedBanks() {
                 </div>
 
                 <div className="flex gap-3">
-                  <Button className="flex-1 bg-red-600 hover:bg-red-700 text-white">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Visit Site
+                  <Button asChild className="flex-1 bg-red-600 hover:bg-red-700 text-white">
+                    <a href={bank.affiliateUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Visit Site
+                    </a>
                   </Button>
                   <Button variant="outline" className="border-red-200 text-red-700 hover:bg-red-50 bg-transparent">
                     Full Review
