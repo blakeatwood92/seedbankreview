@@ -7,6 +7,7 @@ export function Header() {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Top Seed Banks", href: "/seed-banks" },
+    { name: "Strain Directory", href: "/strains" },
     { name: "Provincial Guides", href: "/provinces" },
     { name: "Reviews", href: "/reviews" },
     { name: "Growing Guides", href: "/guides" },
