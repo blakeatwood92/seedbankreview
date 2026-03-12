@@ -12,6 +12,7 @@ export function TopSeedBanks() {
       specialties: ["Established Reputation", "Wide Selection", "Secure Payment"],
       description: "Trusted Canadian source with years of experience and verified genetics.",
       affiliate: true,
+      affiliateUrl: "https://truenorthseedbank.com",
     },
     {
       name: "Jordan of the Islands",
@@ -20,6 +21,7 @@ export function TopSeedBanks() {
       specialties: ["Original Genetics", "Breeder Direct", "Island Genetics"],
       description: "Renowned Canadian breeder offering unique island-bred cannabis genetics.",
       affiliate: true,
+      affiliateUrl: "https://jordanoftheislands.ca",
     },
     {
       name: "Quebec Cannabis Seeds",
@@ -28,6 +30,7 @@ export function TopSeedBanks() {
       specialties: ["Beginner Friendly", "Outdoor Genetics", "Northern Climate"],
       description: "Quebec-based seed bank specializing in easy-to-grow genetics for Canadian hobbyists and first-time growers.",
       affiliate: true,
+      affiliateUrl: "https://quebeccannabisseeds.com",
     },
     {
       name: "GoBack Seed Bank",
@@ -36,6 +39,7 @@ export function TopSeedBanks() {
       specialties: ["Competitive Prices", "Bulk Orders", "Regular Promotions"],
       description: "Value-focused Canadian seed bank with competitive pricing and quality genetics.",
       affiliate: true,
+      affiliateUrl: "https://gobackseedbank.com",
     },
   ]
 
@@ -91,9 +95,11 @@ export function TopSeedBanks() {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <Button className="flex-1 bg-green-600 hover:bg-green-700">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Visit Site
+                  <Button asChild className="flex-1 bg-green-600 hover:bg-green-700">
+                    <a href={bank.affiliateUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Visit Site
+                    </a>
                   </Button>
                   <Button variant="outline" size="sm">
                     Read Review
