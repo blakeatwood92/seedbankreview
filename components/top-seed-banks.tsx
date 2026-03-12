@@ -21,7 +21,7 @@ export function TopSeedBanks() {
       specialties: ["Original Genetics", "Breeder Direct", "Island Genetics"],
       description: "Renowned Canadian breeder offering unique island-bred cannabis genetics.",
       affiliate: true,
-      affiliateUrl: "https://jordanoftheislands.ca",
+      affiliateUrl: "https://jordanoftheislands.com",
     },
     {
       name: "Quebec Cannabis Seeds",
