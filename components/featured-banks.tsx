@@ -27,11 +27,11 @@ export function FeaturedBanks() {
       location: "British Columbia",
       specialties: ["Original Genetics", "Breeder Direct", "Island Strains"],
       description: "Renowned Canadian breeder offering unique island-bred cannabis genetics since the 90s.",
-      paymentMethods: ["Interac E-Transfer", "Cash", "Money Order"],
+      paymentMethods: ["Interac E-Transfer", "Cash", "Money Order", "Crypto"],
       shippingTime: "3-5 days",
       provinces: ["BC", "AB", "ON"],
       affiliate: true,
-      affiliateUrl: "https://jordanoftheislands.ca",
+      affiliateUrl: "https://jordanoftheislands.com",
     },
     {
       name: "Quebec Cannabis Seeds",
