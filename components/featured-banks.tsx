@@ -17,6 +17,7 @@ export function FeaturedBanks() {
       shippingTime: "2-4 days",
       provinces: ["ON", "QC", "BC", "AB"],
       affiliate: true,
+      affiliateUrl: "https://truenorthseedbank.com",
     },
     {
       name: "Jordan of the Islands",
@@ -30,6 +31,7 @@ export function FeaturedBanks() {
       shippingTime: "3-5 days",
       provinces: ["BC", "AB", "ON"],
       affiliate: true,
+      affiliateUrl: "https://jordanoftheislands.ca",
     },
     {
       name: "Quebec Cannabis Seeds",
@@ -43,6 +45,7 @@ export function FeaturedBanks() {
       shippingTime: "3-7 days",
       provinces: ["QC", "ON", "NB", "NS"],
       affiliate: true,
+      affiliateUrl: "https://quebeccannabisseeds.com",
     },
     {
       name: "GoBack Seed Bank",
@@ -56,6 +59,7 @@ export function FeaturedBanks() {
       shippingTime: "2-5 days",
       provinces: ["AB", "BC", "SK", "MB"],
       affiliate: true,
+      affiliateUrl: "https://gobackseedbank.com",
     },
   ]
 
@@ -175,9 +179,11 @@ export function FeaturedBanks() {
                 </div>
 
                 <div className="flex gap-3">
-                  <Button className="flex-1 bg-red-600 hover:bg-red-700 text-white">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Visit Site
+                  <Button asChild className="flex-1 bg-red-600 hover:bg-red-700 text-white">
+                    <a href={bank.affiliateUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Visit Site
+                    </a>
                   </Button>
                   <Button variant="outline" className="border-red-200 text-red-700 hover:bg-red-50 bg-transparent">
                     Full Review

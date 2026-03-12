@@ -19,6 +19,7 @@ export default function SeedBanksPage() {
       specialties: ["Established Reputation", "Wide Selection", "Secure Payment", "Quality Guarantee"],
       strainCount: "800+",
       affiliate: true,
+      affiliateUrl: "https://truenorthseedbank.com",
     },
     {
       rank: 2,
@@ -34,6 +35,7 @@ export default function SeedBanksPage() {
       specialties: ["Original Genetics", "Breeder Direct", "Island Strains", "Organic Seeds"],
       strainCount: "200+",
       affiliate: true,
+      affiliateUrl: "https://jordanoftheislands.ca",
     },
     {
       rank: 3,
@@ -49,6 +51,7 @@ export default function SeedBanksPage() {
       specialties: ["Beginner Friendly", "Outdoor Genetics", "Northern Climate", "Autoflowering"],
       strainCount: "300+",
       affiliate: true,
+      affiliateUrl: "https://quebeccannabisseeds.com",
     },
     {
       rank: 4,
@@ -64,6 +67,7 @@ export default function SeedBanksPage() {
       specialties: ["Competitive Prices", "Bulk Orders", "Prairie Genetics", "Student Discounts"],
       strainCount: "400+",
       affiliate: true,
+      affiliateUrl: "https://gobackseedbank.com",
     },
     {
       rank: 5,
@@ -95,6 +99,7 @@ export default function SeedBanksPage() {
       specialties: ["Germination Guarantee", "Feminized Seeds", "Customer Support", "Beginner Friendly"],
       strainCount: "300+",
       affiliate: false,
+      affiliateUrl: "https://cropkingseeds.com",
     },
     {
       rank: 7,
@@ -110,6 +115,7 @@ export default function SeedBanksPage() {
       specialties: ["Stealth Shipping", "Customer Service", "Variety Packs", "Freebies"],
       strainCount: "2500+",
       affiliate: false,
+      affiliateUrl: "https://herbiesheadshop.com",
     },
     {
       rank: 8,
@@ -125,6 +131,7 @@ export default function SeedBanksPage() {
       specialties: ["Growing Guides", "Guaranteed Delivery", "Beginner Strains", "24/7 Support"],
       strainCount: "150+",
       affiliate: false,
+      affiliateUrl: "https://ilgm.com",
     },
     {
       rank: 9,
@@ -140,6 +147,7 @@ export default function SeedBanksPage() {
       specialties: ["Premium Genetics", "Fast Shipping", "Lab Tested", "High THC Strains"],
       strainCount: "200+",
       affiliate: false,
+      affiliateUrl: "https://growerschoiceseeds.com",
     },
     {
       rank: 10,
@@ -155,6 +163,7 @@ export default function SeedBanksPage() {
       specialties: ["Quality Genetics", "Canadian Service", "Fast Processing", "Discreet Shipping"],
       strainCount: "250+",
       affiliate: false,
+      affiliateUrl: "https://rfrk.net/rocketseeds",
     },
   ]
 
@@ -212,19 +221,12 @@ export default function SeedBanksPage() {
                     </div>
                   </div>
                   <div className="flex gap-3">
-                    {bank.affiliateUrl ? (
-                      <Button asChild className="bg-red-600 hover:bg-red-700">
-                        <a href={bank.affiliateUrl} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="w-4 h-4 mr-2" />
-                          Visit Site
-                        </a>
-                      </Button>
-                    ) : (
-                      <Button className="bg-red-600 hover:bg-red-700">
+                    <Button asChild className="bg-red-600 hover:bg-red-700">
+                      <a href={bank.affiliateUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Visit Site
-                      </Button>
-                    )}
+                      </a>
+                    </Button>
                     <Button variant="outline">Read Review</Button>
                   </div>
                 </div>
