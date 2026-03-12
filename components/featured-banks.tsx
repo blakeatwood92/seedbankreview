@@ -9,7 +9,7 @@ export function FeaturedBanks() {
     {
       name: "True North Seed Bank",
       slug: "true-north",
-      logo: "https://truenorthseedbank.com/skin/frontend/flavor/flavor/images/truenorth-seed-bank-logo.png",
+      logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tnsb_logo-7MCHjFEh91tG5in9Vjgyg7mV65npjx.png",
       rating: 4.8,
       reviews: 1247,
       location: "Ontario",
