@@ -149,7 +149,7 @@ const seedBankData: Record<string, {
   },
   "jordan-of-the-islands": {
     name: "Jordan of the Islands",
-    logo: "https://jordanoftheislands.com/wp-content/uploads/2023/03/joti-logo.png",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cropped-company-lgo-backup-zbA78eurgy53gyRao2trw0BRP1tE1e.png",
     rating: 4.7,
     reviews: 892,
     location: "British Columbia, Canada",
