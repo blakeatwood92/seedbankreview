@@ -6,25 +6,14 @@ import { Star, ExternalLink, Truck, CreditCard } from "lucide-react"
 export default function CanadaPage() {
   const canadianBanks = [
     {
-      name: "FastBuzz.com",
+      name: "True North Seed Bank",
       rating: 4.8,
       reviews: 1247,
-      description: "Premium Canadian seed bank with lightning-fast shipping and exceptional customer service.",
-      pros: ["Same-day shipping", "Discreet packaging", "Canadian genetics", "Excellent support"],
-      cons: ["Higher prices", "Limited international shipping"],
-      paymentMethods: ["Credit Card", "E-Transfer", "Bitcoin"],
-      shippingTime: "1-3 days",
-      affiliate: true,
-    },
-    {
-      name: "True North Seed Bank",
-      rating: 4.7,
-      reviews: 892,
       description: "Established Canadian seed bank with a reputation for quality genetics and reliable service.",
       pros: ["Wide selection", "Established reputation", "Secure payment", "Quality genetics"],
       cons: ["Slower shipping", "Limited promotions"],
       paymentMethods: ["Credit Card", "E-Transfer", "Cash"],
-      shippingTime: "3-5 days",
+      shippingTime: "2-4 days",
       affiliate: true,
     },
     {

@@ -315,9 +315,9 @@ export default function HerbiesReviewPage() {
                 <div>
                   <h4 className="font-medium text-yellow-800 mb-2">Canadian Alternatives:</h4>
                   <ul className="space-y-1 text-yellow-700">
-                    <li>• FastBuzz.com (1-2 day delivery)</li>
-                    <li>• True North Seed Bank</li>
+                    <li>• True North Seed Bank (2-4 day delivery)</li>
                     <li>• Jordan of the Islands</li>
+                    <li>• GoBack Seed Bank</li>
                     <li>• No customs concerns</li>
                   </ul>
                 </div>

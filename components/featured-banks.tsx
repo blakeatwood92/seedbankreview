@@ -6,23 +6,10 @@ import { Star, ExternalLink, MapPin, Truck, CreditCard, Globe } from "lucide-rea
 export function FeaturedBanks() {
   const canadianBanks = [
     {
-      name: "FastBuzz.com",
-      logo: "/images/fastbuzz-logo.png",
-      rating: 4.8,
-      reviews: 1247,
-      location: "British Columbia",
-      specialties: ["Same-Day Shipping", "Discreet Packaging", "BC Genetics"],
-      description: "Leading Canadian seed bank with exceptional customer service and premium West Coast genetics.",
-      paymentMethods: ["Interac E-Transfer", "Credit Card", "Bitcoin"],
-      shippingTime: "1-2 days",
-      provinces: ["BC", "AB", "ON", "QC"],
-      affiliate: true,
-    },
-    {
       name: "True North Seed Bank",
       logo: "/images/truenorth-logo.png",
-      rating: 4.7,
-      reviews: 892,
+      rating: 4.8,
+      reviews: 1247,
       location: "Ontario",
       specialties: ["Established Reputation", "Wide Selection", "Secure Payment"],
       description: "Trusted Canadian source with years of experience and verified genetics from coast to coast.",
@@ -34,8 +21,8 @@ export function FeaturedBanks() {
     {
       name: "Jordan of the Islands",
       logo: "/images/jordan-islands-logo.png",
-      rating: 4.6,
-      reviews: 634,
+      rating: 4.7,
+      reviews: 892,
       location: "British Columbia",
       specialties: ["Original Genetics", "Breeder Direct", "Island Strains"],
       description: "Renowned Canadian breeder offering unique island-bred cannabis genetics since the 90s.",
@@ -47,8 +34,8 @@ export function FeaturedBanks() {
     {
       name: "GoBack Seed Bank",
       logo: "/images/goback-logo.png",
-      rating: 4.5,
-      reviews: 423,
+      rating: 4.6,
+      reviews: 634,
       location: "Alberta",
       specialties: ["Competitive Prices", "Bulk Orders", "Prairie Genetics"],
       description: "Value-focused Canadian seed bank with competitive pricing and quality genetics for all budgets.",

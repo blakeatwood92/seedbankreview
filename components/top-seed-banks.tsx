@@ -6,16 +6,8 @@ import { Star, ExternalLink, MapPin } from "lucide-react"
 export function TopSeedBanks() {
   const canadianBanks = [
     {
-      name: "FastBuzz.com",
-      rating: 4.8,
-      location: "Canada",
-      specialties: ["Fast Shipping", "Discreet Packaging", "Canadian Genetics"],
-      description: "Leading Canadian seed bank with exceptional customer service and premium genetics.",
-      affiliate: true,
-    },
-    {
       name: "True North Seed Bank",
-      rating: 4.7,
+      rating: 4.8,
       location: "Canada",
       specialties: ["Established Reputation", "Wide Selection", "Secure Payment"],
       description: "Trusted Canadian source with years of experience and verified genetics.",
@@ -23,7 +15,7 @@ export function TopSeedBanks() {
     },
     {
       name: "Jordan of the Islands",
-      rating: 4.6,
+      rating: 4.7,
       location: "Canada",
       specialties: ["Original Genetics", "Breeder Direct", "Island Genetics"],
       description: "Renowned Canadian breeder offering unique island-bred cannabis genetics.",
@@ -31,7 +23,7 @@ export function TopSeedBanks() {
     },
     {
       name: "GoBack Seed Bank",
-      rating: 4.5,
+      rating: 4.6,
       location: "Canada",
       specialties: ["Competitive Prices", "Bulk Orders", "Regular Promotions"],
       description: "Value-focused Canadian seed bank with competitive pricing and quality genetics.",
