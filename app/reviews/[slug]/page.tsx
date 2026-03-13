@@ -392,7 +392,7 @@ const seedBankData: Record<string, {
   },
   "seedsman": {
     name: "Seedsman",
-    logo: "https://www.seedsman.com/media/logo/stores/1/seedsman-logo.png",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
     rating: 4.0,
     reviews: 2847,
     location: "International",

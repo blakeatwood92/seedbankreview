@@ -78,7 +78,7 @@ export default function SeedBanksPage() {
       rank: 5,
       name: "Seedsman",
       slug: "seedsman",
-      logo: "https://www.seedsman.com/media/logo/stores/1/seedsman-logo.png",
+      logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
       rating: 4.6,
       reviews: 2847,
       location: "International",
