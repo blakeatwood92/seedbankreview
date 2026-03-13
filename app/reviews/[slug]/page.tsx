@@ -70,7 +70,7 @@ const seedBankData: Record<string, {
 }> = {
   "true-north": {
     name: "True North Seed Bank",
-    logo: "https://truenorthseedbank.com/skin/frontend/flavor/flavor/images/truenorth-seed-bank-logo.png",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tnsb_logo-7MCHjFEh91tG5in9Vjgyg7mV65npjx.png",
     rating: 4.2,
     reviews: 1247,
     location: "Ontario, Canada",
@@ -149,7 +149,7 @@ const seedBankData: Record<string, {
   },
   "jordan-of-the-islands": {
     name: "Jordan of the Islands",
-    logo: "https://jordanoftheislands.com/wp-content/uploads/2023/03/joti-logo.png",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cropped-company-lgo-backup-zbA78eurgy53gyRao2trw0BRP1tE1e.png",
     rating: 4.7,
     reviews: 892,
     location: "British Columbia, Canada",
@@ -242,7 +242,7 @@ const seedBankData: Record<string, {
   },
   "quebec-cannabis-seeds": {
     name: "Quebec Cannabis Seeds",
-    logo: "https://quebeccannabisseeds.com/img/logo.png",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-wyoXlcHaLEtobhRtGiIzCnFwxo1oKI.png",
     rating: 4.5,
     reviews: 578,
     location: "Quebec, Canada",
@@ -392,7 +392,7 @@ const seedBankData: Record<string, {
   },
   "seedsman": {
     name: "Seedsman",
-    logo: "https://www.seedsman.com/media/logo/stores/1/seedsman-logo.png",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
     rating: 4.0,
     reviews: 2847,
     location: "International",

@@ -9,7 +9,7 @@ export function FeaturedBanks() {
     {
       name: "True North Seed Bank",
       slug: "true-north",
-      logo: "https://truenorthseedbank.com/skin/frontend/flavor/flavor/images/truenorth-seed-bank-logo.png",
+      logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tnsb_logo-7MCHjFEh91tG5in9Vjgyg7mV65npjx.png",
       rating: 4.8,
       reviews: 1247,
       location: "Ontario",
@@ -24,7 +24,7 @@ export function FeaturedBanks() {
     {
       name: "Jordan of the Islands",
       slug: "jordan-of-the-islands",
-      logo: "https://jordanoftheislands.com/wp-content/uploads/2023/03/joti-logo.png",
+      logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cropped-company-lgo-backup-zbA78eurgy53gyRao2trw0BRP1tE1e.png",
       rating: 4.7,
       reviews: 892,
       location: "British Columbia",
@@ -39,7 +39,7 @@ export function FeaturedBanks() {
     {
       name: "Quebec Cannabis Seeds",
       slug: "quebec-cannabis-seeds",
-      logo: "https://quebeccannabisseeds.com/img/logo.png",
+      logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-wyoXlcHaLEtobhRtGiIzCnFwxo1oKI.png",
       rating: 4.6,
       reviews: 578,
       location: "Quebec",
@@ -72,7 +72,7 @@ export function FeaturedBanks() {
     {
       name: "Seedsman",
       slug: "seedsman",
-      logo: "https://www.seedsman.com/media/logo/stores/1/seedsman-logo.png",
+      logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
       rating: 4.6,
       reviews: 2847,
       location: "International",
