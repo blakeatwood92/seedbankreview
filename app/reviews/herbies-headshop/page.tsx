@@ -17,33 +17,32 @@ import {
 } from "lucide-react"
 
 export default function HerbiesReviewPage() {
-  const overallRating = 4.3
+  const overallRating = 4.5
   const criteriaRatings = {
-    paymentMethods: 4.5,
+    paymentMethods: 4.9,
     seedVariety: 4.8,
-    genetics: 4.2,
-    customerExperience: 4.0,
-    reputation: 4.1,
+    genetics: 4.5,
+    customerExperience: 4.3,
+    reputation: 4.4,
   }
 
   const pros = [
-    "Massive seed selection (2500+ strains)",
-    "Excellent stealth shipping to Canada",
-    "Regular promotions and freebies",
-    "Multiple payment options including crypto",
-    "Good customer service response times",
-    "Detailed strain information",
-    "Established reputation since 2000s",
-    "Ships worldwide including Canada",
+    "Massive seed selection (hundreds of strains from well-known breeders)",
+    "Own Herbies Seeds genetics line available",
+    "Ships to Canada via Certified Mail (9-12 days)",
+    "Delivery guarantee - free reship if lost",
+    "1 free seed per order + 1 additional per €20 spent",
+    "Accepts Interac for Canadian customers",
+    "Multiple payment options: Credit Card, Apple Pay, Google Pay, PayPal, Interac, Bank Transfer, Bitcoin, USDT",
+    "Regular promotions available",
+    "Discreet packaging on all orders",
   ]
 
   const cons = [
-    "International shipping can take 2-3 weeks",
-    "Potential customs delays/seizures",
-    "No germination guarantee",
-    "Higher shipping costs than domestic options",
-    "Currency conversion fees for CAD",
-    "Limited tracking once in Canada Post system",
+    "International shipping takes 9-12 days",
+    "Shipping cost €10 (~$15 CAD)",
+    "Currency in EUR (conversion fees may apply)",
+    "No physical Canadian location",
   ]
 
   return (
@@ -111,7 +110,7 @@ export default function HerbiesReviewPage() {
             <CardContent className="p-6">
               <Truck className="w-8 h-8 text-purple-600 mx-auto mb-2" />
               <h3 className="font-semibold mb-1">Shipping to Canada</h3>
-              <p className="text-sm text-gray-600">10-21 business days</p>
+              <p className="text-sm text-gray-600">9-12 days (Certified Mail)</p>
             </CardContent>
           </Card>
           <Card className="text-center">
@@ -277,7 +276,15 @@ export default function HerbiesReviewPage() {
               </div>
               <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg">
                 <CheckCircle className="w-4 h-4 text-green-600" />
-                <span className="text-sm">Bitcoin</span>
+                <span className="text-sm">Apple Pay / Google Pay</span>
+              </div>
+              <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg">
+                <CheckCircle className="w-4 h-4 text-green-600" />
+                <span className="text-sm">PayPal</span>
+              </div>
+              <div className="flex items-center gap-2 p-3 bg-purple-100 rounded-lg border border-purple-200">
+                <CheckCircle className="w-4 h-4 text-purple-600" />
+                <span className="text-sm font-medium">Interac (Canada)</span>
               </div>
               <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg">
                 <CheckCircle className="w-4 h-4 text-green-600" />
@@ -285,40 +292,42 @@ export default function HerbiesReviewPage() {
               </div>
               <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg">
                 <CheckCircle className="w-4 h-4 text-green-600" />
-                <span className="text-sm">Cash (Mail)</span>
+                <span className="text-sm">Bitcoin</span>
+              </div>
+              <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg">
+                <CheckCircle className="w-4 h-4 text-green-600" />
+                <span className="text-sm">USDT</span>
               </div>
             </div>
           </CardContent>
         </Card>
 
-        {/* Canadian Customers Warning */}
-        <div className="mb-16 bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+        {/* Canadian Customers Info */}
+        <div className="mb-16 bg-green-50 border border-green-200 rounded-lg p-6">
           <div className="flex items-start gap-3">
-            <AlertTriangle className="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" />
+            <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
             <div>
-              <h3 className="font-semibold text-yellow-800 mb-2">Important Note for Canadian Customers</h3>
-              <p className="text-yellow-700 text-sm mb-4">
-                Herbies Head Shop is an international seed bank shipping from the UK. While they offer excellent
-                genetics and service, Canadian customers should be aware of potential customs delays or seizures. For
-                guaranteed delivery and faster shipping, consider our featured Canadian seed banks.
+              <h3 className="font-semibold text-green-800 mb-2">Good News for Canadian Customers</h3>
+              <p className="text-green-700 text-sm mb-4">
+                Herbies ships regularly to Canada via Certified Mail with a delivery guarantee. If your package is lost or fails to arrive, they will reship it free of charge. They also accept Interac payments, making it convenient for Canadian buyers.
               </p>
               <div className="grid md:grid-cols-2 gap-4 text-sm">
                 <div>
-                  <h4 className="font-medium text-yellow-800 mb-2">Shipping Considerations:</h4>
-                  <ul className="space-y-1 text-yellow-700">
-                    <li>• 10-21 business day delivery</li>
-                    <li>• Potential customs delays</li>
-                    <li>• No delivery guarantee</li>
-                    <li>• Currency conversion fees</li>
+                  <h4 className="font-medium text-green-800 mb-2">Canada Shipping Details:</h4>
+                  <ul className="space-y-1 text-green-700">
+                    <li>• 9-12 days delivery via Certified Mail</li>
+                    <li>• Shipping cost: €10 (~$15 CAD)</li>
+                    <li>• Delivery guarantee included</li>
+                    <li>• Discreet packaging</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-medium text-yellow-800 mb-2">Canadian Alternatives:</h4>
-                  <ul className="space-y-1 text-yellow-700">
-                    <li>• True North Seed Bank (2-4 day delivery)</li>
-                    <li>• Jordan of the Islands</li>
-                    <li>• GoBack Seed Bank</li>
-                    <li>• No customs concerns</li>
+                  <h4 className="font-medium text-green-800 mb-2">Free Seeds Program:</h4>
+                  <ul className="space-y-1 text-green-700">
+                    <li>• 1 free seed with every order</li>
+                    <li>• +1 additional free seed per €20 spent</li>
+                    <li>• Regular promotions available</li>
+                    <li>• Check herbiesheadshop.com/promo</li>
                   </ul>
                 </div>
               </div>
@@ -346,9 +355,8 @@ export default function HerbiesReviewPage() {
               <span className="text-2xl font-bold">{overallRating}/5</span>
             </div>
             <p className="text-gray-600 max-w-3xl mx-auto mb-6">
-              Herbies Head Shop is a reputable international seed bank with an impressive selection of cannabis
-              genetics. While they offer excellent variety and customer service, Canadian customers should weigh the
-              longer shipping times and potential customs issues against the benefits of shopping domestically.
+              Herbies Seeds is a highly reputable international seed bank with an impressive selection of cannabis
+              genetics including their own Herbies Seeds line. They ship regularly to Canada via Certified Mail in 9-12 days with a delivery guarantee. With Interac support, free seeds on every order, and excellent customer service, Herbies is a solid choice for Canadian growers looking for international genetics.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-purple-600 hover:bg-purple-700">
