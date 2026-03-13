@@ -112,7 +112,7 @@ export default function SeedBanksPage() {
       rank: 7,
       name: "Herbies Seeds",
       slug: "herbies-headshop",
-      logo: "https://herbiesheadshop.com/images/herbies-logo.svg",
+      logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-BfEN16kC7tIVKqxs5NuiqmRo1AX2Yz.jpeg",
       rating: 4.5,
       reviews: 1234,
       location: "International",
