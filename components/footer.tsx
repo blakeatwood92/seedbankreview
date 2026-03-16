@@ -21,13 +21,18 @@ export function Footer() {
       { name: "Privacy Policy", href: "/privacy" },
       { name: "Terms of Service", href: "/terms" },
     ],
-    "Canadian Specific": [
-      { name: "BC Seed Banks", href: "/bc-seed-banks" },
-      { name: "Alberta Seed Banks", href: "/alberta-seed-banks" },
-      { name: "Ontario Seed Banks", href: "/ontario-seed-banks" },
-      { name: "Quebec Seed Banks", href: "/quebec-seed-banks" },
-    ],
   }
+
+  const growingGuides = [
+    { name: "Best Seed Banks Canada", href: "/best-seed-banks-canada" },
+    { name: "Best Autoflower Seeds", href: "/best-autoflower-seeds-canada" },
+    { name: "Best Outdoor Strains", href: "/best-outdoor-strains-canada" },
+    { name: "Seeds for Ontario", href: "/best-seeds-ontario" },
+    { name: "Seeds for British Columbia", href: "/best-seeds-british-columbia" },
+    { name: "Seeds for Nova Scotia", href: "/best-seeds-nova-scotia" },
+    { name: "Seed Banks That Ship to Canada", href: "/seed-banks-that-ship-to-canada" },
+    { name: "Cheap Cannabis Seeds", href: "/cheap-cannabis-seeds-canada" },
+  ]
 
   return (
     <footer className="bg-black text-white">
@@ -58,6 +63,22 @@ export function Footer() {
               </ul>
             </div>
           ))}
+        </div>
+
+        {/* Canadian Growing Guides Section */}
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <h3 className="font-semibold mb-4 text-center">Canadian Growing Guides</h3>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+            {growingGuides.map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+              >
+                {guide.name}
+              </Link>
+            ))}
+          </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
