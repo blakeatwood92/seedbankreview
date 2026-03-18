@@ -217,6 +217,57 @@ export default function SeedsOnlineReviewPage() {
           </CardContent>
         </Card>
 
+        {/* Authorized Breeder Partnerships */}
+        <Card className="mb-16 border-2 border-amber-300 bg-gradient-to-br from-amber-50 to-yellow-50">
+          <CardHeader>
+            <CardTitle className="text-2xl flex items-center gap-2">
+              <Award className="w-6 h-6 text-amber-600" />
+              Authorized Breeder Partnerships
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-gray-700 mb-6">
+              Seeds Online has established itself as a verified vendor for some of the most respected cannabis breeders in the industry. 
+              These partnerships are significant because premium breeders typically work with only a limited number of trusted seed banks 
+              to maintain quality control and authenticity of their genetics.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="bg-white p-6 rounded-lg border border-amber-200 shadow-sm">
+                <div className="flex items-center gap-2 mb-3">
+                  <Badge className="bg-amber-600">Exclusive in Canada</Badge>
+                </div>
+                <h3 className="font-bold text-lg mb-2">Square One / Robinhood Genetics</h3>
+                <p className="text-sm text-gray-600">
+                  Seeds Online is the <span className="font-semibold text-amber-700">only verified vendor in Canada</span> authorized 
+                  to sell Square One / Robinhood Genetics. This exclusive partnership means Canadian growers can access these 
+                  highly sought-after genetics directly from a trusted domestic source.
+                </p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg border border-amber-200 shadow-sm">
+                <div className="flex items-center gap-2 mb-3">
+                  <Badge className="bg-green-600">Authorized Vendor</Badge>
+                </div>
+                <h3 className="font-bold text-lg mb-2">Ethos Genetics</h3>
+                <p className="text-sm text-gray-600">
+                  Seeds Online is <span className="font-semibold text-green-700">one of the few Canadian vendors authorized</span> to 
+                  sell Ethos Genetics. Ethos is renowned for producing award-winning, high-end genetics with exceptional 
+                  potency, flavor profiles, and yields.
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-amber-100 p-4 rounded-lg">
+              <p className="text-sm text-amber-800">
+                <span className="font-semibold">Why This Matters:</span> Purchasing from an authorized vendor ensures you receive 
+                authentic genetics directly from the breeder's supply chain. This eliminates concerns about counterfeit seeds 
+                and guarantees the quality and genetic integrity that these premium breeders are known for.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Key Features */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">Key Features</h2>
