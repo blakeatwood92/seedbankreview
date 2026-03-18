@@ -89,14 +89,13 @@ export function FeaturedBanks() {
       rating: 4.6,
       reviews: 312,
       location: "Canada",
-      specialties: ["Single Seed Sales", "Premium Breeders", "$1 Seeds", "Fast Shipping"],
-      description: "Canadian seed bank specializing in single seed purchases starting at $1. Features Ethos, FastBuds, Mephisto and more.",
-      paymentMethods: ["Interac E-Transfer", "Crypto", "Cash"],
+      specialties: ["7 Years in Business", "PayPal Accepted", "$1 Seeds", "Authorized Ethos Vendor"],
+      description: "Established Canadian seed bank in their 7th year. Single seeds from $1, authorized vendor for Ethos and exclusive Canadian vendor for Square One/Robinhood.",
+      paymentMethods: ["PayPal", "Interac E-Transfer", "Crypto", "Cash"],
       shippingTime: "2-5 days",
       provinces: ["All Provinces"],
       affiliate: false,
-      affiliateUrl: "https://seedsonline.ca",
-      isNew: true,
+      affiliateUrl: "https://weedseedsonline.net",
     },
   ]
 
