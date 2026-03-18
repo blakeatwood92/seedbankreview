@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Leaf, Menu } from "lucide-react"
+import Image from "next/image"
+import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
@@ -16,17 +17,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-sm">
       <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-3">
-          <div className="relative">
-            <Leaf className="h-7 w-7 text-red-600" />
-            <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-600 rounded-full flex items-center justify-center">
-              <span className="text-white text-xs font-bold">🍁</span>
-            </div>
-          </div>
-          <div className="flex flex-col">
-            <span className="font-bold text-xl text-gray-900">Canada Seed Bank</span>
-            <span className="text-sm text-red-600 font-medium -mt-1">Reviews</span>
-          </div>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Mar%2017%2C%202026%2C%2001_13_13%20PM-yqlQUllbDyng3KoHmK1UsYUYdrCobS.png"
+            alt="Canada Seed Bank Reviews"
+            width={180}
+            height={50}
+            className="h-12 w-auto object-contain"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6">
