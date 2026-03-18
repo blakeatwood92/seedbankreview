@@ -291,6 +291,125 @@ export default function ButterbeanBirdseedReviewPage() {
           </Card>
         </div>
 
+        {/* How Ordering Works */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">How Ordering Works</h2>
+          <Card className="border-2 border-red-200 bg-gradient-to-br from-red-50 to-orange-50">
+            <CardContent className="p-6">
+              <p className="text-gray-700 mb-6">
+                Butterbean Birdseed does not use a traditional online checkout system. Instead, customers place orders 
+                by contacting the breeder directly using the contact information listed on their website.
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div className="bg-white p-5 rounded-lg border border-red-100 shadow-sm">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
+                      <span className="font-bold text-red-600">1</span>
+                    </div>
+                    <h4 className="font-semibold">Make Contact</h4>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    Reach out to Butterbean Birdseed through the contact info on their site. The breeder responds 
+                    personally to answer questions and help you choose the right strains for your grow.
+                  </p>
+                </div>
+                
+                <div className="bg-white p-5 rounded-lg border border-red-100 shadow-sm">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
+                      <span className="font-bold text-red-600">2</span>
+                    </div>
+                    <h4 className="font-semibold">Get Recommendations</h4>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    The breeder provides personalized strain recommendations based on your experience level, 
+                    growing conditions, and desired effects. This direct communication sets them apart.
+                  </p>
+                </div>
+                
+                <div className="bg-white p-5 rounded-lg border border-red-100 shadow-sm">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
+                      <span className="font-bold text-red-600">3</span>
+                    </div>
+                    <h4 className="font-semibold">Receive Order Total</h4>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    Once you've selected your strains, the breeder provides a personalized order total with 
+                    payment instructions, typically through Interac e-transfer.
+                  </p>
+                </div>
+                
+                <div className="bg-white p-5 rounded-lg border border-red-100 shadow-sm">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
+                      <span className="font-bold text-red-600">4</span>
+                    </div>
+                    <h4 className="font-semibold">Shipping Confirmation</h4>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    After payment is received, the breeder follows up directly to confirm when your package 
+                    has been shipped and provide any tracking information.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="bg-green-100 p-4 rounded-lg">
+                <p className="text-sm text-green-800">
+                  <span className="font-semibold">The Advantage:</span> This direct communication model allows growers 
+                  to ask questions, get personalized recommendations, and build a relationship with the actual breeder 
+                  before placing an order - something you won't find with larger seed banks.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* What Comes With Orders */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">What Comes With Orders</h2>
+          <Card>
+            <CardContent className="p-6">
+              <p className="text-gray-700 mb-6">
+                Butterbean Birdseed is known for including extra promotional items with orders as part of their 
+                customer experience. Packages typically arrive with more than just the seeds you ordered.
+              </p>
+              
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-6">
+                <div className="text-center p-4 bg-gray-50 rounded-lg">
+                  <div className="text-3xl mb-2">🌱</div>
+                  <p className="text-sm font-medium">Free Seeds</p>
+                </div>
+                <div className="text-center p-4 bg-gray-50 rounded-lg">
+                  <div className="text-3xl mb-2">🎨</div>
+                  <p className="text-sm font-medium">Stickers</p>
+                </div>
+                <div className="text-center p-4 bg-gray-50 rounded-lg">
+                  <div className="text-3xl mb-2">🔥</div>
+                  <p className="text-sm font-medium">Grinders</p>
+                </div>
+                <div className="text-center p-4 bg-gray-50 rounded-lg">
+                  <div className="text-3xl mb-2">🖊️</div>
+                  <p className="text-sm font-medium">Pens</p>
+                </div>
+                <div className="text-center p-4 bg-gray-50 rounded-lg">
+                  <div className="text-3xl mb-2">🔗</div>
+                  <p className="text-sm font-medium">Lighter Leashes</p>
+                </div>
+                <div className="text-center p-4 bg-gray-50 rounded-lg">
+                  <div className="text-3xl mb-2">👕</div>
+                  <p className="text-sm font-medium">Clothing*</p>
+                </div>
+              </div>
+              
+              <p className="text-sm text-gray-500 text-center">
+                *Clothing items may be included with larger orders. Exact extras vary by order size and availability.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
         {/* Detailed Review Criteria */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">Detailed Review Breakdown</h2>
