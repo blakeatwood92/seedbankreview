@@ -35,6 +35,17 @@ interface RelatedPage {
   description: string
 }
 
+interface FeaturedBanner {
+  title: string
+  subtitle: string
+  discount: string
+  badges: string[]
+  description: string
+  details: string[]
+  buttonText: string
+  url: string
+}
+
 interface SEOPageProps {
   title: string
   subtitle: string
@@ -45,6 +56,7 @@ interface SEOPageProps {
   faqs: FAQ[]
   relatedPages: RelatedPage[]
   schemaData: object
+  featuredBanner?: FeaturedBanner
 }
 
 export function SEOPageTemplate({
@@ -57,6 +69,7 @@ export function SEOPageTemplate({
   faqs,
   relatedPages,
   schemaData,
+  featuredBanner,
 }: SEOPageProps) {
   return (
     <>
@@ -102,6 +115,50 @@ export function SEOPageTemplate({
             </div>
           </div>
         </section>
+
+        {/* Featured Banner */}
+        {featuredBanner && (
+          <section className="py-8 bg-gradient-to-r from-green-50 to-emerald-50">
+            <div className="container mx-auto px-4">
+              <a
+                href={featuredBanner.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block max-w-4xl mx-auto"
+              >
+                <Card className="overflow-hidden hover:shadow-xl transition-shadow border-2 border-green-200">
+                  <div className="flex flex-col md:flex-row">
+                    <div className="md:w-1/3 bg-gradient-to-br from-green-600 to-emerald-700 p-6 flex items-center justify-center">
+                      <div className="text-center text-white">
+                        <Badge className="mb-2 bg-yellow-500 text-black">Featured Strain</Badge>
+                        <h3 className="text-2xl font-bold">{featuredBanner.title}</h3>
+                        <p className="text-green-100 text-sm mt-1">{featuredBanner.subtitle}</p>
+                        <div className="mt-3 text-xl font-bold text-yellow-300">{featuredBanner.discount}</div>
+                      </div>
+                    </div>
+                    <div className="md:w-2/3 p-6">
+                      <div className="flex flex-wrap gap-2 mb-3">
+                        {featuredBanner.badges.map((badge) => (
+                          <Badge key={badge} variant="secondary">{badge}</Badge>
+                        ))}
+                      </div>
+                      <p className="text-gray-600 mb-4">{featuredBanner.description}</p>
+                      <ul className="text-sm text-gray-500 mb-4 space-y-1">
+                        {featuredBanner.details.map((detail) => (
+                          <li key={detail}>• {detail}</li>
+                        ))}
+                      </ul>
+                      <Button className="bg-green-600 hover:bg-green-700">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        {featuredBanner.buttonText}
+                      </Button>
+                    </div>
+                  </div>
+                </Card>
+              </a>
+            </div>
+          </section>
+        )}
 
         {/* Recommended Seed Banks */}
         <section className="py-12 bg-white">
