@@ -36,21 +36,25 @@ export const metadata: Metadata = {
 export default function SeedsOnlineReviewPage() {
   const overallRating = 4.3
   const criteriaRatings = {
-    paymentMethods: 4.0,
+    paymentMethods: 4.5,
     seedVariety: 4.8,
     genetics: 4.5,
     customerExperience: 4.2,
-    reputation: 4.0,
+    reputation: 4.5,
   }
 
   const pros = [
     "Extremely affordable - single seeds starting at just $1",
     "$3 single seed options for premium genetics",
     "Canadian-based with fast domestic shipping",
+    "Going into their 7th year of service - established and trusted",
+    "Only verified Canadian vendor for Square One / Robinhood Genetics",
+    "Authorized vendor for Ethos Genetics",
     "Large breeder selection including Ethos, FastBuds, Mephisto",
     "Free seeds included with orders",
     "Fast order processing - often same day",
     "No customs delays - ships within Canada",
+    "Accepts PayPal (use credit card through PayPal)",
     "Accepts E-transfer for easy Canadian payments",
     "Cryptocurrency payments with bonus freebies",
   ]
@@ -58,8 +62,7 @@ export default function SeedsOnlineReviewPage() {
   const cons = [
     "Some seeds packaged in-house (not original breeder packaging)",
     "All sales final - no returns accepted",
-    "Newer seed bank compared to established competitors",
-    "Limited payment options compared to international banks",
+    "Website interface could be more modern",
   ]
 
   const breeders = [
@@ -88,7 +91,7 @@ export default function SeedsOnlineReviewPage() {
     },
     {
       question: "What payment methods does Seeds Online accept?",
-      answer: "Seeds Online accepts E-transfer (Interac), cryptocurrency (with bonus freebies), and mailed cash. E-transfer is the most popular option for Canadian customers."
+      answer: "Seeds Online accepts PayPal (which allows you to pay with credit card), E-transfer (Interac), cryptocurrency (with bonus freebies), and mailed cash. PayPal and E-transfer are the most popular options for Canadian customers."
     },
     {
       question: "Are the seeds in original breeder packaging?",
@@ -132,8 +135,9 @@ export default function SeedsOnlineReviewPage() {
             </div>
             
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-              Canadian seed bank offering extremely affordable cannabis seeds with single seeds starting at just $1. 
-              Fast domestic shipping and a large selection of top breeders.
+              Established Canadian seed bank going into their 7th year of service, offering extremely affordable cannabis 
+              seeds with single seeds starting at just $1. Fast domestic shipping, authorized breeder partnerships, and 
+              a large selection of top genetics.
             </p>
 
             <div className="flex items-center justify-center gap-4 mb-8">
@@ -205,14 +209,16 @@ export default function SeedsOnlineReviewPage() {
           </CardHeader>
           <CardContent className="prose max-w-none">
             <p className="text-gray-600 leading-relaxed">
-              Seeds Online is a Canadian seed bank that has carved out a unique niche in the market by focusing on 
-              affordability and convenience. Unlike many seed banks that only sell full packs, Seeds Online allows 
-              Canadian growers to purchase individual seeds starting at incredibly low prices.
+              Seeds Online is a Canadian seed bank going into their 7th year of service, having carved out a unique 
+              niche in the market by focusing on affordability and convenience. Unlike many seed banks that only sell 
+              full packs, Seeds Online allows Canadian growers to purchase individual seeds starting at incredibly low prices.
             </p>
             <p className="text-gray-600 leading-relaxed mt-4">
               The seed bank offers single seeds starting at just $1, with premium genetics available at $3 per seed. 
-              They carry genetics from multiple well-known breeders and ship domestically within Canada, meaning 
-              faster delivery times and no customs delays for Canadian customers.
+              They carry genetics from multiple well-known breeders including exclusive partnerships - they are the 
+              only verified Canadian vendor for Square One / Robinhood Genetics and one of the few authorized to sell 
+              Ethos Genetics. Shipping domestically within Canada means faster delivery times and no customs delays 
+              for Canadian customers.
             </p>
           </CardContent>
         </Card>
@@ -519,12 +525,19 @@ export default function SeedsOnlineReviewPage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid md:grid-cols-3 gap-4">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="flex items-center gap-2 p-4 bg-blue-100 rounded-lg border border-blue-200">
+                <CheckCircle className="w-5 h-5 text-blue-600" />
+                <div>
+                  <span className="font-medium">PayPal</span>
+                  <p className="text-xs text-gray-500">Use credit card via PayPal</p>
+                </div>
+              </div>
               <div className="flex items-center gap-2 p-4 bg-green-100 rounded-lg border border-green-200">
                 <CheckCircle className="w-5 h-5 text-green-600" />
                 <div>
                   <span className="font-medium">E-Transfer (Interac)</span>
-                  <p className="text-xs text-gray-500">Most popular for Canadians</p>
+                  <p className="text-xs text-gray-500">Popular for Canadians</p>
                 </div>
               </div>
               <div className="flex items-center gap-2 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
@@ -542,6 +555,10 @@ export default function SeedsOnlineReviewPage() {
                 </div>
               </div>
             </div>
+            <p className="text-sm text-gray-500 mt-4">
+              PayPal is a great option for customers who want to use their credit card - simply select PayPal at checkout 
+              and choose to pay with your credit card instead of your PayPal balance.
+            </p>
           </CardContent>
         </Card>
 
@@ -668,11 +685,11 @@ export default function SeedsOnlineReviewPage() {
               <span className="text-2xl font-bold">{overallRating}/5</span>
             </div>
             <p className="text-gray-300 max-w-3xl mx-auto mb-6">
-              Seeds Online is an excellent choice for Canadian growers looking for affordable cannabis seeds with 
-              fast domestic shipping. Their $1 and $3 single seed options make it easy to try new genetics without 
-              a big investment, and the domestic shipping means no customs delays. While some seeds may not come 
-              in original breeder packaging, the value and convenience make Seeds Online a solid option for 
-              budget-conscious Canadian growers.
+              Going into their 7th year of service, Seeds Online has proven themselves as a reliable Canadian seed bank 
+              for growers looking for affordable genetics with fast domestic shipping. Their $1 and $3 single seed options 
+              make it easy to try new genetics without a big investment, and their exclusive partnerships with breeders like 
+              Square One / Robinhood Genetics and Ethos Genetics give Canadian growers access to premium genetics. With 
+              PayPal, E-transfer, and crypto payment options, Seeds Online is a trusted choice for Canadian growers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
