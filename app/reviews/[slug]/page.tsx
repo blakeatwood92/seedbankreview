@@ -23,6 +23,7 @@ import {
   MessageSquare,
   Calendar,
   MapPin,
+  AlertTriangle,
 } from "lucide-react"
 import { notFound } from "next/navigation"
 import Link from "next/link"
@@ -482,6 +483,7 @@ const seedBankData: Record<string, {
       "Customer service may offer minimal compensation for issues",
       "Potential customs delays",
       "No guaranteed delivery to Canada",
+      "Seeds may not arrive in original breeder packaging",
       "Low Trustpilot score (note: may include reviews for different site)",
     ],
     criteriaRatings: {
@@ -490,6 +492,32 @@ const seedBankData: Record<string, {
       genetics: 4.2,
       customerExperience: 3.5,
       reputation: 3.8,
+    },
+    realOrderExperience: {
+      title: "Real Order Experience - Seedsman Shipping to Canada",
+      summary: "We placed a real test order from Canada to evaluate Seedsman's service firsthand. Here's what we found:",
+      orderDetails: {
+        origin: "United Kingdom",
+        destination: "Canada",
+        shippingTime: "Faster than expected for international shipping",
+        packaging: "Discreet packaging - successfully delivered",
+      },
+      whatWeLiked: [
+        "Fast international shipping from the UK to Canada",
+        "Discreet packaging that arrived safely",
+      ],
+      whatCouldBeImproved: [
+        "Seeds were not in original breeder packaging - arrived in generic packaging, suggesting possible white-label seeds",
+        "Free seed promotion was not included in the order despite qualifying for the offer",
+      ],
+      detailedRatings: {
+        geneticsSelection: 4.5,
+        shippingSpeed: 4.0,
+        packaging: 3.0,
+        promotionsFreebies: 2.0,
+        customerExperience: 3.5,
+      },
+      disclaimer: "This review reflects our real test order experience. Individual experiences may vary between orders, shipping times, and promotions. We encourage readers to consider multiple reviews when making purchasing decisions.",
     },
     accentColor: "purple",
     communityReviews: [
@@ -883,6 +911,111 @@ export default function SeedBankReviewPage({ params }: { params: { slug: string 
           </Card>
         </div>
 
+        {/* Real Order Experience Section - Only shown for seed banks with this data */}
+        {seedBank.realOrderExperience && (
+          <div className="mb-16">
+            <Card className="border-2 border-blue-200">
+              <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50">
+                <CardTitle className="flex items-center gap-2 text-blue-800">
+                  <Package className="w-6 h-6" />
+                  {seedBank.realOrderExperience.title}
+                </CardTitle>
+                <p className="text-gray-600 mt-2">{seedBank.realOrderExperience.summary}</p>
+              </CardHeader>
+              <CardContent className="p-6">
+                {/* Order Details */}
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-sm text-gray-500">Shipped From</p>
+                    <p className="font-semibold">{seedBank.realOrderExperience.orderDetails.origin}</p>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-sm text-gray-500">Shipped To</p>
+                    <p className="font-semibold">{seedBank.realOrderExperience.orderDetails.destination}</p>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-sm text-gray-500">Shipping Speed</p>
+                    <p className="font-semibold">{seedBank.realOrderExperience.orderDetails.shippingTime}</p>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-sm text-gray-500">Packaging</p>
+                    <p className="font-semibold">{seedBank.realOrderExperience.orderDetails.packaging}</p>
+                  </div>
+                </div>
+
+                {/* What We Liked / What Could Be Improved */}
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-green-50 p-6 rounded-lg border border-green-200">
+                    <h4 className="font-semibold text-green-800 mb-4 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5" />
+                      What We Liked
+                    </h4>
+                    <ul className="space-y-2">
+                      {seedBank.realOrderExperience.whatWeLiked.map((item: string, index: number) => (
+                        <li key={index} className="flex items-start gap-2 text-sm text-green-700">
+                          <CheckCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="bg-amber-50 p-6 rounded-lg border border-amber-200">
+                    <h4 className="font-semibold text-amber-800 mb-4 flex items-center gap-2">
+                      <AlertTriangle className="w-5 h-5" />
+                      What Could Be Improved
+                    </h4>
+                    <ul className="space-y-2">
+                      {seedBank.realOrderExperience.whatCouldBeImproved.map((item: string, index: number) => (
+                        <li key={index} className="flex items-start gap-2 text-sm text-amber-700">
+                          <AlertTriangle className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Detailed Rating Breakdown */}
+                <div className="mb-8">
+                  <h4 className="font-semibold mb-4">Test Order Rating Breakdown</h4>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
+                    {Object.entries(seedBank.realOrderExperience.detailedRatings).map(([key, rating]) => {
+                      const labels: Record<string, string> = {
+                        geneticsSelection: "Genetics Selection",
+                        shippingSpeed: "Shipping Speed",
+                        packaging: "Packaging",
+                        promotionsFreebies: "Promotions/Freebies",
+                        customerExperience: "Customer Experience",
+                      }
+                      return (
+                        <div key={key} className="bg-gray-50 p-4 rounded-lg text-center">
+                          <p className="text-sm text-gray-500 mb-2">{labels[key]}</p>
+                          <div className="flex items-center justify-center gap-1 mb-1">
+                            {[...Array(5)].map((_, i) => (
+                              <Star
+                                key={i}
+                                className={`w-4 h-4 ${
+                                  i < Math.floor(rating as number) ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
+                                }`}
+                              />
+                            ))}
+                          </div>
+                          <p className="font-semibold">{rating as number}/5</p>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+
+                {/* Disclaimer */}
+                <div className="bg-gray-100 p-4 rounded-lg text-sm text-gray-600 italic">
+                  <p>{seedBank.realOrderExperience.disclaimer}</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        )}
+
         {/* Payment Methods */}
         <Card className="mb-16">
           <CardHeader>
@@ -1055,6 +1188,55 @@ export default function SeedBankReviewPage({ params }: { params: { slug: string 
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+
+        {/* Related Seed Bank Reviews */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-bold mb-6 text-center">Compare With Other Seed Banks</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/reviews/herbies-headshop" className="block">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-6">
+                  <h3 className="font-semibold mb-2">Herbies Seeds</h3>
+                  <p className="text-sm text-gray-600 mb-3">International seed bank with delivery guarantee to Canada. Ships in 9-12 days with Interac payment support.</p>
+                  <div className="flex items-center gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className={`w-4 h-4 ${i < 4 ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}`} />
+                    ))}
+                    <span className="text-sm ml-1">4.5/5</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/reviews/true-north-seedbank" className="block">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-6">
+                  <h3 className="font-semibold mb-2">True North Seed Bank</h3>
+                  <p className="text-sm text-gray-600 mb-3">Canada's most popular seed bank with 2-5 day domestic shipping and massive selection of top breeders.</p>
+                  <div className="flex items-center gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className={`w-4 h-4 ${i < 4 ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}`} />
+                    ))}
+                    <span className="text-sm ml-1">4.6/5</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/reviews/jordan-of-the-islands" className="block">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-6">
+                  <h3 className="font-semibold mb-2">Jordan of the Islands</h3>
+                  <p className="text-sm text-gray-600 mb-3">Canadian breeder with award-winning genetics. Known for exceptional freebies and personal customer service.</p>
+                  <div className="flex items-center gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className={`w-4 h-4 ${i < 5 ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}`} />
+                    ))}
+                    <span className="text-sm ml-1">4.8/5</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </div>
 
