@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import Link from "next/link"
+import Image from "next/image"
 import type { Metadata } from "next"
 import {
   Star,
@@ -131,6 +132,15 @@ export default function ButterbeanBirdseedReviewPage() {
       <div className="bg-gradient-to-br from-green-50 to-emerald-100 py-16">
         <div className="container px-4 mx-auto">
           <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-6">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/unnamed-Z58t5ADg5F6WMHT7mVUV4BJ0DPcwth.png"
+                alt="Butterbean Birdseed Logo"
+                width={300}
+                height={120}
+                className="mx-auto"
+              />
+            </div>
             <Badge variant="secondary" className="mb-4 bg-red-100 text-red-800">
               Canadian Seed Breeder - Ships from Canada
             </Badge>
