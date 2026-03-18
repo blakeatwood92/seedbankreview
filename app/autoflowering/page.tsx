@@ -271,6 +271,45 @@ export default function AutofloweringPage() {
         </div>
       </section>
 
+      {/* Featured Strain Banner */}
+      <section className="py-8 bg-gradient-to-r from-green-50 to-emerald-50">
+        <div className="container px-4 mx-auto">
+          <a
+            href="https://herbiesheadshop.com/cannabis-seeds/apple-betty-auto?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block max-w-4xl mx-auto"
+          >
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow border-2 border-green-200">
+              <div className="flex flex-col md:flex-row">
+                <div className="md:w-1/3 bg-gradient-to-br from-green-600 to-emerald-700 p-6 flex items-center justify-center">
+                  <div className="text-center text-white">
+                    <Badge className="mb-2 bg-yellow-500 text-black">Featured Auto</Badge>
+                    <h3 className="text-2xl font-bold">Apple Betty Auto</h3>
+                    <p className="text-green-100 text-sm mt-1">by Herbies Seeds</p>
+                  </div>
+                </div>
+                <div className="md:w-2/3 p-6">
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    <Badge variant="outline">10-20% OFF</Badge>
+                    <Badge variant="secondary">Indica Dominant</Badge>
+                    <Badge variant="secondary">Fast Flowering</Badge>
+                  </div>
+                  <p className="text-muted-foreground mb-4">
+                    Sweet apple pie flavors with relaxing effects. Perfect for Canadian growers looking for a unique, 
+                    easy-to-grow autoflower with exceptional taste.
+                  </p>
+                  <Button className="bg-green-600 hover:bg-green-700">
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Shop Apple Betty Auto
+                  </Button>
+                </div>
+              </div>
+            </Card>
+          </a>
+        </div>
+      </section>
+
       {/* Seed Banks */}
       <section className="py-12 bg-white">
         <div className="container px-4 mx-auto">

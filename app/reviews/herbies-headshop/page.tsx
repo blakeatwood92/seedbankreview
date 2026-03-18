@@ -125,23 +125,68 @@ export default function HerbiesReviewPage() {
         {/* Affiliate Banners Section */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">Current Herbies Promotions</h2>
+          
+          {/* Featured Strain - Apple Betty Auto */}
+          <div className="mb-8">
+            <a
+              href="https://herbiesheadshop.com/cannabis-seeds/apple-betty-auto?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <Card className="overflow-hidden hover:shadow-xl transition-shadow border-2 border-purple-200">
+                <div className="flex flex-col md:flex-row">
+                  <div className="md:w-1/3 bg-gradient-to-br from-purple-600 to-indigo-700 p-8 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <Badge className="mb-2 bg-yellow-500 text-black">Featured Strain</Badge>
+                      <h3 className="text-3xl font-bold">Apple Betty Auto</h3>
+                      <p className="text-purple-100 text-sm mt-2">Herbies Seeds Original</p>
+                      <div className="mt-3 text-2xl font-bold text-yellow-300">10-20% OFF</div>
+                    </div>
+                  </div>
+                  <div className="md:w-2/3 p-8">
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <Badge variant="secondary">Autoflowering</Badge>
+                      <Badge variant="secondary">Indica Dominant</Badge>
+                      <Badge variant="secondary">Easy to Grow</Badge>
+                      <Badge variant="secondary">Sweet Apple Flavor</Badge>
+                    </div>
+                    <p className="text-gray-600 mb-4 text-lg">
+                      Experience the delicious sweet apple pie aroma with relaxing, full-body effects. 
+                      Apple Betty Auto is a beginner-friendly autoflower that thrives in Canadian climates 
+                      with excellent mold resistance and fast flowering times.
+                    </p>
+                    <ul className="text-sm text-gray-500 mb-4 space-y-1">
+                      <li>• THC: 20-24%</li>
+                      <li>• Flowering: 8-9 weeks from seed</li>
+                      <li>• Yield: Up to 500g/m² indoors</li>
+                    </ul>
+                    <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Shop Apple Betty Auto
+                    </Button>
+                  </div>
+                </div>
+              </Card>
+            </a>
+          </div>
+          
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <Card className="overflow-hidden">
               <CardHeader className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-center">
-                <CardTitle>Spring 2024 Deals</CardTitle>
+                <CardTitle>All Herbies Promotions</CardTitle>
               </CardHeader>
               <CardContent className="p-4 text-center">
                 <a
-                  href="https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner"
+                  href="https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block hover:opacity-90 transition-opacity"
                 >
                   <div className="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 rounded-lg">
-                    <div className="text-4xl mb-4">🌸</div>
-                    <h3 className="text-xl font-bold mb-2">Spring Cannabis Seed Sale</h3>
-                    <p className="text-gray-600 mb-4">Up to 40% off selected strains + free seeds</p>
-                    <Button className="bg-purple-600 hover:bg-purple-700">Shop Spring Deals</Button>
+                    <h3 className="text-xl font-bold mb-2">Browse All Deals</h3>
+                    <p className="text-gray-600 mb-4">Up to 40% off selected strains + free seeds with every order</p>
+                    <Button className="bg-purple-600 hover:bg-purple-700">Shop All Herbies</Button>
                   </div>
                 </a>
               </CardContent>
@@ -149,18 +194,24 @@ export default function HerbiesReviewPage() {
 
             <Card className="overflow-hidden">
               <CardHeader className="bg-gradient-to-r from-green-600 to-emerald-600 text-white text-center">
-                <CardTitle>Tracking Banner</CardTitle>
+                <CardTitle>Free Seeds Program</CardTitle>
               </CardHeader>
-              <CardContent className="p-4">
+              <CardContent className="p-6">
                 <div className="text-center">
-                  <iframe
-                    name="banner"
-                    src="https://panel.herbiesheadshop.com/scripts/dbm4mh?a_aid=689e356589639&a_bid=846496a9&w=1"
-                    width="100%"
-                    height="200"
-                    frameBorder="0"
-                    className="rounded-lg"
-                  ></iframe>
+                  <div className="text-4xl mb-4">🎁</div>
+                  <h3 className="text-xl font-bold mb-2">Get Free Seeds</h3>
+                  <ul className="text-sm text-gray-600 mb-4 space-y-2">
+                    <li>• 1 free seed with every order</li>
+                    <li>• +1 additional seed per €20 spent</li>
+                    <li>• Delivery guarantee included</li>
+                  </ul>
+                  <a
+                    href="https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="bg-green-600 hover:bg-green-700">Claim Free Seeds</Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>

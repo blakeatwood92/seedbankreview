@@ -138,6 +138,17 @@ const faqs = [
   },
 ]
 
+const featuredBanner = {
+  title: "Apple Betty Auto",
+  subtitle: "by Herbies Seeds",
+  discount: "10-20% OFF",
+  badges: ["Autoflowering", "Indica Dominant", "Easy to Grow", "Sweet Flavor"],
+  description: "Experience delicious sweet apple pie flavors with relaxing effects. Apple Betty Auto is a beginner-friendly autoflower that thrives in Canadian climates with excellent mold resistance.",
+  details: ["THC: 20-24%", "Flowering: 8-9 weeks from seed", "Yield: Up to 500g/m² indoors"],
+  buttonText: "Shop Apple Betty Auto",
+  url: "https://herbiesheadshop.com/cannabis-seeds/apple-betty-auto?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner",
+}
+
 const relatedPages = [
   {
     title: "Best Seed Banks Canada",
@@ -197,6 +208,7 @@ export default function BestAutoflowerSeedsCanadaPage() {
       faqs={faqs}
       relatedPages={relatedPages}
       schemaData={schemaData}
+      featuredBanner={featuredBanner}
     />
   )
 }
