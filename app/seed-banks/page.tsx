@@ -59,6 +59,23 @@ export default function SeedBanksPage() {
     },
     {
       rank: 4,
+      name: "Butterbean Birdseed",
+      slug: "butterbean-birdseed",
+      logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/unnamed-Z58t5ADg5F6WMHT7mVUV4BJ0DPcwth.png",
+      rating: 4.5,
+      reviews: 156,
+      location: "Canada",
+      description: "Canadian autoflower breeder specializing in fast-finishing strains for northern climates. Direct from breeder with unique genetics like Mac N Cheese Auto and Banana Runtz Auto.",
+      paymentMethods: ["Interac E-Transfer", "Cash"],
+      deliveryTime: "3-7 business days",
+      shippingCost: "Varies",
+      specialties: ["Autoflower Specialist", "Canadian Breeder", "Northern Climate Genetics", "Direct from Breeder"],
+      strainCount: "50+",
+      affiliate: false,
+      affiliateUrl: "#",
+    },
+    {
+      rank: 6,
       name: "GoBack Seed Bank",
       slug: "goback-seed-bank",
       logo: "/images/goback-logo.png",
@@ -75,7 +92,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://gobackseedbank.com",
     },
     {
-      rank: 5,
+      rank: 7,
       name: "Seedsman",
       slug: "seedsman",
       logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
@@ -92,7 +109,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432",
     },
     {
-      rank: 6,
+      rank: 8,
       name: "Crop King Seeds",
       slug: "crop-king-seeds",
       logo: "https://www.cropkingseeds.com/wp-content/uploads/2021/06/crop-king-seeds-logo.png",
@@ -109,7 +126,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://cropkingseeds.com",
     },
     {
-      rank: 7,
+      rank: 9,
       name: "Herbies Seeds",
       slug: "herbies-headshop",
       logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-BfEN16kC7tIVKqxs5NuiqmRo1AX2Yz.jpeg",
@@ -126,7 +143,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://herbiesheadshop.com",
     },
     {
-      rank: 8,
+      rank: 10,
       name: "ILGM (I Love Growing Marijuana)",
       slug: "ilgm",
       logo: "https://www.ilovegrowingmarijuana.com/wp-content/themes/flavor/images/ilgm-logo.svg",
@@ -143,7 +160,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://ilgm.com",
     },
     {
-      rank: 9,
+      rank: 11,
       name: "Growers Choice Seeds",
       slug: "growers-choice-seeds",
       logo: "https://www.growerschoiceseeds.com/wp-content/uploads/2020/08/growers-choice-seeds-logo.png",
@@ -160,7 +177,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://growerschoiceseeds.com",
     },
     {
-      rank: 10,
+      rank: 12,
       name: "Rocket Seeds",
       slug: "rocket-seeds",
       logo: "/images/rocket-seeds-logo.png",
