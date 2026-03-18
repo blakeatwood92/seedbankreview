@@ -47,7 +47,7 @@ const seedBanks = [
     rating: 4.0,
     description: "International bank carrying BC genetics plus 4000+ other strains worldwide.",
     specialties: ["BC Genetics Available", "Huge Selection", "Competitive Prices"],
-    affiliateUrl: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432",
+    affiliateUrl: "https://www.seedsman.com",
   },
   {
     name: "Herbies Seeds",

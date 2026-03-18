@@ -53,7 +53,7 @@ const strains: Strain[] = [
     seedBanks: [
       { name: "True North Seed Bank", url: "https://truenorthseedbank.com" },
       { name: "Quebec Cannabis Seeds", url: "https://quebeccannabisseeds.com" },
-      { name: "Seedsman", url: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432" },
+      { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
     ],
   },
   {
@@ -68,7 +68,7 @@ const strains: Strain[] = [
     seedBanks: [
       { name: "True North Seed Bank", url: "https://truenorthseedbank.com" },
       { name: "Jordan of the Islands", url: "https://jordanoftheislands.com" },
-      { name: "Seedsman", url: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432" },
+      { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
     ],
   },
   {
@@ -83,7 +83,7 @@ const strains: Strain[] = [
     seedBanks: [
       { name: "Quebec Cannabis Seeds", url: "https://quebeccannabisseeds.com" },
       { name: "GoBack Seed Bank", url: "https://gobackseedbank.com" },
-      { name: "Seedsman", url: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432" },
+      { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
     ],
   },
   {
@@ -97,7 +97,7 @@ const strains: Strain[] = [
     description: "Potent hybrid with dessert-like flavors. Best grown indoors where conditions can be carefully controlled.",
     seedBanks: [
       { name: "True North Seed Bank", url: "https://truenorthseedbank.com" },
-      { name: "Seedsman", url: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432" },
+      { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
     ],
   },
   {
@@ -125,7 +125,7 @@ const strains: Strain[] = [
     description: "One of the fastest autoflowers available. Perfect for Canadian growers wanting multiple harvests or late starts.",
     seedBanks: [
       { name: "Quebec Cannabis Seeds", url: "https://quebeccannabisseeds.com" },
-      { name: "Seedsman", url: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432" },
+      { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
     ],
   },
   {
@@ -140,7 +140,7 @@ const strains: Strain[] = [
     seedBanks: [
       { name: "True North Seed Bank", url: "https://truenorthseedbank.com" },
       { name: "GoBack Seed Bank", url: "https://gobackseedbank.com" },
-      { name: "Seedsman", url: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432" },
+      { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
     ],
   },
   {
@@ -168,7 +168,7 @@ const strains: Strain[] = [
     description: "Pure indica landrace from the Hindu Kush mountains. Extremely resilient and mold-resistant.",
     seedBanks: [
       { name: "Jordan of the Islands", url: "https://jordanoftheislands.com" },
-      { name: "Seedsman", url: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432" },
+      { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
       { name: "GoBack Seed Bank", url: "https://gobackseedbank.com" },
     ],
   },
@@ -183,7 +183,7 @@ const strains: Strain[] = [
     description: "Award-winning sativa-dominant strain with cerebral effects. Longer flowering time best suited for indoor grows.",
     seedBanks: [
       { name: "True North Seed Bank", url: "https://truenorthseedbank.com" },
-      { name: "Seedsman", url: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432" },
+      { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
     ],
   },
   {
@@ -212,7 +212,7 @@ const strains: Strain[] = [
     description: "Heavy yielding autoflower with dense, resinous buds. Great for beginners wanting big harvests.",
     seedBanks: [
       { name: "GoBack Seed Bank", url: "https://gobackseedbank.com" },
-      { name: "Seedsman", url: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432" },
+      { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
     ],
   },
   {
@@ -226,7 +226,7 @@ const strains: Strain[] = [
     description: "Legendary strain with complex flavors. Requires careful attention to nutrients and environment.",
     seedBanks: [
       { name: "True North Seed Bank", url: "https://truenorthseedbank.com" },
-      { name: "Seedsman", url: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432" },
+      { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
     ],
   },
   {
@@ -254,7 +254,7 @@ const strains: Strain[] = [
     description: "One of the strongest autoflowers available. Named after the Hulk for its incredible potency.",
     seedBanks: [
       { name: "True North Seed Bank", url: "https://truenorthseedbank.com" },
-      { name: "Seedsman", url: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432" },
+      { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
       { name: "GoBack Seed Bank", url: "https://gobackseedbank.com" },
     ],
   },
