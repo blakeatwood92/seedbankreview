@@ -47,7 +47,7 @@ const seedBanks = [
     rating: 4.0,
     description: "Massive international selection with 4000+ strains. Ships to Ontario regularly.",
     specialties: ["Huge Selection", "Competitive Prices", "Top Breeders"],
-    affiliateUrl: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432",
+    affiliateUrl: "https://www.seedsman.com",
   },
   {
     name: "Herbies Seeds",

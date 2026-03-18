@@ -462,7 +462,7 @@ const seedBankData: Record<string, {
     established: "2003",
     description: "World's largest cannabis seed bank with 4000+ strains. Mixed reviews on shipping times to Canada and germination rates.",
     longDescription: "Seedsman is one of the world's largest and most established cannabis seed banks, operating since 2003. With over 4000 strains from 100+ breeders, they offer unparalleled selection. However, reviews from 2025 show mixed experiences - while some praise the selection, low prices, and freebies, others report slow shipping to Canada (sometimes over 2 weeks), germination issues, and difficulty getting satisfactory resolutions from customer service. Note: Some negative Trustpilot reviews may be for a different site 'seedman.com' rather than Seedsman.",
-    affiliateUrl: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432",
+    affiliateUrl: "https://www.seedsman.com",
     paymentMethods: ["Credit Card", "Bitcoin", "Bank Transfer", "Cash"],
     deliveryTime: "7-14 business days (sometimes longer)",
     shippingCost: "Free over $90",

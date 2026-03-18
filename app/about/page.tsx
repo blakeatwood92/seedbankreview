@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -48,6 +49,15 @@ export default function AboutPage() {
       <section className="bg-gradient-to-br from-green-800 to-emerald-900 text-white py-20">
         <div className="container px-4 mx-auto">
           <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-6">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Mar%2017%2C%202026%2C%2001_13_13%20PM-yqlQUllbDyng3KoHmK1UsYUYdrCobS.png"
+                alt="Canada Seed Bank Reviews"
+                width={500}
+                height={280}
+                className="mx-auto rounded-lg shadow-xl"
+              />
+            </div>
             <Badge className="mb-4 bg-green-700">
               <Leaf className="w-3 h-3 mr-1" />
               About Us

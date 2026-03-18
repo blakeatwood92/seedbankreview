@@ -63,22 +63,10 @@ export function Hero() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/cannabis-leaf-hero.png"
-                  alt="Premium Canadian cannabis plants"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Mar%2017%2C%202026%2C%2001_13_13%20PM-yqlQUllbDyng3KoHmK1UsYUYdrCobS.png"
+                  alt="Canada Seed Bank Reviews - Find the Best Seed Banks for Canadian Growers"
                   className="w-full h-[400px] object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="bg-white/90 backdrop-blur rounded-lg p-4">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="font-semibold text-gray-900">Premium Canadian Genetics</p>
-                        <p className="text-sm text-gray-600">Trusted by growers nationwide</p>
-                      </div>
-                      <div className="text-red-600 text-2xl">🇨🇦</div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
