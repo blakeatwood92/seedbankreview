@@ -77,7 +77,7 @@ export default function HerbiesReviewPage() {
 
             <Button asChild size="lg" className="bg-purple-600 hover:bg-purple-700 mr-4">
               <a
-                href="https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner"
+                href="https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -713,7 +713,7 @@ export default function HerbiesReviewPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-purple-600 hover:bg-purple-700">
                 <a
-                  href="https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner"
+                  href="https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -47,7 +47,7 @@ const seedBanks = [
     rating: 4.5,
     description: "International seed bank with delivery guarantee. Ships to Canada in 9-12 days via Certified Mail.",
     specialties: ["Delivery Guarantee", "Free Seeds", "Accepts Interac"],
-    affiliateUrl: "https://herbiesheadshop.com",
+    affiliateUrl: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639",
   },
   {
     name: "Seedsman",

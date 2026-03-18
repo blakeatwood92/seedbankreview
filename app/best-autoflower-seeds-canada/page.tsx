@@ -29,7 +29,7 @@ const seedBanks = [
     rating: 4.5,
     description: "Wide autoflower selection with their own Herbies Auto line. Free seeds with every order.",
     specialties: ["Herbies Auto Line", "Free Seeds", "Delivery Guarantee"],
-    affiliateUrl: "https://herbiesheadshop.com",
+    affiliateUrl: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639",
   },
   {
     name: "Seedsman",

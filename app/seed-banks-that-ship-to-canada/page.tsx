@@ -20,7 +20,7 @@ const seedBanks = [
     rating: 4.5,
     description: "Ships to Canada via Certified Mail in 9-12 days. Delivery guarantee - free reship if lost.",
     specialties: ["Delivery Guarantee", "9-12 Day Shipping", "Accepts Interac"],
-    affiliateUrl: "https://herbiesheadshop.com",
+    affiliateUrl: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639",
   },
   {
     name: "Seedsman",

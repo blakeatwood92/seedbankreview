@@ -122,7 +122,7 @@ const seedBanks = [
     autoCount: "500+",
     description: "Massive international selection with own autoflower genetics line.",
     specialties: ["Own Genetics", "Free Seeds", "Delivery Guarantee"],
-    affiliateUrl: "https://herbiesheadshop.com",
+    affiliateUrl: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639",
   },
   {
     name: "Seedsman",
