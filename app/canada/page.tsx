@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -7,6 +8,7 @@ export default function CanadaPage() {
   const canadianBanks = [
     {
       name: "True North Seed Bank",
+      slug: "true-north-seed-bank",
       rating: 4.8,
       reviews: 1247,
       description: "Established Canadian seed bank with a reputation for quality genetics and reliable service.",
@@ -15,9 +17,11 @@ export default function CanadaPage() {
       paymentMethods: ["Credit Card", "E-Transfer", "Cash"],
       shippingTime: "2-4 days",
       affiliate: true,
+      affiliateUrl: "https://truenorthseedbank.com",
     },
     {
       name: "Jordan of the Islands",
+      slug: "jordan-of-the-islands",
       rating: 4.7,
       reviews: 892,
       description: "Renowned Canadian breeder offering unique island-bred cannabis genetics.",
@@ -26,9 +30,11 @@ export default function CanadaPage() {
       paymentMethods: ["E-Transfer", "Cash", "Money Order"],
       shippingTime: "3-5 days",
       affiliate: true,
+      affiliateUrl: "https://jordanoftheislands.ca",
     },
     {
       name: "Quebec Cannabis Seeds",
+      slug: "quebec-cannabis-seeds",
       rating: 4.6,
       reviews: 578,
       description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-grow genetics suited for northern climates.",
@@ -37,9 +43,11 @@ export default function CanadaPage() {
       paymentMethods: ["Credit Card", "E-Transfer"],
       shippingTime: "3-7 days",
       affiliate: true,
+      affiliateUrl: "https://quebeccannabisseeds.com",
     },
     {
       name: "GoBack Seed Bank",
+      slug: "goback-seed-bank",
       rating: 4.5,
       reviews: 423,
       description: "Value-focused Canadian seed bank with competitive pricing and quality genetics for all budgets.",
@@ -48,6 +56,7 @@ export default function CanadaPage() {
       paymentMethods: ["E-Transfer", "Bitcoin", "Cash"],
       shippingTime: "2-5 days",
       affiliate: true,
+      affiliateUrl: "https://gobackseedbank.com",
     },
   ]
 
@@ -93,11 +102,15 @@ export default function CanadaPage() {
                     </div>
                   </div>
                   <div className="flex gap-3">
-                    <Button className="bg-green-600 hover:bg-green-700">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Visit Site
+                    <Button asChild className="bg-green-600 hover:bg-green-700">
+                      <a href={bank.affiliateUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Visit Site
+                      </a>
                     </Button>
-                    <Button variant="outline">Read Full Review</Button>
+                    <Button asChild variant="outline">
+                      <Link href={`/reviews/${bank.slug}`}>Read Full Review</Link>
+                    </Button>
                   </div>
                 </div>
               </CardHeader>

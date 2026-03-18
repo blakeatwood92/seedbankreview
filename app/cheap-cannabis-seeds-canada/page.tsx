@@ -29,7 +29,7 @@ const seedBanks = [
     rating: 4.5,
     description: "Free seed with every order + 1 free seed per €20 spent. Regular promotions and deals.",
     specialties: ["Free Seeds Program", "Regular Promos", "Competitive Prices"],
-    affiliateUrl: "https://herbiesheadshop.com",
+    affiliateUrl: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639",
   },
   {
     name: "Seedsman",
