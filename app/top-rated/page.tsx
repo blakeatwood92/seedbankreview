@@ -121,7 +121,7 @@ const topRatedBanks = [
       "Competitive bulk pricing",
       "Extensive loyalty program",
     ],
-    affiliateUrl: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432",
+    affiliateUrl: "https://www.seedsman.com",
   },
 ]
 

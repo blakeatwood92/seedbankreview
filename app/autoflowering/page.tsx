@@ -132,7 +132,7 @@ const seedBanks = [
     autoCount: "1000+",
     description: "World's largest selection of autoflowering seeds from 100+ breeders.",
     specialties: ["Largest Selection", "Rare Genetics", "Bulk Discounts"],
-    affiliateUrl: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432",
+    affiliateUrl: "https://www.seedsman.com",
   },
 ]
 

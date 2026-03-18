@@ -28,7 +28,7 @@ const internationalBanks = [
     specialties: ["Huge Selection", "Autoflowering Specialists", "Breeder Partnerships", "Free Seeds"],
     pros: ["Massive 4000+ strain selection", "Multiple payment options including crypto", "Regular promotions and freebies", "Established since 2003"],
     cons: ["Shipping takes 7-14 days", "Potential customs delays", "No guaranteed delivery to Canada"],
-    affiliateUrl: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432",
+    affiliateUrl: "https://www.seedsman.com",
   },
   {
     name: "Herbies Seeds",

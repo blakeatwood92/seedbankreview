@@ -86,19 +86,19 @@ export function FeaturedBanks() {
 
   const internationalBanks = [
     {
-      name: "Seedsman",
-      slug: "seedsman",
-      logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
-      rating: 4.6,
-      reviews: 2847,
+      name: "Herbies Seeds",
+      slug: "herbies-headshop",
+      logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-BfEN16kC7tIVKqxs5NuiqmRo1AX2Yz.jpeg",
+      rating: 4.5,
+      reviews: 1234,
       location: "International",
-      specialties: ["Huge Selection", "Autoflowering Specialists", "Global Shipping"],
-      description: "World's largest cannabis seed bank with over 4000+ strains and global shipping to Canada.",
-      paymentMethods: ["Credit Card", "Bitcoin", "Bank Transfer"],
-      shippingTime: "7-14 days to Canada",
+      specialties: ["Delivery Guarantee", "Free Seeds", "Interac Payment"],
+      description: "International seed bank with delivery guarantee to Canada. Ships in 9-12 days with Interac support.",
+      paymentMethods: ["Credit Card", "Interac", "Bitcoin"],
+      shippingTime: "9-12 days to Canada",
       provinces: ["All Provinces"],
       affiliate: true,
-      affiliateUrl: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432",
+      affiliateUrl: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639",
     },
   ]
 
@@ -300,7 +300,7 @@ export function FeaturedBanks() {
                     <Button asChild className="flex-1 bg-blue-600 hover:bg-blue-700 text-white">
                       <a href={bank.affiliateUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />
-                        Visit Seedsman
+                        Visit Herbies
                       </a>
                     </Button>
                     <Button asChild variant="outline" className="border-blue-200 text-blue-700 hover:bg-blue-50 bg-transparent">

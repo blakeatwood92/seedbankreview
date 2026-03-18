@@ -38,7 +38,7 @@ const seedBanks = [
     rating: 4.0,
     description: "Huge selection with budget options under $5/seed. Bitcoin payment gets 15% discount.",
     specialties: ["Budget Options", "Bitcoin Discount", "Bulk Pricing"],
-    affiliateUrl: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432",
+    affiliateUrl: "https://www.seedsman.com",
   },
   {
     name: "True North Seed Bank",

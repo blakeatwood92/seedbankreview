@@ -29,7 +29,7 @@ const seedBanks = [
     rating: 4.0,
     description: "World's largest seed bank with 4000+ strains. Multiple stealth shipping options to Canada.",
     specialties: ["Stealth Shipping", "4000+ Strains", "Multiple Payment Options"],
-    affiliateUrl: "https://www.seedsman.com/us-en/promotions?a_aid=6898fd6444bda&a_bid=0dde5432",
+    affiliateUrl: "https://www.seedsman.com",
   },
   {
     name: "ILGM (I Love Growing Marijuana)",
