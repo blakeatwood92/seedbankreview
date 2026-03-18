@@ -122,7 +122,7 @@ export default function HerbiesReviewPage() {
           </Card>
         </div>
 
-{/* Affiliate Banners Section */}
+        {/* Affiliate Banners Section */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">Current Herbies Promotions</h2>
           
@@ -212,29 +212,6 @@ export default function HerbiesReviewPage() {
                   >
                     <Button className="bg-green-600 hover:bg-green-700">Claim Free Seeds</Button>
                   </a>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-                </a>
-              </CardContent>
-            </Card>
-
-            <Card className="overflow-hidden">
-              <CardHeader className="bg-gradient-to-r from-green-600 to-emerald-600 text-white text-center">
-                <CardTitle>Tracking Banner</CardTitle>
-              </CardHeader>
-              <CardContent className="p-4">
-                <div className="text-center">
-                  <iframe
-                    name="banner"
-                    src="https://panel.herbiesheadshop.com/scripts/dbm4mh?a_aid=689e356589639&a_bid=846496a9&w=1"
-                    width="100%"
-                    height="200"
-                    frameBorder="0"
-                    className="rounded-lg"
-                  ></iframe>
                 </div>
               </CardContent>
             </Card>
