@@ -353,6 +353,276 @@ export default function HerbiesReviewPage() {
           </CardContent>
         </Card>
 
+        {/* Strains Ordered for Testing */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold mb-4 text-center">Strains Ordered for Testing</h2>
+          <p className="text-gray-600 text-center max-w-3xl mx-auto mb-8">
+            We ordered seeds from Herbies to conduct real-world testing including shipping experience, germination rates, 
+            plant growth, terpene profiles, and yield. The seeds are currently in transit and the grow will be documented 
+            on this page once they arrive.
+          </p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {/* Gorilla Cookies Auto */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-2">
+                <Badge className="w-fit mb-2 bg-green-100 text-green-800">Autoflower</Badge>
+                <CardTitle className="text-lg">Gorilla Cookies Auto</CardTitle>
+                <p className="text-sm text-purple-600 font-medium">Fast Buds</p>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-600 mb-4">
+                  Potent hybrid combining Gorilla Glue and Girl Scout Cookies genetics. Known for heavy resin production and relaxing effects.
+                </p>
+                <Button asChild size="sm" variant="outline" className="w-full">
+                  <a href="https://herbiesheadshop.com/ca/cannabis-seeds/gorilla-cookies-auto?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-3 h-3 mr-2" />
+                    View on Herbies
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Sour Crack Auto */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-2">
+                <Badge className="w-fit mb-2 bg-green-100 text-green-800">Autoflower</Badge>
+                <CardTitle className="text-lg">Sour Crack Auto</CardTitle>
+                <p className="text-sm text-purple-600 font-medium">Mephisto Genetics</p>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-600 mb-4">
+                  Lightning-fast autoflower from seed to harvest in 60-65 days. Sour candy aroma with energizing sativa effects.
+                </p>
+                <Button asChild size="sm" variant="outline" className="w-full">
+                  <a href="https://herbiesheadshop.com/ca/cannabis-seeds/sour-crack-auto?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-3 h-3 mr-2" />
+                    View on Herbies
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Blackberry Moonrocks */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-2">
+                <Badge className="w-fit mb-2 bg-purple-100 text-purple-800">Photoperiod</Badge>
+                <CardTitle className="text-lg">Blackberry Moonrocks</CardTitle>
+                <p className="text-sm text-purple-600 font-medium">AlphaFem Seeds</p>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-600 mb-4">
+                  Stunning purple-hued strain with intense berry flavors. Heavy indica effects perfect for evening relaxation.
+                </p>
+                <Button asChild size="sm" variant="outline" className="w-full">
+                  <a href="https://herbiesheadshop.com/ca/cannabis-seeds/blackberry-moonrocks?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-3 h-3 mr-2" />
+                    View on Herbies
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Dozy Doz */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-2">
+                <Badge className="w-fit mb-2 bg-purple-100 text-purple-800">Photoperiod</Badge>
+                <CardTitle className="text-lg">Dozy Doz</CardTitle>
+                <p className="text-sm text-purple-600 font-medium">AlphaFem Seeds</p>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-600 mb-4">
+                  Relaxing indica strain perfect for unwinding. Delivers calming effects with sweet, earthy flavors.
+                </p>
+                <Button asChild size="sm" variant="outline" className="w-full">
+                  <a href="https://herbiesheadshop.com/ca/cannabis-seeds/z-original-sensible-seeds?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-3 h-3 mr-2" />
+                    View on Herbies
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Grandmommy Purple */}
+            <Card className="hover:shadow-lg transition-shadow border-purple-200">
+              <CardHeader className="pb-2">
+                <Badge className="w-fit mb-2 bg-purple-100 text-purple-800">Photoperiod</Badge>
+                <CardTitle className="text-lg">Grandmommy Purple</CardTitle>
+                <p className="text-sm text-purple-600 font-medium">Herbies Seeds</p>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-600 mb-4">
+                  Herbies original genetics with beautiful purple colors and grape/berry terpene profile. Deeply relaxing indica.
+                </p>
+                <Button asChild size="sm" variant="outline" className="w-full">
+                  <a href="https://herbiesheadshop.com/ca/cannabis-seeds/grandmommy-purple-herbies-seeds?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-3 h-3 mr-2" />
+                    View on Herbies
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Apple Betty */}
+            <Card className="hover:shadow-lg transition-shadow border-purple-200">
+              <CardHeader className="pb-2">
+                <Badge className="w-fit mb-2 bg-purple-100 text-purple-800">Photoperiod</Badge>
+                <CardTitle className="text-lg">Apple Betty</CardTitle>
+                <p className="text-sm text-purple-600 font-medium">Herbies Seeds</p>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-600 mb-4">
+                  Herbies original with sweet apple pie aroma. Balanced hybrid effects with excellent flavor profile.
+                </p>
+                <Button asChild size="sm" variant="outline" className="w-full">
+                  <a href="https://herbiesheadshop.com/ca/cannabis-seeds/apple-betty-herbies-seeds?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-3 h-3 mr-2" />
+                    View on Herbies
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        {/* Grow Test Updates */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold mb-4 text-center">Grow Test Updates</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8">
+            Follow along as we document the entire grow process from seed to harvest. Updates will be posted as we progress through each stage.
+          </p>
+          
+          <div className="space-y-4">
+            {/* Seed Arrival */}
+            <Card className="border-l-4 border-l-yellow-500">
+              <CardHeader className="pb-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                    <Package className="w-5 h-5 text-yellow-600" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-lg">Seed Arrival</CardTitle>
+                    <Badge variant="outline" className="text-yellow-600 border-yellow-300">In Transit</Badge>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-600">Seeds have been ordered and are on their way from Herbies. Expecting delivery within 9-12 days. We'll document packaging quality and seed condition upon arrival.</p>
+              </CardContent>
+            </Card>
+
+            {/* Germination Results */}
+            <Card className="border-l-4 border-l-gray-300">
+              <CardHeader className="pb-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                    <span className="text-gray-400">🌱</span>
+                  </div>
+                  <div>
+                    <CardTitle className="text-lg text-gray-400">Germination Results</CardTitle>
+                    <Badge variant="outline" className="text-gray-400 border-gray-300">Upcoming</Badge>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-400">Germination rates, methods used, and time to sprout will be documented here.</p>
+              </CardContent>
+            </Card>
+
+            {/* Vegetative Growth */}
+            <Card className="border-l-4 border-l-gray-300">
+              <CardHeader className="pb-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                    <span className="text-gray-400">🌿</span>
+                  </div>
+                  <div>
+                    <CardTitle className="text-lg text-gray-400">Vegetative Growth</CardTitle>
+                    <Badge variant="outline" className="text-gray-400 border-gray-300">Upcoming</Badge>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-400">Plant structure, growth rate, and health during vegetative stage with weekly photo updates.</p>
+              </CardContent>
+            </Card>
+
+            {/* Flowering Stage */}
+            <Card className="border-l-4 border-l-gray-300">
+              <CardHeader className="pb-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                    <span className="text-gray-400">🌸</span>
+                  </div>
+                  <div>
+                    <CardTitle className="text-lg text-gray-400">Flowering Stage</CardTitle>
+                    <Badge variant="outline" className="text-gray-400 border-gray-300">Upcoming</Badge>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-400">Bud development, trichome production, and flowering time observations.</p>
+              </CardContent>
+            </Card>
+
+            {/* Harvest Results */}
+            <Card className="border-l-4 border-l-gray-300">
+              <CardHeader className="pb-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                    <span className="text-gray-400">🏆</span>
+                  </div>
+                  <div>
+                    <CardTitle className="text-lg text-gray-400">Harvest Results</CardTitle>
+                    <Badge variant="outline" className="text-gray-400 border-gray-300">Upcoming</Badge>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-400">Final yield, terpene profiles, potency assessment, and overall strain reviews.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        {/* Buy These Strains CTA */}
+        <div className="mb-16 bg-gradient-to-br from-purple-100 to-indigo-100 rounded-lg p-8">
+          <h2 className="text-2xl font-bold mb-4 text-center">Buy These Strains From Herbies</h2>
+          <p className="text-gray-600 text-center mb-6">Interested in growing the same strains we're testing? Get them directly from Herbies with free seeds on every order.</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Button asChild className="bg-purple-600 hover:bg-purple-700">
+              <a href="https://herbiesheadshop.com/ca/cannabis-seeds/gorilla-cookies-auto?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" target="_blank" rel="noopener noreferrer">
+                Gorilla Cookies Auto
+              </a>
+            </Button>
+            <Button asChild className="bg-purple-600 hover:bg-purple-700">
+              <a href="https://herbiesheadshop.com/ca/cannabis-seeds/sour-crack-auto?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" target="_blank" rel="noopener noreferrer">
+                Sour Crack Auto
+              </a>
+            </Button>
+            <Button asChild className="bg-purple-600 hover:bg-purple-700">
+              <a href="https://herbiesheadshop.com/ca/cannabis-seeds/blackberry-moonrocks?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" target="_blank" rel="noopener noreferrer">
+                Blackberry Moonrocks
+              </a>
+            </Button>
+            <Button asChild className="bg-purple-600 hover:bg-purple-700">
+              <a href="https://herbiesheadshop.com/ca/cannabis-seeds/z-original-sensible-seeds?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" target="_blank" rel="noopener noreferrer">
+                Dozy Doz
+              </a>
+            </Button>
+            <Button asChild className="bg-purple-600 hover:bg-purple-700">
+              <a href="https://herbiesheadshop.com/ca/cannabis-seeds/grandmommy-purple-herbies-seeds?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" target="_blank" rel="noopener noreferrer">
+                Grandmommy Purple
+              </a>
+            </Button>
+            <Button asChild className="bg-purple-600 hover:bg-purple-700">
+              <a href="https://herbiesheadshop.com/ca/cannabis-seeds/apple-betty-herbies-seeds?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" target="_blank" rel="noopener noreferrer">
+                Apple Betty
+              </a>
+            </Button>
+          </div>
+        </div>
+
         {/* Canadian Customers Info */}
         <div className="mb-16 bg-green-50 border border-green-200 rounded-lg p-6">
           <div className="flex items-start gap-3">
@@ -383,6 +653,37 @@ export default function HerbiesReviewPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Related Resources */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-bold mb-6 text-center">Related Resources</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <a href="/reviews/seedsman" className="block">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-6">
+                  <h3 className="font-semibold mb-2">Seedsman Review</h3>
+                  <p className="text-sm text-gray-600">Compare with another major international seed bank shipping to Canada.</p>
+                </CardContent>
+              </Card>
+            </a>
+            <a href="/seed-banks" className="block">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-6">
+                  <h3 className="font-semibold mb-2">Canadian Seed Bank Reviews</h3>
+                  <p className="text-sm text-gray-600">Browse all seed banks that ship to Canada with detailed comparisons.</p>
+                </CardContent>
+              </Card>
+            </a>
+            <a href="/autoflowering" className="block">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-6">
+                  <h3 className="font-semibold mb-2">Autoflower Grow Guides</h3>
+                  <p className="text-sm text-gray-600">Learn how to grow autoflowering cannabis seeds in Canadian climates.</p>
+                </CardContent>
+              </Card>
+            </a>
           </div>
         </div>
 

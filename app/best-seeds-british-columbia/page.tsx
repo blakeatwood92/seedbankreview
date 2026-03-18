@@ -41,15 +41,6 @@ const seedBanks = [
     affiliateUrl: "https://cropkingseeds.com",
   },
   {
-    name: "Seedsman",
-    slug: "seedsman",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
-    rating: 4.0,
-    description: "International bank carrying BC genetics plus 4000+ other strains worldwide.",
-    specialties: ["BC Genetics Available", "Huge Selection", "Competitive Prices"],
-    affiliateUrl: "https://www.seedsman.com",
-  },
-  {
     name: "Herbies Seeds",
     slug: "herbies-headshop",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-BfEN16kC7tIVKqxs5NuiqmRo1AX2Yz.jpeg",
@@ -57,6 +48,15 @@ const seedBanks = [
     description: "International selection with delivery guarantee to BC. Free seeds with orders.",
     specialties: ["Delivery Guarantee", "Free Seeds", "International Genetics"],
     affiliateUrl: "https://herbiesheadshop.com",
+  },
+  {
+    name: "Seedsman",
+    slug: "seedsman",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
+    rating: 4.0,
+    description: "International bank carrying BC genetics plus 4000+ other strains worldwide.",
+    specialties: ["BC Genetics Available", "Huge Selection", "Competitive Prices"],
+    affiliateUrl: "https://www.seedsman.com",
   },
 ]
 
