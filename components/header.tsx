@@ -19,11 +19,11 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Mar%2017%2C%202026%2C%2001_13_13%20PM-yqlQUllbDyng3KoHmK1UsYUYdrCobS.png"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Mar%2018%2C%202026%2C%2007_15_06%20PM-tCxftWyVrLY3Y16tr6r4s28BJxgzZa.png"
             alt="Canada Seed Bank Reviews"
-            width={180}
-            height={50}
-            className="h-12 w-auto object-contain"
+            width={220}
+            height={60}
+            className="h-14 w-auto object-contain"
           />
         </Link>
 
