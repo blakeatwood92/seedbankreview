@@ -28,7 +28,7 @@ const internationalBanks = [
     specialties: ["Delivery Guarantee", "Free Seeds with Orders", "Own Genetics Line", "Interac Accepted"],
     pros: ["Delivery guarantee - free reship if lost", "Accepts Interac for Canadians", "1 free seed per order + 1 per €20", "9-12 day delivery"],
     cons: ["Currency in EUR", "International shipping", "€10 shipping fee"],
-    affiliateUrl: "https://herbiesheadshop.com",
+    affiliateUrl: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639",
   },
   {
     name: "Seedsman",

@@ -99,7 +99,7 @@ const topRatedBanks = [
       "Free seeds on every order",
       "Own Herbies Seeds genetics line",
     ],
-    affiliateUrl: "https://herbiesheadshop.com",
+    affiliateUrl: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639",
   },
   {
     rank: 5,
