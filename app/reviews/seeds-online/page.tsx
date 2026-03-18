@@ -119,6 +119,18 @@ export default function SeedsOnlineReviewPage() {
               Canadian Seed Bank - Ships From Canada
             </Badge>
             <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-white">Seeds Online Review</h1>
+            
+            {/* Review Coming Soon Banner */}
+            <div className="bg-yellow-50 border-2 border-yellow-300 rounded-lg p-4 mb-6 max-w-2xl mx-auto">
+              <div className="flex items-center justify-center gap-3">
+                <Package className="w-6 h-6 text-yellow-600" />
+                <div className="text-left">
+                  <p className="font-semibold text-yellow-800">Full Review Coming Soon</p>
+                  <p className="text-sm text-yellow-700">We have an order on the way - detailed review with photos and grow results coming after shipment arrives!</p>
+                </div>
+              </div>
+            </div>
+            
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
               Canadian seed bank offering extremely affordable cannabis seeds with single seeds starting at just $1. 
               Fast domestic shipping and a large selection of top breeders.

@@ -82,6 +82,22 @@ export function FeaturedBanks() {
       affiliateUrl: "#",
       isNew: true,
     },
+    {
+      name: "Seeds Online",
+      slug: "seeds-online",
+      logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/84267487_115064260055533_1100969039028551680_n-oMcDc3E2crRygpg0ehG6mlStSkcmx1.jpg",
+      rating: 4.6,
+      reviews: 312,
+      location: "Canada",
+      specialties: ["Single Seed Sales", "Premium Breeders", "$1 Seeds", "Fast Shipping"],
+      description: "Canadian seed bank specializing in single seed purchases starting at $1. Features Ethos, FastBuds, Mephisto and more.",
+      paymentMethods: ["Interac E-Transfer", "Crypto", "Cash"],
+      shippingTime: "2-5 days",
+      provinces: ["All Provinces"],
+      affiliate: false,
+      affiliateUrl: "https://seedsonline.ca",
+      isNew: true,
+    },
   ]
 
   const internationalBanks = [
