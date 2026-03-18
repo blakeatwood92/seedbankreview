@@ -41,15 +41,6 @@ const seedBanks = [
     affiliateUrl: "https://quebeccannabisseeds.com",
   },
   {
-    name: "Seedsman",
-    slug: "seedsman",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
-    rating: 4.0,
-    description: "World's largest seed bank with 4000+ strains. Ships to Canada with stealth options.",
-    specialties: ["Huge Selection", "Global Shipping", "Breeder Partnerships"],
-    affiliateUrl: "https://www.seedsman.com",
-  },
-  {
     name: "Herbies Seeds",
     slug: "herbies-headshop",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-BfEN16kC7tIVKqxs5NuiqmRo1AX2Yz.jpeg",
@@ -57,6 +48,15 @@ const seedBanks = [
     description: "International seed bank with delivery guarantee. Ships to Canada in 9-12 days via Certified Mail.",
     specialties: ["Delivery Guarantee", "Free Seeds", "Accepts Interac"],
     affiliateUrl: "https://herbiesheadshop.com",
+  },
+  {
+    name: "Seedsman",
+    slug: "seedsman",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
+    rating: 4.0,
+    description: "World's largest seed bank with 4000+ strains. Ships to Canada with stealth options.",
+    specialties: ["Huge Selection", "Global Shipping", "Breeder Partnerships"],
+    affiliateUrl: "https://www.seedsman.com",
   },
   {
     name: "Crop King Seeds",
