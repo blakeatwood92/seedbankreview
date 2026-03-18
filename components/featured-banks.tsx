@@ -66,6 +66,22 @@ export function FeaturedBanks() {
       affiliate: true,
       affiliateUrl: "https://gobackseedbank.com",
     },
+    {
+      name: "Butterbean Birdseed",
+      slug: "butterbean-birdseed",
+      logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/unnamed-Z58t5ADg5F6WMHT7mVUV4BJ0DPcwth.png",
+      rating: 4.5,
+      reviews: 156,
+      location: "Canada",
+      specialties: ["Autoflower Specialist", "Canadian Breeder", "Northern Climate", "Direct from Breeder"],
+      description: "Canadian autoflower breeder specializing in fast-finishing strains for northern climates. Unique genetics like Mac N Cheese Auto and Banana Runtz Auto.",
+      paymentMethods: ["Interac E-Transfer", "Cash"],
+      shippingTime: "3-7 days",
+      provinces: ["All Provinces"],
+      affiliate: false,
+      affiliateUrl: "#",
+      isNew: true,
+    },
   ]
 
   const internationalBanks = [
