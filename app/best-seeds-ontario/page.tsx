@@ -41,15 +41,6 @@ const seedBanks = [
     affiliateUrl: "https://jordanoftheislands.com",
   },
   {
-    name: "Seedsman",
-    slug: "seedsman",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
-    rating: 4.0,
-    description: "Massive international selection with 4000+ strains. Ships to Ontario regularly.",
-    specialties: ["Huge Selection", "Competitive Prices", "Top Breeders"],
-    affiliateUrl: "https://www.seedsman.com",
-  },
-  {
     name: "Herbies Seeds",
     slug: "herbies-headshop",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-BfEN16kC7tIVKqxs5NuiqmRo1AX2Yz.jpeg",
@@ -57,6 +48,15 @@ const seedBanks = [
     description: "International bank with guaranteed delivery to Ontario. Accepts Interac.",
     specialties: ["Delivery Guarantee", "Free Seeds", "Accepts Interac"],
     affiliateUrl: "https://herbiesheadshop.com",
+  },
+  {
+    name: "Seedsman",
+    slug: "seedsman",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
+    rating: 4.0,
+    description: "Massive international selection with 4000+ strains. Ships to Ontario regularly.",
+    specialties: ["Huge Selection", "Competitive Prices", "Top Breeders"],
+    affiliateUrl: "https://www.seedsman.com",
   },
 ]
 
