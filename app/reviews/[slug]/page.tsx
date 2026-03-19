@@ -90,8 +90,10 @@ const seedBankData: Record<string, {
       "One of Canada's longest-running seed banks (since 2009)",
       "Large selection with 800+ strains available",
       "Ships domestically - no customs concerns",
+      "Fast shipping across Canada",
       "Accepts Interac E-Transfer",
-      "Free seeds often included with orders",
+      "Free seeds included with orders (2 packs of freebies)",
+      "Printed catalog of available strains included",
       "Regular sales and promotions",
     ],
     cons: [
@@ -109,6 +111,39 @@ const seedBankData: Record<string, {
       reputation: 3.8,
     },
     accentColor: "red",
+    realOrderExperience: {
+      title: "Real Order Experience",
+      summary: "I recently placed an order with True North Seed Bank to test their service for this True North Seed Bank review Canada. Shipping was fast and the package arrived without any issues. They included 2 packs of free seeds along with a printed catalog of their available strains, which was a nice bonus. Overall, I was very happy with the True North Seed Bank shipping experience.",
+      orderDetails: {
+        origin: "Ontario, Canada",
+        destination: "Canada",
+        shippingTime: "Fast (3-4 days)",
+        packaging: "Discreet, secure packaging",
+      },
+      whatWeLiked: [
+        "Fast shipping across Canada - package arrived quickly",
+        "2 packs of free seeds included with the order",
+        "Printed catalog of available cannabis seeds Canada strains",
+        "Discreet and secure packaging",
+        "No issues with the order - smooth experience",
+      ],
+      whatCouldBeImproved: [
+        "Website could be more modern",
+        "More detailed strain descriptions would be helpful",
+      ],
+      detailedRatings: {
+        geneticsSelection: 4.5,
+        shippingSpeed: 5,
+        packaging: 4.5,
+        promotionsFreebies: 5,
+        customerExperience: 4,
+      },
+      internalLinks: [
+        { text: "Compare with other top seed banks", href: "/best-seed-banks-canada" },
+        { text: "See Herbies Seeds review", href: "/reviews/herbies-headshop" },
+      ],
+      disclaimer: "This review is based on a real order placed with True North Seed Bank. Individual experiences may vary. We recommend doing your own research before making a purchase.",
+    },
     communityReviews: [
       {
         id: 1,
@@ -1006,6 +1041,25 @@ export default function SeedBankReviewPage({ params }: { params: { slug: string 
                     })}
                   </div>
                 </div>
+
+                {/* Internal Links */}
+                {seedBank.realOrderExperience.internalLinks && seedBank.realOrderExperience.internalLinks.length > 0 && (
+                  <div className="mb-8">
+                    <h4 className="font-semibold mb-4">Related Resources</h4>
+                    <div className="flex flex-wrap gap-3">
+                      {seedBank.realOrderExperience.internalLinks.map((link: { text: string; href: string }, index: number) => (
+                        <Link
+                          key={index}
+                          href={link.href}
+                          className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition-colors text-sm"
+                        >
+                          {link.text}
+                          <ExternalLink className="w-3 h-3" />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {/* Disclaimer */}
                 <div className="bg-gray-100 p-4 rounded-lg text-sm text-gray-600 italic">
