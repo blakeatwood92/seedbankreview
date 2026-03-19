@@ -54,10 +54,8 @@ export default function ButterbeanBirdseedReviewPage() {
   ]
 
   const cons = [
-    "Smaller operation compared to large seed banks",
+    "Direct ordering process may not appeal to users who prefer traditional online checkout",
     "Limited payment options (no credit card)",
-    "Newer breeder with less established reputation",
-    "Stock availability may vary",
   ]
 
   const featuredStrains = [
@@ -244,6 +242,141 @@ export default function ButterbeanBirdseedReviewPage() {
                 northern climates. Their strains are selected and bred for cold resistance, fast finishing times, and
                 the ability to thrive in shorter growing seasons.
               </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Breeding Experience and Background */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">Breeding Experience and Background</h2>
+          <Card className="border-2 border-green-200">
+            <CardContent className="p-6">
+              <p className="text-gray-600 mb-4">
+                While the Butterbean Birdseed brand launched in 2020, the breeder behind the operation brings close to 
+                15 years of experience in producing and supplying cannabis seeds. This is not a newcomer learning the trade - 
+                this is an experienced breeder with deep industry roots.
+              </p>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-green-800">Industry Experience</h4>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span>Close to 15 years producing and supplying seeds</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span>Has worked with and supplied larger seed banks</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span>Experience includes white label production</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-green-800">Industry Relationships</h4>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span>Long-standing relationships within the seed industry</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span>Established reputation among industry peers</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span>Brand launched 2020 with existing expertise</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Production and Genetics */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">Production and Genetics</h2>
+          <Card>
+            <CardContent className="p-6">
+              <p className="text-gray-600 mb-4">
+                Butterbean Birdseed operates one of the larger seed-producing operations in Canada, maintaining consistent 
+                stock availability and supplying genetics to other seed banks in addition to their direct sales.
+              </p>
+              <div className="grid md:grid-cols-4 gap-4">
+                <div className="text-center p-4 bg-gray-50 rounded-lg">
+                  <Package className="w-8 h-8 text-green-600 mx-auto mb-2" />
+                  <h4 className="font-semibold text-sm">Large Scale Operation</h4>
+                  <p className="text-xs text-gray-500 mt-1">One of Canada's larger seed producers</p>
+                </div>
+                <div className="text-center p-4 bg-gray-50 rounded-lg">
+                  <Users className="w-8 h-8 text-green-600 mx-auto mb-2" />
+                  <h4 className="font-semibold text-sm">B2B Supplier</h4>
+                  <p className="text-xs text-gray-500 mt-1">Supplies genetics to other seed banks</p>
+                </div>
+                <div className="text-center p-4 bg-gray-50 rounded-lg">
+                  <Shield className="w-8 h-8 text-green-600 mx-auto mb-2" />
+                  <h4 className="font-semibold text-sm">Consistent Stock</h4>
+                  <p className="text-xs text-gray-500 mt-1">Maintains reliable inventory levels</p>
+                </div>
+                <div className="text-center p-4 bg-gray-50 rounded-lg">
+                  <Award className="w-8 h-8 text-green-600 mx-auto mb-2" />
+                  <h4 className="font-semibold text-sm">Rarely Out of Stock</h4>
+                  <p className="text-xs text-gray-500 mt-1">Production capacity meets demand</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Unique Genetics and Autoflower Development */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">Unique Genetics and Autoflower Development</h2>
+          <Card className="border-2 border-amber-200 bg-gradient-to-br from-amber-50 to-yellow-50">
+            <CardContent className="p-6">
+              <p className="text-gray-700 mb-4">
+                Unlike many breeders who simply cross existing autoflower genetics, Butterbean Birdseed develops original 
+                autoflower strains from scratch. This is a significant differentiator in the market, as true autoflower 
+                breeding from the ground up requires substantial time, expertise, and resources.
+              </p>
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <h4 className="font-semibold mb-3 text-amber-800">Autoflower Expertise</h4>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    <li className="flex items-start gap-2">
+                      <Leaf className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <span>Strong focus on autoflower breeding and development</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Leaf className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <span>Larger autoflower selection than many single brands</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Leaf className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <span>Creates original autoflower lines from scratch</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-3 text-amber-800">Legacy Genetics</h4>
+                  <p className="text-sm text-gray-600 mb-2">Work includes preservation and development of classic lines:</p>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="bg-amber-100 text-amber-800">Juicy Fruit (1990s)</Badge>
+                    <Badge variant="secondary" className="bg-amber-100 text-amber-800">UBC Chemo</Badge>
+                    <Badge variant="secondary" className="bg-amber-100 text-amber-800">Rockstar Kush</Badge>
+                    <Badge variant="secondary" className="bg-amber-100 text-amber-800">Tuna Kush</Badge>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-4 rounded-lg border border-amber-200">
+                <p className="text-sm text-amber-800">
+                  <span className="font-semibold">Why This Matters:</span> Many breeders simply take existing autoflower 
+                  genetics and cross them together. Creating autoflower lines from scratch requires converting photoperiod 
+                  genetics through multiple generations - a process that takes years and significant breeding expertise.
+                </p>
+              </div>
             </CardContent>
           </Card>
         </div>
@@ -761,6 +894,25 @@ export default function ButterbeanBirdseedReviewPage() {
           </div>
         </div>
 
+        {/* How This Rating Is Determined */}
+        <div className="mb-16">
+          <Card className="border-gray-200 bg-gray-50">
+            <CardContent className="p-6">
+              <h3 className="font-semibold mb-3 text-gray-800">How This Rating Is Determined</h3>
+              <p className="text-sm text-gray-600 mb-3">
+                This rating is based on available information, ordering experience (where applicable), communication 
+                quality, product positioning, and industry reputation. We evaluate seed banks and breeders using a 
+                consistent 5-factor analysis that considers genetics quality, variety, customer experience, shipping, 
+                and overall reputation.
+              </p>
+              <p className="text-sm text-gray-500">
+                As more real grow tests and customer feedback are collected, this rating may evolve over time. Our 
+                goal is to provide accurate, balanced assessments that help Canadian growers make informed decisions.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
         {/* Final Verdict */}
         <Card className="bg-gradient-to-br from-green-50 to-emerald-50 border-green-200">
           <CardHeader>
@@ -782,10 +934,11 @@ export default function ButterbeanBirdseedReviewPage() {
             </div>
             <p className="text-gray-600 max-w-3xl mx-auto mb-6">
               Butterbean Birdseed is an excellent choice for Canadian growers looking for autoflower genetics designed
-              specifically for northern climates. As a Canadian breeder, they offer the significant advantage of
-              domestic shipping with no customs risk. Their focus on fast finishing strains, unique genetics, and direct
-              customer communication makes them stand out from larger international seed banks. If you're looking to
-              support a Canadian breeder while getting quality autoflower genetics, Butterbean Birdseed is worth
+              specifically for northern climates. Backed by close to 15 years of breeding experience and operating one 
+              of the larger seed-producing operations in Canada, they offer the significant advantage of domestic shipping 
+              with no customs risk. Their focus on developing original autoflower lines from scratch, preserving legacy 
+              genetics, and maintaining direct customer communication makes them stand out. If you're looking to support 
+              an experienced Canadian breeder while getting quality autoflower genetics, Butterbean Birdseed is worth 
               checking out.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
