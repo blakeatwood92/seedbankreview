@@ -27,11 +27,25 @@ export function Footer() {
     { name: "Best Seed Banks Canada", href: "/best-seed-banks-canada" },
     { name: "Best Autoflower Seeds", href: "/best-autoflower-seeds-canada" },
     { name: "Best Outdoor Strains", href: "/best-outdoor-strains-canada" },
-    { name: "Seeds for Ontario", href: "/best-seeds-ontario" },
-    { name: "Seeds for British Columbia", href: "/best-seeds-british-columbia" },
-    { name: "Seeds for Nova Scotia", href: "/best-seeds-nova-scotia" },
+    { name: "Best Cannabis Seeds", href: "/best-cannabis-seeds-canada" },
     { name: "Seed Banks That Ship to Canada", href: "/seed-banks-that-ship-to-canada" },
     { name: "Cheap Cannabis Seeds", href: "/cheap-cannabis-seeds-canada" },
+  ]
+
+  const cultivationGuides = [
+    { name: "Growing Cannabis in Canada", href: "/growing-cannabis-in-canada" },
+    { name: "Autoflower Grow Guide", href: "/autoflower-grow-guide" },
+    { name: "Outdoor Growing Canada", href: "/outdoor-growing-canada" },
+    { name: "Best Grow Lights", href: "/best-grow-lights-canada" },
+    { name: "Grow Tent Setup", href: "/grow-tent-setup-guide" },
+    { name: "Cannabis Soil Recipe", href: "/cannabis-soil-recipe" },
+    { name: "Best Nutrients", href: "/best-nutrients-for-cannabis" },
+  ]
+
+  const legalGuides = [
+    { name: "Are Seeds Legal in Canada?", href: "/are-cannabis-seeds-legal-canada" },
+    { name: "How to Buy Seeds", href: "/how-to-buy-cannabis-seeds-canada" },
+    { name: "How Long to Grow", href: "/how-long-do-cannabis-seeds-take-to-grow" },
   ]
 
   return (
@@ -65,11 +79,43 @@ export function Footer() {
           ))}
         </div>
 
-        {/* Canadian Growing Guides Section */}
+        {/* Seed Guides Section */}
         <div className="border-t border-gray-800 mt-8 pt-8">
-          <h3 className="font-semibold mb-4 text-center">Canadian Growing Guides</h3>
+          <h3 className="font-semibold mb-4 text-center">Seed Buying Guides</h3>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
             {growingGuides.map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+              >
+                {guide.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Cultivation Guides Section */}
+        <div className="border-t border-gray-800 mt-6 pt-6">
+          <h3 className="font-semibold mb-4 text-center">Cultivation Guides</h3>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+            {cultivationGuides.map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+              >
+                {guide.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Legal & How-To Section */}
+        <div className="border-t border-gray-800 mt-6 pt-6">
+          <h3 className="font-semibold mb-4 text-center">Legal & How-To</h3>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+            {legalGuides.map((guide) => (
               <Link
                 key={guide.href}
                 href={guide.href}
