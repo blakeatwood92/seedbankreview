@@ -28,8 +28,8 @@ export function Footer() {
     { name: "Best Autoflower Seeds", href: "/best-autoflower-seeds-canada" },
     { name: "Best Outdoor Strains", href: "/best-outdoor-strains-canada" },
     { name: "Best Cannabis Seeds", href: "/best-cannabis-seeds-canada" },
+    { name: "Buy Cannabis Clones", href: "/buy-cannabis-clones-canada" },
     { name: "Seed Banks That Ship to Canada", href: "/seed-banks-that-ship-to-canada" },
-    { name: "Cheap Cannabis Seeds", href: "/cheap-cannabis-seeds-canada" },
   ]
 
   const cultivationGuides = [
