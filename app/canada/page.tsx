@@ -45,6 +45,19 @@ export default function CanadaPage() {
       affiliate: true,
       affiliateUrl: "https://gobackseedbank.com",
     },
+    {
+      name: "Montreal Cannabis Seeds",
+      slug: "montreal-cannabis-seeds",
+      rating: 4.3,
+      reviews: 245,
+      description: "Quebec-based seed bank with bilingual support and curated genetics suited for Canadian climates.",
+      pros: ["Bilingual support", "Fast shipping", "Canadian genetics", "Free shipping $150+"],
+      cons: ["Smaller selection", "Newer operation"],
+      paymentMethods: ["Credit Card", "E-Transfer", "Crypto"],
+      shippingTime: "2-5 days",
+      affiliate: false,
+      affiliateUrl: "https://montrealcannabis-seeds.ca/",
+    },
   ]
 
   return (

@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, use } from "react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -484,6 +484,73 @@ const seedBankData: Record<string, {
       },
     ],
   },
+  "montreal-cannabis-seeds": {
+    name: "Montreal Cannabis Seeds",
+    logo: "/images/montreal-cannabis-seeds-logo.png",
+    rating: 4.3,
+    reviews: 245,
+    location: "Montreal, Quebec",
+    country: "Canada",
+    flag: "🇨🇦",
+    established: "2018",
+    description: "Quebec-based seed bank offering a curated selection of cannabis genetics with fast Canadian shipping and bilingual customer support.",
+    longDescription: "Montreal Cannabis Seeds is a Quebec-based seed bank that has been serving Canadian growers since 2018. They offer a carefully curated selection of cannabis genetics from trusted breeders, with a focus on strains that perform well in Canadian climates. Based in Montreal, they provide bilingual customer support in both English and French, making them accessible to growers across the country. Their commitment to fast domestic shipping and quality genetics has earned them a loyal customer base in the Canadian cannabis community.",
+    affiliateUrl: "https://montrealcannabis-seeds.ca/",
+    paymentMethods: ["Interac E-Transfer", "Credit Card", "Crypto"],
+    deliveryTime: "2-5 business days",
+    shippingCost: "Free over $150",
+    strainCount: "200+",
+    specialties: ["Quebec Based", "Bilingual Support", "Canadian Genetics", "Fast Shipping"],
+    pros: [
+      "Based in Montreal - fast Canadian shipping",
+      "Bilingual support (English and French)",
+      "Curated selection of quality genetics",
+      "Accepts Interac E-Transfer and credit cards",
+      "Free shipping over $150",
+      "No customs concerns - domestic shipping",
+      "Strains suited for Canadian climates",
+      "Cryptocurrency accepted",
+    ],
+    cons: [
+      "Smaller selection than larger international banks",
+      "Newer operation compared to established competitors",
+      "Limited information on specific breeder partnerships",
+    ],
+    criteriaRatings: {
+      paymentMethods: 4.5,
+      seedVariety: 4.0,
+      genetics: 4.3,
+      customerExperience: 4.4,
+      reputation: 4.2,
+    },
+    accentColor: "blue",
+    communityReviews: [
+      {
+        id: 1,
+        author: "QuebecGrower",
+        source: "Community Review",
+        location: "Quebec",
+        rating: 5,
+        date: "2024-10-15",
+        title: "Great local option for Quebec",
+        content: "Finally a seed bank that speaks French! Customer service was excellent and shipping to Montreal was just 2 days. Seeds arrived well packaged and germination was great. Will order again.",
+        helpful: 15,
+        verified: true,
+      },
+      {
+        id: 2,
+        author: "CanadianHomegrower",
+        source: "Community Review",
+        location: "Ontario",
+        rating: 4,
+        date: "2024-09-20",
+        title: "Fast shipping, good selection",
+        content: "Ordered from Montreal Cannabis Seeds and was impressed with how quickly my order arrived. Selection is smaller than some big international banks but the quality is there. E-transfer was easy.",
+        helpful: 12,
+        verified: true,
+      },
+    ],
+  },
   "seedsman": {
     name: "Seedsman",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
@@ -678,12 +745,13 @@ const seedBankData: Record<string, {
 // Community reviews are now stored per seed bank in the seedBankData object above
 // In production, these would come from a database
 
-export default function SeedBankReviewPage({ params }: { params: { slug: string } }) {
+export default function SeedBankReviewPage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = use(params)
   const [showReviewForm, setShowReviewForm] = useState(false)
   const [reviewRating, setReviewRating] = useState(0)
   const [hoverRating, setHoverRating] = useState(0)
   
-  const seedBank = seedBankData[params.slug]
+  const seedBank = seedBankData[resolvedParams.slug]
   
   if (!seedBank) {
     notFound()
