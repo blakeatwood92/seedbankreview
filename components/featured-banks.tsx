@@ -82,6 +82,21 @@ export function FeaturedBanks() {
       affiliate: false,
       affiliateUrl: "https://weedseedsonline.net",
     },
+    {
+      name: "Gasd Up Seeds",
+      slug: "gasd-up-seeds",
+      logo: "/images/gasd-up-seeds-logo.png",
+      rating: 4.4,
+      reviews: 87,
+      location: "British Columbia",
+      specialties: ["In-House Genetics", "Exotic Genetix Crosses", "BC Based", "Fast Shipping"],
+      description: "BC-based seed bank with exclusive in-house genetics and Exotic Genetix crosses. Fast Canadian shipping with e-transfer.",
+      paymentMethods: ["Interac E-Transfer"],
+      shippingTime: "2-5 days",
+      provinces: ["All Provinces"],
+      affiliate: false,
+      affiliateUrl: "https://gasdupseeds.com",
+    },
   ]
 
   const internationalBanks = [
