@@ -99,6 +99,13 @@ export default function GasdUpSeedsReviewPage() {
       <div className="bg-gradient-to-br from-green-900 via-green-800 to-black py-16">
         <div className="container px-4 mx-auto">
           <div className="max-w-4xl mx-auto text-center">
+            <div className="w-32 h-32 mx-auto mb-6 rounded-xl overflow-hidden border-4 border-white/20 shadow-lg">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/475543832_426187703911637_152434204950628002_n-4o0JuLlDM72po666KhR2qk5eqMnYb0.jpg"
+                alt="Gasd Up Seeds Logo"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <Badge variant="secondary" className="mb-4 bg-red-100 text-red-800">
               Local Canadian Seedbank
             </Badge>
