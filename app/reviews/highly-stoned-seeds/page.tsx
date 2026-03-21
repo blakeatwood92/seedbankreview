@@ -101,7 +101,7 @@ export default function HighlyStonedSeedsReviewPage() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="w-32 h-32 mx-auto mb-6 rounded-xl overflow-hidden border-4 border-white/20 shadow-lg">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/475543832_426187703911637_152434204950628002_n-4o0JuLlDM72po666KhR2qk5eqMnYb0.jpg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cd25f659-37f1-4d5f-a1ee-8d23a1ee1939-7h9cWtPaa76zf6bfJ0qd3DfgRBZOeZ.jpeg"
                 alt="Highly Stoned Seeds Logo"
                 className="w-full h-full object-cover"
               />
