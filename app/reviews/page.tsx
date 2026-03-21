@@ -53,19 +53,7 @@ export default function ReviewsPage() {
       shipping: "3-14 business days",
       website: "canukseeds.com",
     },
-    {
-      name: "Crop King Seeds",
-      slug: "crop-king-seeds",
-      rating: 4.6,
-      location: "British Columbia, Canada",
-      flag: "🇨🇦",
-      summary: "Established Canadian seed bank with germination guarantee and Bitcoin payment bonuses.",
-      reviewed: false,
-      payments: ["Visa/Mastercard", "Interac e-Transfer", "Bitcoin"],
-      shipping: "Tracked shipping",
-      website: "cropkingseeds.com",
-    },
-    {
+{
       name: "Sunwest Genetics",
       slug: "sunwest-genetics",
       rating: 4.3,

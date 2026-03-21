@@ -110,23 +110,6 @@ export default function SeedBanksPage() {
     },
     {
       rank: 7,
-      name: "Crop King Seeds",
-      slug: "crop-king-seeds",
-      logo: "https://www.cropkingseeds.com/wp-content/uploads/2021/06/crop-king-seeds-logo.png",
-      rating: 4.4,
-      reviews: 756,
-      location: "British Columbia, Canada",
-      description: "Canadian seed bank specializing in feminized and autoflowering seeds with guaranteed germination.",
-      paymentMethods: ["Interac E-Transfer", "Credit Card", "Bitcoin"],
-      deliveryTime: "3-7 business days",
-      shippingCost: "Free over $75",
-      specialties: ["Germination Guarantee", "Feminized Seeds", "Customer Support", "Beginner Friendly"],
-      strainCount: "300+",
-      affiliate: false,
-      affiliateUrl: "https://cropkingseeds.com",
-    },
-    {
-      rank: 8,
       name: "Seedsman",
       slug: "seedsman",
       logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
@@ -143,7 +126,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://www.seedsman.com",
     },
     {
-      rank: 9,
+      rank: 8,
       name: "ILGM (I Love Growing Marijuana)",
       slug: "ilgm",
       logo: "https://www.ilovegrowingmarijuana.com/wp-content/themes/flavor/images/ilgm-logo.svg",
@@ -160,7 +143,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://ilgm.com",
     },
     {
-      rank: 10,
+      rank: 9,
       name: "Growers Choice Seeds",
       slug: "growers-choice-seeds",
       logo: "https://www.growerschoiceseeds.com/wp-content/uploads/2020/08/growers-choice-seeds-logo.png",
@@ -177,7 +160,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://growerschoiceseeds.com",
     },
     {
-      rank: 11,
+      rank: 10,
       name: "Rocket Seeds",
       slug: "rocket-seeds",
       logo: "/images/rocket-seeds-logo.png",
@@ -194,7 +177,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://rfrk.net/rocketseeds",
     },
     {
-      rank: 12,
+      rank: 11,
       name: "Highly Stoned Seeds",
       slug: "highly-stoned-seeds",
       logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cd25f659-37f1-4d5f-a1ee-8d23a1ee1939-7h9cWtPaa76zf6bfJ0qd3DfgRBZOeZ.jpeg",
@@ -211,7 +194,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://highlystonedseeds.com",
     },
     {
-      rank: 13,
+      rank: 12,
       name: "Montreal Cannabis Seeds",
       slug: "montreal-cannabis-seeds",
       logo: "/images/montreal-cannabis-seeds-logo.png",
@@ -228,7 +211,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://montrealcannabis-seeds.ca/",
     },
     {
-      rank: 14,
+      rank: 13,
       name: "Jordan of the Islands",
       slug: "jordan-of-the-islands",
       logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cropped-company-lgo-backup-zbA78eurgy53gyRao2trw0BRP1tE1e.png",
