@@ -49,16 +49,7 @@ const seedBanks = [
     specialties: ["Canadian Based", "Fast Shipping", "Multiple Breeders"],
     affiliateUrl: "https://truenorthseedbank.com",
   },
-  {
-    name: "Crop King Seeds",
-    slug: "crop-king-seeds",
-    logo: "https://www.cropkingseeds.com/wp-content/uploads/2021/06/crop-king-seeds-logo.png",
-    rating: 3.8,
-    description: "Canadian seed bank with beginner-friendly autoflowers and germination guarantee.",
-    specialties: ["Beginner Friendly", "Germination Guarantee", "Canadian Based"],
-    affiliateUrl: "https://cropkingseeds.com",
-  },
-]
+  ]
 
 const strains = [
   {

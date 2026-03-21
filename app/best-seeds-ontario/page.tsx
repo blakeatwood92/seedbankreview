@@ -134,7 +134,7 @@ const faqs = [
   },
   {
     question: "Where can I buy cannabis seeds in Ontario?",
-    answer: "While OCS doesn't sell seeds, Ontarians can legally purchase from licensed online seed banks. Canadian options include True North Seed Bank, Quebec Cannabis Seeds, and Crop King Seeds. International banks like Seedsman and Herbies also ship to Ontario.",
+    answer: "While OCS doesn't sell seeds, Ontarians can legally purchase from licensed online seed banks. Canadian options include True North Seed Bank, Quebec Cannabis Seeds, and Seeds Online. International banks like Seedsman and Herbies also ship to Ontario.",
   },
 ]
 

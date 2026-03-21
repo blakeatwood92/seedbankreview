@@ -58,16 +58,7 @@ const seedBanks = [
     specialties: ["Huge Selection", "Global Shipping", "Breeder Partnerships"],
     affiliateUrl: "https://www.seedsman.com",
   },
-  {
-    name: "Crop King Seeds",
-    slug: "crop-king-seeds",
-    logo: "https://www.cropkingseeds.com/wp-content/uploads/2021/06/crop-king-seeds-logo.png",
-    rating: 3.8,
-    description: "BC-based seed bank with 80% germination guarantee. Specializes in feminized and autoflower seeds.",
-    specialties: ["Germination Guarantee", "Feminized Seeds", "Canadian Based"],
-    affiliateUrl: "https://cropkingseeds.com",
-  },
-]
+  ]
 
 const strains = [
   {
@@ -119,7 +110,7 @@ const faqs = [
   },
   {
     question: "Do Canadian seed banks accept Interac e-Transfer?",
-    answer: "Yes, most Canadian seed banks accept Interac e-Transfer, which is often the preferred payment method. True North Seed Bank, Jordan of the Islands, Quebec Cannabis Seeds, and Crop King Seeds all accept Interac. International banks like Herbies also accept Interac for Canadian customers.",
+    answer: "Yes, most Canadian seed banks accept Interac e-Transfer, which is often the preferred payment method. True North Seed Bank, Quebec Cannabis Seeds, and Seeds Online all accept Interac. International banks like Herbies also accept Interac for Canadian customers.",
   },
   {
     question: "What's the difference between feminized and autoflower seeds?",
@@ -127,7 +118,7 @@ const faqs = [
   },
   {
     question: "Which seed banks offer germination guarantees?",
-    answer: "Crop King Seeds offers an 80% germination guarantee on all seeds. Quebec Cannabis Seeds provides a germination guarantee and often includes extra seeds to compensate for potential failures. Herbies Seeds offers a delivery guarantee - if your package doesn't arrive, they'll reship for free.",
+    answer: "Quebec Cannabis Seeds provides a germination guarantee and often includes extra seeds to compensate for potential failures. Herbies Seeds offers a delivery guarantee - if your package doesn't arrive, they'll reship for free. Seeds Online also includes free seeds with every order.",
   },
 ]
 

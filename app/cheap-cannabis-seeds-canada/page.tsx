@@ -58,16 +58,7 @@ const seedBanks = [
     specialties: ["Free Breeder's Choice", "Regular Seeds", "Bulk Deals"],
     affiliateUrl: "https://jordanoftheislands.com",
   },
-  {
-    name: "Crop King Seeds",
-    slug: "crop-king-seeds",
-    logo: "https://www.cropkingseeds.com/wp-content/uploads/2021/06/crop-king-seeds-logo.png",
-    rating: 3.8,
-    description: "Mix and match 3-packs from $35. Germination guarantee protects your investment.",
-    specialties: ["Mix & Match", "Germination Guarantee", "Starter Packs"],
-    affiliateUrl: "https://cropkingseeds.com",
-  },
-]
+  ]
 
 const strains = [
   {

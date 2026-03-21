@@ -50,15 +50,6 @@ const seedBanks = [
     affiliateUrl: "https://www.cannabis-seeds-bank.co.uk",
   },
   {
-    name: "Crop King Seeds",
-    slug: "crop-king-seeds",
-    logo: "https://www.cropkingseeds.com/wp-content/uploads/2021/06/crop-king-seeds-logo.png",
-    rating: 3.8,
-    description: "Canadian-based but ships worldwide. No customs concerns for Canadian customers.",
-    specialties: ["Canadian Based", "No Customs", "Germination Guarantee"],
-    affiliateUrl: "https://cropkingseeds.com",
-  },
-  {
     name: "True North Seed Bank",
     slug: "true-north",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tnsb_logo-7MCHjFEh91tG5in9Vjgyg7mV65npjx.png",
