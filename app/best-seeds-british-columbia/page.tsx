@@ -32,15 +32,6 @@ const seedBanks = [
     affiliateUrl: "https://truenorthseedbank.com",
   },
   {
-    name: "Crop King Seeds",
-    slug: "crop-king-seeds",
-    logo: "https://www.cropkingseeds.com/wp-content/uploads/2021/06/crop-king-seeds-logo.png",
-    rating: 3.8,
-    description: "Vancouver-based seed bank with germination guarantee. Local BC company.",
-    specialties: ["Vancouver Based", "Germination Guarantee", "Feminized Seeds"],
-    affiliateUrl: "https://cropkingseeds.com",
-  },
-  {
     name: "Herbies Seeds",
     slug: "herbies-headshop",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-BfEN16kC7tIVKqxs5NuiqmRo1AX2Yz.jpeg",
@@ -134,7 +125,7 @@ const faqs = [
   },
   {
     question: "Where can I buy seeds in Vancouver?",
-    answer: "While licensed BC Cannabis Stores don't typically sell seeds, you can legally order online from seed banks. Jordan of the Islands ships from Vancouver Island, Crop King Seeds is Vancouver-based, and True North Seed Bank delivers quickly to BC. International options like Seedsman also ship to Vancouver.",
+    answer: "While licensed BC Cannabis Stores don't typically sell seeds, you can legally order online from seed banks. True North Seed Bank delivers quickly to BC, and Seeds Online offers affordable single seeds. International options like Seedsman and Herbies also ship to Vancouver.",
   },
 ]
 
