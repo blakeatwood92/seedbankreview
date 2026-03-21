@@ -83,9 +83,9 @@ export function FeaturedBanks() {
       affiliateUrl: "https://weedseedsonline.net",
     },
     {
-      name: "Gasd Up Seeds",
-      slug: "gasd-up-seeds",
-      logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/475543832_426187703911637_152434204950628002_n-4o0JuLlDM72po666KhR2qk5eqMnYb0.jpg",
+      name: "Highly Stoned Seeds",
+      slug: "highly-stoned-seeds",
+      logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cd25f659-37f1-4d5f-a1ee-8d23a1ee1939-7h9cWtPaa76zf6bfJ0qd3DfgRBZOeZ.jpeg",
       rating: 4.4,
       reviews: 87,
       location: "Nova Scotia",
