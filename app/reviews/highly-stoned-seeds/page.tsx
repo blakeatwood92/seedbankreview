@@ -31,12 +31,12 @@ import {
 } from "@/components/ui/accordion"
 
 export const metadata: Metadata = {
-  title: "Gasd Up Seeds Review (Canada 2026) - Nova Scotia Cannabis Seedbank",
-  description: "Gasd Up Seeds review for Canadian growers. Nova Scotia-based seedbank with fast local shipping, real breeder packs, and strong customer service. Buy cannabis seeds Canada.",
-  keywords: "Gasd Up Seeds review, Canadian seedbank Nova Scotia, buy cannabis seeds Canada, fast shipping seedbank Canada, Nova Scotia cannabis seeds",
+  title: "Highly Stoned Seeds Review (Canada 2026) - Nova Scotia Cannabis Seedbank",
+  description: "Highly Stoned Seeds review for Canadian growers. Nova Scotia-based seedbank with fast local shipping, real breeder packs, and strong customer service. Buy cannabis seeds Canada.",
+  keywords: "Highly Stoned Seeds review, Canadian seedbank Nova Scotia, buy cannabis seeds Canada, fast shipping seedbank Canada, Nova Scotia cannabis seeds",
 }
 
-export default function GasdUpSeedsReviewPage() {
+export default function HighlyStonedSeedsReviewPage() {
   const overallRating = 4.2
   const criteriaRatings = {
     paymentMethods: 4.5,
@@ -68,27 +68,27 @@ export default function GasdUpSeedsReviewPage() {
 
   const faqs = [
     {
-      question: "Where is Gasd Up Seeds located?",
-      answer: "Gasd Up Seeds is based in Nova Scotia, Canada. This makes them an excellent choice for Canadian growers, especially those on the East Coast who want fast local shipping."
+      question: "Where is Highly Stoned Seeds located?",
+      answer: "Highly Stoned Seeds is based in Nova Scotia, Canada. This makes them an excellent choice for Canadian growers, especially those on the East Coast who want fast local shipping."
     },
     {
-      question: "How fast is shipping from Gasd Up Seeds?",
-      answer: "Gasd Up Seeds offers very fast shipping within Nova Scotia (1-2 days). For the rest of Canada, typical delivery times are competitive with other domestic seedbanks. Free shipping is available on orders over $50."
+      question: "How fast is shipping from Highly Stoned Seeds?",
+      answer: "Highly Stoned Seeds offers very fast shipping within Nova Scotia (1-2 days). For the rest of Canada, typical delivery times are competitive with other domestic seedbanks. Free shipping is available on orders over $50."
     },
     {
-      question: "What payment methods does Gasd Up Seeds accept?",
-      answer: "Gasd Up Seeds accepts major credit cards and Google Pay directly through their website. E-transfer is also available but requires manual processing off-site. This gives Canadian customers flexible payment options."
+      question: "What payment methods does Highly Stoned Seeds accept?",
+      answer: "Highly Stoned Seeds accepts major credit cards and Google Pay directly through their website. E-transfer is also available but requires manual processing off-site. This gives Canadian customers flexible payment options."
     },
     {
-      question: "Are Gasd Up Seeds legitimate breeder packs?",
-      answer: "Yes, Gasd Up Seeds sells original sealed breeder packs from well-known breeders. They focus on quality over bulk and do not sell white label or repackaged seeds."
+      question: "Are Highly Stoned Seeds legitimate breeder packs?",
+      answer: "Yes, Highly Stoned Seeds sells original sealed breeder packs from well-known breeders. They focus on quality over bulk and do not sell white label or repackaged seeds."
     },
     {
       question: "Is shipping discreet?",
       answer: "Yes, all orders ship discreetly under the business name 'Riverside Treasures' with no cannabis branding on the package. Stickers are included as a bonus with orders."
     },
     {
-      question: "Does Gasd Up Seeds offer freebies?",
+      question: "Does Highly Stoned Seeds offer freebies?",
       answer: "Yes, breeder freebies are included on orders over $200. These are genuine breeder promotional seeds, not random extras."
     },
   ]
@@ -101,15 +101,15 @@ export default function GasdUpSeedsReviewPage() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="w-32 h-32 mx-auto mb-6 rounded-xl overflow-hidden border-4 border-white/20 shadow-lg">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/475543832_426187703911637_152434204950628002_n-4o0JuLlDM72po666KhR2qk5eqMnYb0.jpg"
-                alt="Gasd Up Seeds Logo"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cd25f659-37f1-4d5f-a1ee-8d23a1ee1939-7h9cWtPaa76zf6bfJ0qd3DfgRBZOeZ.jpeg"
+                alt="Highly Stoned Seeds Logo"
                 className="w-full h-full object-cover"
               />
             </div>
             <Badge variant="secondary" className="mb-4 bg-red-100 text-red-800">
               Local Canadian Seedbank
             </Badge>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-white">Gasd Up Seeds Review (Canada 2026)</h1>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-white">Highly Stoned Seeds Review (Canada 2026)</h1>
             
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-6">
               Nova Scotia-based seedbank offering breeder packs, fast local shipping, and strong customer service.
@@ -299,7 +299,7 @@ export default function GasdUpSeedsReviewPage() {
             <CardContent>
               <div className="space-y-4">
                 <p className="text-gray-600">
-                  Gasd Up Seeds focuses on quality over quantity. They sell original sealed breeder packs from well-known 
+                  Highly Stoned Seeds focuses on quality over quantity. They sell original sealed breeder packs from well-known 
                   cannabis breeders - no white label or repackaged genetics. This is a major plus for growers who want 
                   to know exactly what they&apos;re getting.
                 </p>
@@ -335,7 +335,7 @@ export default function GasdUpSeedsReviewPage() {
             <CardContent>
               <div className="space-y-4">
                 <p className="text-gray-600">
-                  Being based in Nova Scotia gives Gasd Up Seeds a major advantage for Canadian growers, especially 
+                  Being based in Nova Scotia gives Highly Stoned Seeds a major advantage for Canadian growers, especially 
                   those on the East Coast. Local customers report 1-2 day delivery times, which is exceptional for 
                   the Canadian seedbank market.
                 </p>
@@ -377,7 +377,7 @@ export default function GasdUpSeedsReviewPage() {
             <CardContent>
               <div className="space-y-4">
                 <p className="text-gray-600">
-                  Based on our direct communication with Gasd Up Seeds, customer service appears to be a strong point. 
+                  Based on our direct communication with Highly Stoned Seeds, customer service appears to be a strong point. 
                   As a smaller operation, they offer a more personal touch compared to larger seedbanks.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
@@ -411,7 +411,7 @@ export default function GasdUpSeedsReviewPage() {
             <CardContent>
               <div className="space-y-4">
                 <p className="text-gray-600">
-                  Gasd Up Seeds takes discretion seriously. All orders ship under the business name &quot;Riverside Treasures&quot; 
+                  Highly Stoned Seeds takes discretion seriously. All orders ship under the business name &quot;Riverside Treasures&quot; 
                   with no cannabis branding or obvious indicators of the contents.
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
@@ -446,7 +446,7 @@ export default function GasdUpSeedsReviewPage() {
             <CardContent>
               <div className="space-y-4">
                 <p className="text-gray-600">
-                  Gasd Up Seeds offers flexible payment options compared to many Canadian seedbanks. Credit cards and 
+                  Highly Stoned Seeds offers flexible payment options compared to many Canadian seedbanks. Credit cards and 
                   Google Pay work directly through their website, making checkout simple and secure.
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
@@ -512,7 +512,7 @@ export default function GasdUpSeedsReviewPage() {
           </CardHeader>
           <CardContent>
             <p className="text-gray-600 mb-6">
-              We have placed an order with Gasd Up Seeds and will be documenting the full experience. 
+              We have placed an order with Highly Stoned Seeds and will be documenting the full experience. 
               This section will be updated with real results.
             </p>
             <div className="grid md:grid-cols-4 gap-4">
@@ -558,7 +558,7 @@ export default function GasdUpSeedsReviewPage() {
             </div>
             <p className="text-3xl font-bold text-green-700 mb-4">{overallRating} / 5.0</p>
             <p className="text-gray-600 max-w-3xl mx-auto mb-6">
-              Gasd Up Seeds looks like a promising Canadian seedbank, especially for growers in Nova Scotia 
+              Highly Stoned Seeds looks like a promising Canadian seedbank, especially for growers in Nova Scotia 
               looking for fast delivery and legit breeder packs. Their focus on quality genetics, strong 
               customer service, and flexible payment options make them worth considering. Once we complete 
               a full order and grow test, this review will be updated with real results.
@@ -566,7 +566,7 @@ export default function GasdUpSeedsReviewPage() {
             <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
               <a href="https://highlystonedseeds.com" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="w-5 h-5 mr-2" />
-                Visit Gasd Up Seeds
+                Visit Highly Stoned Seeds
               </a>
             </Button>
             <p className="text-sm text-gray-500 mt-4">Support local Canadian seedbanks</p>
