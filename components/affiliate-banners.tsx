@@ -17,42 +17,20 @@ export function AffiliateBanners() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-          {/* Herbies Main Banner */}
-          <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-            <CardContent className="p-6">
-              <div className="text-center">
-                <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-BfEN16kC7tIVKqxs5NuiqmRo1AX2Yz.jpeg"
-                  alt="Herbies Seeds"
-                  className="w-20 h-20 mx-auto mb-4 rounded-full"
-                />
-                <Badge className="mb-3 bg-yellow-500 text-black">10-20% OFF</Badge>
-                <h3 className="font-bold text-lg mb-2">Herbies Seeds</h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  International seed bank with delivery guarantee to Canada
-                </p>
-                <div className="flex items-center justify-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className={`w-4 h-4 ${i < 4 ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}`}
-                    />
-                  ))}
-                  <span className="text-sm ml-1">4.5/5</span>
-                </div>
-                <a
-                  href="https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button className="w-full bg-green-600 hover:bg-green-700">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Shop Herbies
-                  </Button>
-                </a>
-              </div>
-            </CardContent>
-          </Card>
+          {/* Herbies Canadian Banner */}
+          <a
+            href="https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="block overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+          >
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/300%D1%85600-THGeUDylXQYkEIDcQlUvCbJ37hcsT6.png"
+              alt="Herbies Seeds - Buy cannabis seeds in Canada with 100% Germination Guarantee"
+              className="w-full h-auto"
+              loading="lazy"
+            />
+          </a>
 
           {/* Apple Betty Auto Banner */}
           <Card className="overflow-hidden hover:shadow-xl transition-shadow">
