@@ -101,16 +101,41 @@ export function SEOPageTemplate({
           </div>
         </div>
 
-        {/* Main Content */}
+        {/* Main Content with Sidebar Banner */}
         <section className="py-12">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="prose prose-lg max-w-none">
-                {mainContent.map((paragraph, index) => (
-                  <p key={index} className="text-gray-700 mb-6 leading-relaxed">
-                    {paragraph}
-                  </p>
-                ))}
+            <div className="max-w-6xl mx-auto">
+              <div className="flex flex-col lg:flex-row gap-8">
+                {/* Main Content */}
+                <div className="lg:w-2/3">
+                  <div className="prose prose-lg max-w-none">
+                    {mainContent.map((paragraph, index) => (
+                      <p key={index} className="text-gray-700 mb-6 leading-relaxed">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+                
+                {/* Sidebar with Herbies Banner */}
+                <div className="lg:w-1/3">
+                  <div className="sticky top-24">
+                    <p className="text-xs text-gray-500 mb-2 text-center">Sponsored</p>
+                    <a
+                      href="https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639"
+                      target="_blank"
+                      rel="noopener noreferrer sponsored"
+                      className="block overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+                    >
+                      <img
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/300%D1%85600-THGeUDylXQYkEIDcQlUvCbJ37hcsT6.png"
+                        alt="Herbies Seeds - Buy cannabis seeds in Canada with 100% Germination Guarantee"
+                        className="w-full h-auto"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
