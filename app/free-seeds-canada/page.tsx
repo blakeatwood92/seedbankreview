@@ -47,6 +47,8 @@ import {
 
 export default function FreeSeedsCanadaPage() {
   const [formSubmitted, setFormSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState("")
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -60,10 +62,28 @@ export default function FreeSeedsCanadaPage() {
     canProvideUpdates: false,
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // In a real implementation, this would submit to a backend
-    setFormSubmitted(true)
+    setIsSubmitting(true)
+    setSubmitError("")
+    
+    try {
+      const response = await fetch('/api/free-seeds-application', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+      
+      if (!response.ok) {
+        throw new Error('Failed to submit application')
+      }
+      
+      setFormSubmitted(true)
+    } catch (error) {
+      setSubmitError("There was an error submitting your application. Please try again or contact us directly.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const provinces = [
@@ -650,14 +670,29 @@ export default function FreeSeedsCanadaPage() {
                         </p>
                       </div>
 
+                      {submitError && (
+                        <div className="bg-red-50 border border-red-200 p-4 rounded-lg text-sm text-red-700">
+                          {submitError}
+                        </div>
+                      )}
+
                       <Button
                         type="submit"
                         size="lg"
                         className="w-full bg-green-600 hover:bg-green-700"
-                        disabled={!formData.canProvideUpdates}
+                        disabled={!formData.canProvideUpdates || isSubmitting}
                       >
-                        <Send className="w-5 h-5 mr-2" />
-                        Submit Application
+                        {isSubmitting ? (
+                          <>
+                            <div className="w-5 h-5 mr-2 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                            Submitting...
+                          </>
+                        ) : (
+                          <>
+                            <Send className="w-5 h-5 mr-2" />
+                            Submit Application
+                          </>
+                        )}
                       </Button>
                     </form>
                   </CardContent>
