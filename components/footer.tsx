@@ -25,9 +25,9 @@ export function Footer() {
 
   const growingGuides = [
     { name: "Best Seed Banks Canada", href: "/best-seed-banks-canada" },
+    { name: "Top Cannabis Breeders", href: "/top-cannabis-breeders-canada" },
     { name: "Best Autoflower Seeds", href: "/best-autoflower-seeds-canada" },
     { name: "Best Outdoor Strains", href: "/best-outdoor-strains-canada" },
-    { name: "Best Cannabis Seeds", href: "/best-cannabis-seeds-canada" },
     { name: "Buy Cannabis Clones", href: "/buy-cannabis-clones-canada" },
     { name: "Free Seeds Canada", href: "/free-seeds-canada" },
   ]
