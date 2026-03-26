@@ -37,6 +37,12 @@ import {
   MapPin,
   Clock,
   FileText,
+  Building2,
+  BookOpen,
+  Snowflake,
+  Zap,
+  Calendar,
+  ExternalLink,
 } from "lucide-react"
 
 export default function FreeSeedsCanadaPage() {
@@ -79,27 +85,79 @@ export default function FreeSeedsCanadaPage() {
   const howItWorks = [
     {
       step: 1,
-      title: "Apply",
-      description: "Tell us about your grow experience and setup",
+      title: "Growers Apply",
+      description: "Canadian growers submit applications with their experience and setup details",
       icon: FileText,
     },
     {
       step: 2,
-      title: "Share Your Details",
-      description: "Let us know if you grow indoor or outdoor",
-      icon: Home,
+      title: "Breeders Reach Out",
+      description: "Breeders and seed banks can submit genetics for community testing",
+      icon: Building2,
     },
     {
       step: 3,
-      title: "Get Selected",
-      description: "If selected, receive seeds to test",
+      title: "Community Testing",
+      description: "Selected growers may be featured in grow journals with real feedback",
       icon: Sprout,
     },
     {
       step: 4,
-      title: "Provide Feedback",
-      description: "Send progress updates, photos, and final results",
+      title: "Honest Updates",
+      description: "Photos, progress updates, and honest feedback help build better reviews",
       icon: Camera,
+    },
+  ]
+
+  const growJournalCategories = [
+    {
+      title: "Indoor Grow Journals",
+      description: "Tent grows, hydro setups, and controlled environment results",
+      icon: Home,
+      color: "purple",
+      status: "Coming Soon",
+    },
+    {
+      title: "Outdoor Grow Journals",
+      description: "Full season Canadian outdoor grows and climate testing",
+      icon: Sun,
+      color: "amber",
+      status: "Coming Soon",
+    },
+    {
+      title: "Autoflower Tests",
+      description: "Fast finishing autoflower strain testing and results",
+      icon: Zap,
+      color: "blue",
+      status: "Coming Soon",
+    },
+    {
+      title: "Canadian Climate Results",
+      description: "Regional performance data from across Canada",
+      icon: Snowflake,
+      color: "teal",
+      status: "Coming Soon",
+    },
+  ]
+
+  const recentUpdates = [
+    {
+      type: "grower",
+      title: "Grower Applications Open",
+      description: "We are accepting applications from Canadian growers for the 2026 season",
+      date: "March 2026",
+    },
+    {
+      type: "breeder",
+      title: "Breeder Submissions Welcome",
+      description: "Seed banks and breeders can submit genetics for community testing",
+      date: "Ongoing",
+    },
+    {
+      type: "journal",
+      title: "Grow Journals Coming Soon",
+      description: "Community grow logs will be published as testing progresses",
+      date: "Summer 2026",
     },
   ]
 
@@ -125,43 +183,53 @@ export default function FreeSeedsCanadaPage() {
 
   const faqs = [
     {
-      question: "Is this available across Canada?",
+      question: "How can growers get free seeds in Canada?",
       answer:
-        "Yes, this program is focused on growers located in Canada. We accept applications from all provinces and territories.",
+        "Growers can apply through our community seed testing program. We connect Canadian growers with breeders and seed banks who want real-world feedback. Selected applicants may receive free cannabis seeds in exchange for providing grow updates, photos, and honest reviews.",
     },
     {
-      question: "Do I need to be an expert grower?",
+      question: "Do seed banks offer free seeds in Canada?",
       answer:
-        "No, you do not need to be an expert. Experience helps, but newer growers who are committed to learning and providing feedback can still apply.",
+        "Yes, many seed banks offer free seeds with orders or through promotional programs. Our community testing program works directly with breeders and seed banks who want to get their genetics tested by Canadian growers in real growing conditions.",
     },
     {
-      question: "Will everyone receive seeds?",
+      question: "Can indoor and outdoor growers both apply?",
       answer:
-        "No, submitting an application does not guarantee selection. We review each application and select growers based on their experience, setup, and ability to provide quality feedback.",
+        "Yes, we welcome both indoor and outdoor growers. Different growing environments provide valuable data for Canadian growers. Indoor growers can test year-round, while outdoor growers provide crucial data on how strains perform in Canadian climates and short seasons.",
     },
     {
-      question: "What do I need to provide in return?",
+      question: "Do I need grow experience to join?",
       answer:
-        "Selected growers are expected to provide regular grow updates, photos throughout the grow cycle, and honest feedback on germination rates, plant vigor, yield, and overall genetics quality.",
+        "Experience is helpful but not required. We look for growers who are committed to providing quality feedback, regular updates, and honest reviews. Newer growers who are dedicated to learning and documenting their grows can still apply.",
     },
     {
-      question: "Are indoor and outdoor growers both accepted?",
+      question: "Will every applicant receive seeds?",
       answer:
-        "Yes, we welcome both indoor and outdoor growers. Different growing environments provide valuable data for Canadian growers in various situations.",
+        "No, submitting an application does not guarantee you will receive free seeds. We review all applications and select growers based on their experience, setup, location, and ability to provide thorough feedback and documentation.",
+    },
+    {
+      question: "Can breeders and seed banks submit genetics for testing?",
+      answer:
+        "Yes, we welcome submissions from breeders and seed banks who want their genetics tested by the Canadian growing community. This provides real-world feedback, exposure, and potential reviews on our platform.",
+    },
+    {
+      question: "What is the Canadian grower community?",
+      answer:
+        "Our Canadian grower community is a network of home growers across all provinces who participate in seed testing, share grow journals, and provide honest feedback on cannabis genetics. This helps other Canadian growers make informed decisions about which seeds to buy.",
     },
   ]
 
   return (
     <>
       <head>
-        <title>Free Seeds in Canada for Growers | Canada Seed Bank Reviews</title>
+        <title>Free Seeds in Canada | Canada Seed Bank Reviews</title>
         <meta
           name="description"
-          content="Apply to test free seeds in Canada. We are looking for indoor and outdoor growers who can provide updates, photos, and honest feedback for seed reviews."
+          content="Explore free seeds in Canada, grower applications, breeder submissions, and community grow journals at Canada Seed Bank Reviews. Join the Canadian grower community."
         />
         <meta
           name="keywords"
-          content="free seeds Canada, cannabis seed testers Canada, free cannabis seeds for growers, indoor growers Canada, outdoor growers Canada"
+          content="free seeds Canada, free cannabis seeds Canada, Canadian grower community, seed tester Canada, breeder submissions Canada, grow journals Canada"
         />
       </head>
 
@@ -170,15 +238,15 @@ export default function FreeSeedsCanadaPage() {
         <section className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-20">
           <div className="container px-4 mx-auto text-center">
             <Badge variant="secondary" className="mb-4 bg-green-100 text-green-800">
-              Community Grow Program
+              Canadian Grower Community
             </Badge>
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-              Free Seeds in Canada for Growers
+              Free Seeds in Canada
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              We are looking for Canadian growers to help test seeds from breeders and seed banks.
-              In exchange, selected growers may receive free seeds and be asked to provide honest
-              feedback, grow updates, and photos throughout the process.
+              This page is for Canadian growers, breeders, and seed banks who want to participate in 
+              community testing, grow journals, and real-world feedback. Join our network of growers 
+              helping to build better seed reviews for the Canadian cannabis community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -189,15 +257,22 @@ export default function FreeSeedsCanadaPage() {
                 }
               >
                 <Sprout className="w-5 h-5 mr-2" />
-                Apply to Test Seeds
+                Apply as a Grower
               </Button>
-              <Link href="/contact">
-                <Button size="lg" variant="outline">
-                  <MessageSquare className="w-5 h-5 mr-2" />
-                  Message Us
-                </Button>
-              </Link>
+              <Button
+                size="lg"
+                variant="outline"
+                onClick={() =>
+                  document.getElementById("breeder-section")?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                <Building2 className="w-5 h-5 mr-2" />
+                Submit as a Breeder
+              </Button>
             </div>
+            <p className="text-sm text-gray-500 mt-6">
+              Last updated: March 2026
+            </p>
           </div>
         </section>
 
@@ -271,7 +346,7 @@ export default function FreeSeedsCanadaPage() {
           <div className="container px-4 mx-auto">
             <div className="max-w-3xl mx-auto text-center">
               <Users className="w-12 h-12 text-green-600 mx-auto mb-4" />
-              <h2 className="text-3xl font-bold mb-6">Why We Are Doing This</h2>
+              <h2 className="text-3xl font-bold mb-6">Building the Canadian Grower Community</h2>
               <div className="prose prose-lg max-w-none text-gray-600">
                 <p className="mb-4">
                   We are incredibly thankful to the breeders and seed banks that have sent seeds for
@@ -285,6 +360,57 @@ export default function FreeSeedsCanadaPage() {
                   growers.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Breeder and Seed Bank Section */}
+        <section id="breeder-section" className="py-16 bg-white">
+          <div className="container px-4 mx-auto">
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center mb-8">
+                <Building2 className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                <h2 className="text-3xl font-bold mb-4">Breeders and Seed Banks</h2>
+                <p className="text-gray-600 text-lg">
+                  Are you a breeder or seed bank looking for exposure, community feedback, and review opportunities?
+                </p>
+              </div>
+              <Card className="border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-indigo-50">
+                <CardContent className="p-8">
+                  <div className="space-y-4 text-gray-700">
+                    <p>
+                      We work with breeders and seed banks who want their genetics tested by real Canadian growers 
+                      in real growing conditions. This provides valuable feedback and potential exposure through:
+                    </p>
+                    <ul className="space-y-2 ml-4">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                        <span>Community grow journals featuring your genetics</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                        <span>Honest feedback from indoor and outdoor growers</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                        <span>Canadian climate testing data</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                        <span>Review opportunities on our platform</span>
+                      </li>
+                    </ul>
+                    <div className="pt-4">
+                      <Link href="/contact">
+                        <Button className="bg-blue-600 hover:bg-blue-700">
+                          <MessageSquare className="w-4 h-4 mr-2" />
+                          Contact Us About Submissions
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
@@ -541,22 +667,86 @@ export default function FreeSeedsCanadaPage() {
           </div>
         </section>
 
-        {/* Community Grow Logs Coming Soon */}
-        <section className="py-12 bg-white">
+        {/* Community Grow Journals */}
+        <section className="py-16 bg-gray-50">
           <div className="container px-4 mx-auto">
-            <div className="max-w-3xl mx-auto text-center">
-              <Card className="border-dashed border-2 border-gray-300 bg-gray-50">
-                <CardContent className="py-8">
-                  <Leaf className="w-10 h-10 text-gray-400 mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                    Community Grow Logs Coming Soon
-                  </h3>
-                  <p className="text-gray-500">
-                    As growers complete their tests, we will be adding real grow logs and results
-                    to the site. Check back for updates from the community.
-                  </p>
-                </CardContent>
-              </Card>
+            <div className="text-center mb-12">
+              <BookOpen className="w-12 h-12 text-green-600 mx-auto mb-4" />
+              <h2 className="text-3xl font-bold mb-4">Community Grow Journals</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                As growers complete their tests, we will be publishing real grow journals with photos, 
+                updates, and results. These journals help Canadian growers make informed decisions.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+              {growJournalCategories.map((category, index) => {
+                const colorClasses = {
+                  purple: "border-purple-200 bg-gradient-to-br from-purple-50 to-indigo-50",
+                  amber: "border-amber-200 bg-gradient-to-br from-amber-50 to-yellow-50",
+                  blue: "border-blue-200 bg-gradient-to-br from-blue-50 to-cyan-50",
+                  teal: "border-teal-200 bg-gradient-to-br from-teal-50 to-green-50",
+                }
+                const iconColorClasses = {
+                  purple: "bg-purple-100 text-purple-600",
+                  amber: "bg-amber-100 text-amber-600",
+                  blue: "bg-blue-100 text-blue-600",
+                  teal: "bg-teal-100 text-teal-600",
+                }
+                return (
+                  <Card key={index} className={`border-2 ${colorClasses[category.color as keyof typeof colorClasses]}`}>
+                    <CardContent className="p-6 text-center">
+                      <div className={`w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 ${iconColorClasses[category.color as keyof typeof iconColorClasses]}`}>
+                        <category.icon className="w-6 h-6" />
+                      </div>
+                      <Badge variant="outline" className="mb-3 text-xs">
+                        {category.status}
+                      </Badge>
+                      <h3 className="font-semibold mb-2">{category.title}</h3>
+                      <p className="text-sm text-gray-600">{category.description}</p>
+                    </CardContent>
+                  </Card>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Recent Updates Section */}
+        <section className="py-16 bg-white">
+          <div className="container px-4 mx-auto">
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center mb-8">
+                <Calendar className="w-12 h-12 text-green-600 mx-auto mb-4" />
+                <h2 className="text-3xl font-bold mb-4">Recent Updates</h2>
+                <p className="text-gray-600">
+                  Stay informed about open opportunities and community news
+                </p>
+              </div>
+              <div className="space-y-4">
+                {recentUpdates.map((update, index) => (
+                  <Card key={index} className="hover:shadow-md transition-shadow">
+                    <CardContent className="p-6">
+                      <div className="flex items-start gap-4">
+                        <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${
+                          update.type === "grower" ? "bg-green-100" : 
+                          update.type === "breeder" ? "bg-blue-100" : "bg-amber-100"
+                        }`}>
+                          {update.type === "grower" && <Sprout className="w-5 h-5 text-green-600" />}
+                          {update.type === "breeder" && <Building2 className="w-5 h-5 text-blue-600" />}
+                          {update.type === "journal" && <BookOpen className="w-5 h-5 text-amber-600" />}
+                        </div>
+                        <div className="flex-1">
+                          <div className="flex items-center justify-between mb-1">
+                            <h3 className="font-semibold">{update.title}</h3>
+                            <span className="text-sm text-gray-500">{update.date}</span>
+                          </div>
+                          <p className="text-gray-600 text-sm">{update.description}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
         </section>

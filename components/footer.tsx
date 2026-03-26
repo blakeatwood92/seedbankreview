@@ -12,7 +12,7 @@ export function Footer() {
     Resources: [
       { name: "Growing Guides", href: "/guides" },
       { name: "Strain Reviews", href: "/strains" },
-      { name: "Regional Tips", href: "/regional" },
+      { name: "Free Seeds Canada", href: "/free-seeds-canada" },
       { name: "FAQ", href: "/faq" },
     ],
     Company: [
