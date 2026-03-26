@@ -29,7 +29,7 @@ export function Footer() {
     { name: "Best Outdoor Strains", href: "/best-outdoor-strains-canada" },
     { name: "Best Cannabis Seeds", href: "/best-cannabis-seeds-canada" },
     { name: "Buy Cannabis Clones", href: "/buy-cannabis-clones-canada" },
-    { name: "Seed Banks That Ship to Canada", href: "/seed-banks-that-ship-to-canada" },
+    { name: "Free Seeds Canada", href: "/free-seeds-canada" },
   ]
 
   const cultivationGuides = [
