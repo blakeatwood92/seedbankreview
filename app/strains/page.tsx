@@ -82,7 +82,7 @@ const strains: Strain[] = [
     description: "Autoflowering version of the popular Blue Dream. Great for short Canadian summers with no light schedule needed.",
     seedBanks: [
       { name: "Quebec Cannabis Seeds", url: "https://quebeccannabisseeds.com" },
-      { name: "GoBack Seed Bank", url: "https://gobackseedbank.com" },
+      
       { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
     ],
   },
@@ -139,7 +139,7 @@ const strains: Strain[] = [
     description: "Extremely potent strain with heavy resin production. Known for its sticky buds and powerful effects.",
     seedBanks: [
       { name: "True North Seed Bank", url: "https://truenorthseedbank.com" },
-      { name: "GoBack Seed Bank", url: "https://gobackseedbank.com" },
+      
       { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
     ],
   },
@@ -169,7 +169,7 @@ const strains: Strain[] = [
     seedBanks: [
       { name: "Jordan of the Islands", url: "https://jordanoftheislands.com" },
       { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
-      { name: "GoBack Seed Bank", url: "https://gobackseedbank.com" },
+      
     ],
   },
   {
@@ -211,7 +211,7 @@ const strains: Strain[] = [
     tags: ["Autoflower", "Feminized", "Indoor", "Outdoor", "Beginner-friendly", "Canadian climate friendly"],
     description: "Heavy yielding autoflower with dense, resinous buds. Great for beginners wanting big harvests.",
     seedBanks: [
-      { name: "GoBack Seed Bank", url: "https://gobackseedbank.com" },
+      
       { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
     ],
   },
@@ -255,7 +255,7 @@ const strains: Strain[] = [
     seedBanks: [
       { name: "True North Seed Bank", url: "https://truenorthseedbank.com" },
       { name: "Herbies Seeds", url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639" },
-      { name: "GoBack Seed Bank", url: "https://gobackseedbank.com" },
+      
     ],
   },
   {

@@ -36,17 +36,7 @@ export function TopSeedBanks() {
       affiliate: true,
       affiliateUrl: "https://quebeccannabisseeds.com",
     },
-    {
-      name: "GoBack Seed Bank",
-      slug: "goback-seed-bank",
-      rating: 4.5,
-      location: "Canada",
-      specialties: ["Competitive Prices", "Bulk Orders", "Regular Promotions"],
-      description: "Value-focused Canadian seed bank with competitive pricing and quality genetics.",
-      affiliate: true,
-      affiliateUrl: "https://gobackseedbank.com",
-    },
-  ]
+    ]
 
   return (
     <section className="py-20 bg-background">

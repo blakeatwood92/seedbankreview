@@ -76,23 +76,6 @@ description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-g
     },
     {
       rank: 5,
-      name: "GoBack Seed Bank",
-      slug: "goback-seed-bank",
-      logo: "/images/goback-logo.png",
-      rating: 4.5,
-      reviews: 423,
-      location: "Alberta, Canada",
-      description: "Value-focused Canadian seed bank with competitive pricing and quality genetics for all budgets.",
-      paymentMethods: ["Interac E-Transfer", "Bitcoin", "Cash"],
-      deliveryTime: "2-5 business days",
-      shippingCost: "Free over $50",
-      specialties: ["Competitive Prices", "Bulk Orders", "Prairie Genetics", "Student Discounts"],
-      strainCount: "400+",
-      affiliate: true,
-      affiliateUrl: "https://gobackseedbank.com",
-    },
-    {
-      rank: 6,
       name: "Herbies Seeds",
       slug: "herbies-headshop",
       logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-BfEN16kC7tIVKqxs5NuiqmRo1AX2Yz.jpeg",
@@ -109,7 +92,7 @@ description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-g
       affiliateUrl: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639",
     },
     {
-      rank: 7,
+      rank: 6,
       name: "Seedsman",
       slug: "seedsman",
       logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
@@ -126,7 +109,7 @@ description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-g
       affiliateUrl: "https://www.seedsman.com",
     },
     {
-      rank: 8,
+      rank: 7,
       name: "ILGM (I Love Growing Marijuana)",
       slug: "ilgm",
       logo: "https://www.ilovegrowingmarijuana.com/wp-content/themes/flavor/images/ilgm-logo.svg",
@@ -143,7 +126,7 @@ description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-g
       affiliateUrl: "https://ilgm.com",
     },
     {
-      rank: 9,
+      rank: 8,
       name: "Growers Choice Seeds",
       slug: "growers-choice-seeds",
       logo: "https://www.growerschoiceseeds.com/wp-content/uploads/2020/08/growers-choice-seeds-logo.png",
@@ -160,7 +143,7 @@ description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-g
       affiliateUrl: "https://growerschoiceseeds.com",
     },
     {
-      rank: 10,
+      rank: 9,
       name: "Rocket Seeds",
       slug: "rocket-seeds",
       logo: "/images/rocket-seeds-logo.png",
@@ -177,7 +160,7 @@ description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-g
       affiliateUrl: "https://rfrk.net/rocketseeds",
     },
     {
-      rank: 11,
+      rank: 10,
       name: "Highly Stoned Seeds",
       slug: "highly-stoned-seeds",
       logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cd25f659-37f1-4d5f-a1ee-8d23a1ee1939-7h9cWtPaa76zf6bfJ0qd3DfgRBZOeZ.jpeg",
@@ -194,7 +177,7 @@ description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-g
       affiliateUrl: "https://highlystonedseeds.com",
     },
     {
-      rank: 12,
+      rank: 11,
       name: "Montreal Cannabis Seeds",
       slug: "montreal-cannabis-seeds",
       logo: "/images/montreal-cannabis-seeds-logo.png",
@@ -211,7 +194,7 @@ description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-g
       affiliateUrl: "https://montrealcannabis-seeds.ca/",
     },
     {
-      rank: 13,
+      rank: 12,
       name: "Jordan of the Islands",
       slug: "jordan-of-the-islands",
       logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cropped-company-lgo-backup-zbA78eurgy53gyRao2trw0BRP1tE1e.png",
