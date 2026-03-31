@@ -210,6 +210,75 @@ description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-g
       affiliate: false,
       affiliateUrl: "https://jordanoftheislands.com",
     },
+    // Unranked seed banks - not yet fully reviewed
+    {
+      rank: null,
+      name: "Canada Seedz",
+      slug: "canada-seedz",
+      logo: "/images/placeholder-logo.png",
+      rating: null,
+      reviews: 0,
+      location: "Canada",
+      description: "Canadian seed bank offering cannabis seeds to Canadian growers. Currently under review.",
+      paymentMethods: ["Interac E-Transfer"],
+      deliveryTime: "TBD",
+      shippingCost: "TBD",
+      specialties: ["Canadian Based"],
+      strainCount: "TBD",
+      affiliate: false,
+      affiliateUrl: "https://canadaseedz.ca",
+    },
+    {
+      rank: null,
+      name: "RMHCA",
+      slug: "rmhca",
+      logo: "/images/placeholder-logo.png",
+      rating: null,
+      reviews: 0,
+      location: "Canada",
+      description: "Canadian seed bank serving the Canadian cannabis community. Currently under review.",
+      paymentMethods: ["Interac E-Transfer"],
+      deliveryTime: "TBD",
+      shippingCost: "TBD",
+      specialties: ["Canadian Based"],
+      strainCount: "TBD",
+      affiliate: false,
+      affiliateUrl: "https://rmhca.ca",
+    },
+    {
+      rank: null,
+      name: "GTA Seedbank",
+      slug: "gta-seedbank",
+      logo: "/images/placeholder-logo.png",
+      rating: null,
+      reviews: 0,
+      location: "Ontario, Canada",
+      description: "Greater Toronto Area based seed bank serving Canadian growers. Currently under review.",
+      paymentMethods: ["Interac E-Transfer"],
+      deliveryTime: "TBD",
+      shippingCost: "TBD",
+      specialties: ["Ontario Based", "GTA Local"],
+      strainCount: "TBD",
+      affiliate: false,
+      affiliateUrl: "https://gtaseedbank.com",
+    },
+    {
+      rank: null,
+      name: "Hemp Depot",
+      slug: "hemp-depot",
+      logo: "/images/placeholder-logo.png",
+      rating: null,
+      reviews: 0,
+      location: "Canada",
+      description: "Established Canadian seed retailer offering a variety of cannabis genetics. Currently under review.",
+      paymentMethods: ["Interac E-Transfer", "Credit Card"],
+      deliveryTime: "TBD",
+      shippingCost: "TBD",
+      specialties: ["Canadian Based", "Established Retailer"],
+      strainCount: "TBD",
+      affiliate: false,
+      affiliateUrl: "https://hempdepot.ca",
+    },
   ]
 
   return (
@@ -234,7 +303,11 @@ description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-g
               <CardHeader className="bg-muted/30">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                   <div className="flex items-center gap-4">
-                    <Badge className="text-lg px-3 py-1 bg-red-600 text-white">#{bank.rank}</Badge>
+                    {bank.rank ? (
+                      <Badge className="text-lg px-3 py-1 bg-red-600 text-white">#{bank.rank}</Badge>
+                    ) : (
+                      <Badge className="text-lg px-3 py-1 bg-gray-400 text-white">Unranked</Badge>
+                    )}
                     <div className="w-16 h-16 bg-white rounded-lg border-2 border-gray-100 flex items-center justify-center overflow-hidden">
                       <img
                         src={bank.logo || "/placeholder.svg"}
@@ -249,20 +322,26 @@ description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-g
                         <span className="text-gray-600">{bank.location}</span>
                         {bank.location.includes("Canada") && <span className="text-red-600">🇨🇦</span>}
                       </div>
-                      <div className="flex items-center gap-2 mt-1">
-                        <div className="flex items-center">
-                          {[...Array(5)].map((_, i) => (
-                            <Star
-                              key={i}
-                              className={`w-4 h-4 ${
-                                i < Math.floor(bank.rating) ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
-                              }`}
-                            />
-                          ))}
+                      {bank.rating ? (
+                        <div className="flex items-center gap-2 mt-1">
+                          <div className="flex items-center">
+                            {[...Array(5)].map((_, i) => (
+                              <Star
+                                key={i}
+                                className={`w-4 h-4 ${
+                                  i < Math.floor(bank.rating) ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
+                                }`}
+                              />
+                            ))}
+                          </div>
+                          <span className="font-medium">{bank.rating}</span>
+                          <span className="text-gray-500">({bank.reviews} reviews)</span>
                         </div>
-                        <span className="font-medium">{bank.rating}</span>
-                        <span className="text-gray-500">({bank.reviews} reviews)</span>
-                      </div>
+                      ) : (
+                        <div className="flex items-center gap-2 mt-1">
+                          <span className="text-gray-500 italic">Not yet reviewed</span>
+                        </div>
+                      )}
                     </div>
                   </div>
                   <div className="flex gap-3">
