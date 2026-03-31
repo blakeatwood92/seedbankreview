@@ -31,9 +31,9 @@ export default function SeedBanksPage() {
       rating: 4.6,
       reviews: 578,
       location: "Quebec, Canada",
-      description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-grow genetics suited for northern climates and first-time growers. Regular shipping 3-7 days, express shipping 1-2 days.",
-      paymentMethods: ["Credit Card", "Interac E-Transfer"],
-      deliveryTime: "Regular: 3-7 days | Express: 1-2 days",
+description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-grow genetics suited for northern climates and first-time growers. Fast 3 business day shipping across Canada.",
+  paymentMethods: ["Credit Card", "Interac E-Transfer"],
+  deliveryTime: "3 business days",
       shippingCost: "Free express shipping over $200",
       specialties: ["Beginner Friendly", "Outdoor Genetics", "Northern Climate", "Free Express $200+"],
       strainCount: "300+",
@@ -76,40 +76,23 @@ export default function SeedBanksPage() {
     },
     {
       rank: 5,
-      name: "GoBack Seed Bank",
-      slug: "goback-seed-bank",
-      logo: "/images/goback-logo.png",
-      rating: 4.5,
-      reviews: 423,
-      location: "Alberta, Canada",
-      description: "Value-focused Canadian seed bank with competitive pricing and quality genetics for all budgets.",
-      paymentMethods: ["Interac E-Transfer", "Bitcoin", "Cash"],
-      deliveryTime: "2-5 business days",
-      shippingCost: "Free over $50",
-      specialties: ["Competitive Prices", "Bulk Orders", "Prairie Genetics", "Student Discounts"],
-      strainCount: "400+",
-      affiliate: true,
-      affiliateUrl: "https://gobackseedbank.com",
-    },
-    {
-      rank: 6,
       name: "Herbies Seeds",
       slug: "herbies-headshop",
       logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-BfEN16kC7tIVKqxs5NuiqmRo1AX2Yz.jpeg",
       rating: 4.5,
       reviews: 1234,
       location: "International",
-      description: "International seed bank with their own Herbies Seeds line plus hundreds of strains from well-known breeders. Ships to Canada via Certified Mail with delivery guarantee.",
+      description: "International seed bank from Spain with their own Herbies Seeds line plus hundreds of strains from well-known breeders. Fast 7 business day shipping to Canada with clever stealth packaging.",
       paymentMethods: ["Credit Card", "Apple Pay", "Google Pay", "PayPal", "Interac", "Bank Transfer", "Bitcoin", "USDT"],
-      deliveryTime: "9-12 days to Canada",
+      deliveryTime: "7 business days",
       shippingCost: "€10 (~$15 CAD)",
-      specialties: ["Delivery Guarantee", "Free Seeds with Orders", "Own Genetics Line", "Regular Promotions"],
+      specialties: ["Stealth Packaging", "Delivery Guarantee", "Free Seeds with Orders", "Own Genetics Line"],
       strainCount: "2500+",
       affiliate: true,
       affiliateUrl: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639",
     },
     {
-      rank: 7,
+      rank: 6,
       name: "Seedsman",
       slug: "seedsman",
       logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
@@ -126,7 +109,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://www.seedsman.com",
     },
     {
-      rank: 8,
+      rank: 7,
       name: "ILGM (I Love Growing Marijuana)",
       slug: "ilgm",
       logo: "https://www.ilovegrowingmarijuana.com/wp-content/themes/flavor/images/ilgm-logo.svg",
@@ -143,7 +126,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://ilgm.com",
     },
     {
-      rank: 9,
+      rank: 8,
       name: "Growers Choice Seeds",
       slug: "growers-choice-seeds",
       logo: "https://www.growerschoiceseeds.com/wp-content/uploads/2020/08/growers-choice-seeds-logo.png",
@@ -160,7 +143,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://growerschoiceseeds.com",
     },
     {
-      rank: 10,
+      rank: 9,
       name: "Rocket Seeds",
       slug: "rocket-seeds",
       logo: "/images/rocket-seeds-logo.png",
@@ -177,7 +160,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://rfrk.net/rocketseeds",
     },
     {
-      rank: 11,
+      rank: 10,
       name: "Highly Stoned Seeds",
       slug: "highly-stoned-seeds",
       logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cd25f659-37f1-4d5f-a1ee-8d23a1ee1939-7h9cWtPaa76zf6bfJ0qd3DfgRBZOeZ.jpeg",
@@ -194,7 +177,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://highlystonedseeds.com",
     },
     {
-      rank: 12,
+      rank: 11,
       name: "Montreal Cannabis Seeds",
       slug: "montreal-cannabis-seeds",
       logo: "/images/montreal-cannabis-seeds-logo.png",
@@ -211,7 +194,7 @@ export default function SeedBanksPage() {
       affiliateUrl: "https://montrealcannabis-seeds.ca/",
     },
     {
-      rank: 13,
+      rank: 12,
       name: "Jordan of the Islands",
       slug: "jordan-of-the-islands",
       logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cropped-company-lgo-backup-zbA78eurgy53gyRao2trw0BRP1tE1e.png",
@@ -226,6 +209,92 @@ export default function SeedBanksPage() {
       strainCount: "200+",
       affiliate: false,
       affiliateUrl: "https://jordanoftheislands.com",
+    },
+    // Unranked seed banks - not yet fully reviewed
+    {
+      rank: null,
+      name: "Canada Seedz",
+      slug: "canada-seedz",
+      logo: "/images/placeholder-logo.png",
+      rating: null,
+      reviews: 0,
+      location: "Canada",
+      description: "Canadian seed bank offering cannabis seeds to Canadian growers. Currently under review.",
+      paymentMethods: ["Interac E-Transfer"],
+      deliveryTime: "TBD",
+      shippingCost: "TBD",
+      specialties: ["Canadian Based"],
+      strainCount: "TBD",
+      affiliate: false,
+      affiliateUrl: "https://canadaseedz.ca",
+    },
+    {
+      rank: null,
+      name: "RMHCA",
+      slug: "rmhca",
+      logo: "/images/placeholder-logo.png",
+      rating: null,
+      reviews: 0,
+      location: "Canada",
+      description: "Canadian seed bank serving the Canadian cannabis community. Currently under review.",
+      paymentMethods: ["Interac E-Transfer"],
+      deliveryTime: "TBD",
+      shippingCost: "TBD",
+      specialties: ["Canadian Based"],
+      strainCount: "TBD",
+      affiliate: false,
+      affiliateUrl: "https://rmhca.ca",
+    },
+    {
+      rank: null,
+      name: "GTA Seedbank",
+      slug: "gta-seedbank",
+      logo: "/images/placeholder-logo.png",
+      rating: null,
+      reviews: 0,
+      location: "Ontario, Canada",
+      description: "Greater Toronto Area based seed bank serving Canadian growers. Currently under review.",
+      paymentMethods: ["Interac E-Transfer"],
+      deliveryTime: "TBD",
+      shippingCost: "TBD",
+      specialties: ["Ontario Based", "GTA Local"],
+      strainCount: "TBD",
+      affiliate: false,
+      affiliateUrl: "https://gtaseedbank.com",
+    },
+    {
+      rank: null,
+      name: "Hemp Depot",
+      slug: "hemp-depot",
+      logo: "/images/placeholder-logo.png",
+      rating: null,
+      reviews: 0,
+      location: "Canada",
+      description: "Established Canadian seed retailer offering a variety of cannabis genetics. Currently under review.",
+      paymentMethods: ["Interac E-Transfer", "Credit Card"],
+      deliveryTime: "TBD",
+      shippingCost: "TBD",
+      specialties: ["Canadian Based", "Established Retailer"],
+      strainCount: "TBD",
+      affiliate: false,
+      affiliateUrl: "https://hempdepot.ca",
+    },
+    {
+      rank: null,
+      name: "7 East Genetics",
+      slug: "7-east-genetics",
+      logo: "/images/placeholder-logo.png",
+      rating: null,
+      reviews: 0,
+      location: "Eastern Canada",
+      description: "Eastern Canadian genetics company specializing in breeding and seed production. Currently under review.",
+      paymentMethods: ["Interac E-Transfer"],
+      deliveryTime: "TBD",
+      shippingCost: "TBD",
+      specialties: ["Canadian Breeder", "In-House Genetics", "Eastern Canada"],
+      strainCount: "TBD",
+      affiliate: false,
+      affiliateUrl: "https://www.7eastgenetics.com",
     },
   ]
 
@@ -251,7 +320,11 @@ export default function SeedBanksPage() {
               <CardHeader className="bg-muted/30">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                   <div className="flex items-center gap-4">
-                    <Badge className="text-lg px-3 py-1 bg-red-600 text-white">#{bank.rank}</Badge>
+                    {bank.rank ? (
+                      <Badge className="text-lg px-3 py-1 bg-red-600 text-white">#{bank.rank}</Badge>
+                    ) : (
+                      <Badge className="text-lg px-3 py-1 bg-gray-400 text-white">Unranked</Badge>
+                    )}
                     <div className="w-16 h-16 bg-white rounded-lg border-2 border-gray-100 flex items-center justify-center overflow-hidden">
                       <img
                         src={bank.logo || "/placeholder.svg"}
@@ -266,20 +339,26 @@ export default function SeedBanksPage() {
                         <span className="text-gray-600">{bank.location}</span>
                         {bank.location.includes("Canada") && <span className="text-red-600">🇨🇦</span>}
                       </div>
-                      <div className="flex items-center gap-2 mt-1">
-                        <div className="flex items-center">
-                          {[...Array(5)].map((_, i) => (
-                            <Star
-                              key={i}
-                              className={`w-4 h-4 ${
-                                i < Math.floor(bank.rating) ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
-                              }`}
-                            />
-                          ))}
+                      {bank.rating ? (
+                        <div className="flex items-center gap-2 mt-1">
+                          <div className="flex items-center">
+                            {[...Array(5)].map((_, i) => (
+                              <Star
+                                key={i}
+                                className={`w-4 h-4 ${
+                                  i < Math.floor(bank.rating) ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
+                                }`}
+                              />
+                            ))}
+                          </div>
+                          <span className="font-medium">{bank.rating}</span>
+                          <span className="text-gray-500">({bank.reviews} reviews)</span>
                         </div>
-                        <span className="font-medium">{bank.rating}</span>
-                        <span className="text-gray-500">({bank.reviews} reviews)</span>
-                      </div>
+                      ) : (
+                        <div className="flex items-center gap-2 mt-1">
+                          <span className="text-gray-500 italic">Not yet reviewed</span>
+                        </div>
+                      )}
                     </div>
                   </div>
                   <div className="flex gap-3">
