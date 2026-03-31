@@ -279,6 +279,23 @@ description: "Quebec-based seed bank built for Canadian hobbyists with easy-to-g
       affiliate: false,
       affiliateUrl: "https://hempdepot.ca",
     },
+    {
+      rank: null,
+      name: "7 East Genetics",
+      slug: "7-east-genetics",
+      logo: "/images/placeholder-logo.png",
+      rating: null,
+      reviews: 0,
+      location: "Eastern Canada",
+      description: "Eastern Canadian genetics company specializing in breeding and seed production. Currently under review.",
+      paymentMethods: ["Interac E-Transfer"],
+      deliveryTime: "TBD",
+      shippingCost: "TBD",
+      specialties: ["Canadian Breeder", "In-House Genetics", "Eastern Canada"],
+      strainCount: "TBD",
+      affiliate: false,
+      affiliateUrl: "https://www.7eastgenetics.com",
+    },
   ]
 
   return (
