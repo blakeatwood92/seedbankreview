@@ -29,17 +29,16 @@ export default function HerbiesReviewPage() {
   const pros = [
     "Massive seed selection (hundreds of strains from well-known breeders)",
     "Own Herbies Seeds genetics line available",
-    "Ships to Canada via Certified Mail (9-12 days)",
+    "Fast shipping from Spain - 7 business days to Canada",
+    "Clever stealth packaging (seeds hidden in garden gloves, etc.)",
     "Delivery guarantee - free reship if lost",
     "1 free seed per order + 1 additional per €20 spent",
     "Accepts Interac for Canadian customers",
     "Multiple payment options: Credit Card, Apple Pay, Google Pay, PayPal, Interac, Bank Transfer, Bitcoin, USDT",
     "Regular promotions available",
-    "Discreet packaging on all orders",
   ]
 
   const cons = [
-    "International shipping takes 9-12 days",
     "Shipping cost €10 (~$15 CAD)",
     "Currency in EUR (conversion fees may apply)",
     "No physical Canadian location",
