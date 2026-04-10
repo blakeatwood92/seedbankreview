@@ -34,7 +34,7 @@ export function PromoBanner420() {
             )}
           </span>
           <span className="hidden sm:inline">—</span>
-          <span className="hidden sm:inline">Up to 50% off cannabis seeds</span>
+          <span className="hidden sm:inline">Seed bank deals coming soon</span>
           <Link
             href="/420-seed-bank-deals-canada"
             className="inline-flex items-center gap-1 bg-white text-green-700 px-3 py-1 rounded-full font-semibold text-sm hover:bg-green-50 transition-colors ml-2"
