@@ -32,90 +32,111 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 // Easy to update deals array - just add/remove/edit deals here
-const deals = [
+// Deals will be updated as seed banks confirm their 420 promotions
+const deals: {
+  id: number
+  seedBank: string
+  logo: string
+  description: string
+  offer: string
+  promoCode: string | null
+  startDate: string
+  endDate: string
+  shipsToCanada: boolean
+  category: string[]
+  url: string
+  featured: boolean
+  comingSoon: boolean
+}[] = [
   {
     id: 1,
     seedBank: "Herbies Seeds",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-BfEN16kC7tIVKqxs5NuiqmRo1AX2Yz.jpeg",
     description: "International seed bank with 7-day shipping to Canada and delivery guarantee.",
-    offer: "Up to 40% Off + Free Seeds",
+    offer: "Coming Soon",
     promoCode: null,
-    startDate: "April 15, 2026",
-    endDate: "April 25, 2026",
+    startDate: "TBD",
+    endDate: "TBD",
     shipsToCanada: true,
     category: ["best-overall", "autoflower", "beginner"],
     url: "https://herbiesheadshop.com/?utm_source=689e356589639&utm_medium=people&utm_campaign=689e356589639_partner&a_aid=689e356589639",
     featured: true,
+    comingSoon: true,
   },
   {
     id: 2,
     seedBank: "Quebec Cannabis Seeds",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-wyoXlcHaLEtobhRtGiIzCnFwxo1oKI.png",
     description: "Quebec-based seed bank with fast 3 business day shipping across Canada.",
-    offer: "20% Off All Seeds",
-    promoCode: "420CANADA",
-    startDate: "April 18, 2026",
-    endDate: "April 22, 2026",
+    offer: "Coming Soon",
+    promoCode: null,
+    startDate: "TBD",
+    endDate: "TBD",
     shipsToCanada: true,
     category: ["best-overall", "outdoor", "beginner"],
     url: "https://quebeccannabisseeds.com",
     featured: true,
+    comingSoon: true,
   },
   {
     id: 3,
     seedBank: "True North Seed Bank",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tnsb_logo-7MCHjFEh91tG5in9Vjgyg7mV65npjx.png",
     description: "Established Canadian seed bank since 2009 with 800+ strains.",
-    offer: "Buy 2 Get 1 Free on Select Strains",
+    offer: "Coming Soon",
     promoCode: null,
-    startDate: "April 15, 2026",
-    endDate: "April 30, 2026",
+    startDate: "TBD",
+    endDate: "TBD",
     shipsToCanada: true,
     category: ["best-overall", "autoflower"],
     url: "https://truenorthseedbank.com",
     featured: false,
+    comingSoon: true,
   },
   {
     id: 4,
     seedBank: "Seedsman",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsman-logo_1-0LbwKPv9WxDs9ZUlqN7h7BWdHOrWME.avif",
     description: "World's largest seed bank with 4000+ strains and stealth shipping.",
-    offer: "25% Off Sitewide + Free Gifts",
-    promoCode: "420DEALS",
-    startDate: "April 10, 2026",
-    endDate: "April 25, 2026",
+    offer: "Coming Soon",
+    promoCode: null,
+    startDate: "TBD",
+    endDate: "TBD",
     shipsToCanada: true,
     category: ["best-overall", "outdoor"],
     url: "https://www.seedsman.com",
     featured: false,
+    comingSoon: true,
   },
   {
     id: 5,
     seedBank: "Highly Stoned Seeds",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cd25f659-37f1-4d5f-a1ee-8d23a1ee1939-7h9cWtPaa76zf6bfJ0qd3DfgRBZOeZ.jpeg",
     description: "Nova Scotia-based seed bank with exclusive in-house genetics.",
-    offer: "15% Off + Free Shipping",
-    promoCode: "420NS",
-    startDate: "April 19, 2026",
-    endDate: "April 21, 2026",
+    offer: "Coming Soon",
+    promoCode: null,
+    startDate: "TBD",
+    endDate: "TBD",
     shipsToCanada: true,
     category: ["autoflower", "beginner"],
     url: "https://highlystonedseeds.com",
     featured: false,
+    comingSoon: true,
   },
   {
     id: 6,
     seedBank: "Seeds Online",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/seedsonline-logohq-1xFBylCeFT6DzT0x5mdcnxvDXFSiSH.png",
     description: "Canadian seed bank offering affordable single seeds with free extras.",
-    offer: "Buy Any 5 Seeds, Get 2 Free",
+    offer: "Coming Soon",
     promoCode: null,
-    startDate: "April 15, 2026",
-    endDate: "April 22, 2026",
+    startDate: "TBD",
+    endDate: "TBD",
     shipsToCanada: true,
     category: ["beginner", "outdoor"],
     url: "https://seedsonline.ca",
     featured: false,
+    comingSoon: true,
   },
 ]
 
@@ -285,43 +306,54 @@ export default function Page420DealsCanada() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 text-sm mb-4">{deal.description}</p>
-                    <div className="bg-white rounded-lg p-4 mb-4 border border-green-200">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Percent className="w-5 h-5 text-green-600" />
-                        <span className="font-bold text-lg text-green-700">{deal.offer}</span>
-                      </div>
-                      {deal.promoCode && (
-                        <div className="flex items-center gap-2">
-                          <code className="bg-gray-100 px-3 py-1 rounded text-sm font-mono">
-                            {deal.promoCode}
-                          </code>
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            onClick={() => copyPromoCode(deal.promoCode!)}
-                            className="text-xs"
-                          >
-                            {copiedCode === deal.promoCode ? (
-                              <CheckCircle className="w-4 h-4 text-green-600" />
-                            ) : (
-                              <Copy className="w-4 h-4" />
-                            )}
-                          </Button>
+                    <div className={`rounded-lg p-4 mb-4 border ${deal.comingSoon ? "bg-gray-50 border-gray-200" : "bg-white border-green-200"}`}>
+                      {deal.comingSoon ? (
+                        <div className="text-center py-2">
+                          <Badge className="bg-amber-500 text-white mb-2">Coming Soon</Badge>
+                          <p className="text-sm text-gray-500">Deal details will be announced soon</p>
                         </div>
-                      )}
-                      {!deal.promoCode && (
-                        <p className="text-xs text-gray-500">No code needed - applied automatically</p>
+                      ) : (
+                        <>
+                          <div className="flex items-center gap-2 mb-2">
+                            <Percent className="w-5 h-5 text-green-600" />
+                            <span className="font-bold text-lg text-green-700">{deal.offer}</span>
+                          </div>
+                          {deal.promoCode && (
+                            <div className="flex items-center gap-2">
+                              <code className="bg-gray-100 px-3 py-1 rounded text-sm font-mono">
+                                {deal.promoCode}
+                              </code>
+                              <Button
+                                variant="outline"
+                                size="sm"
+                                onClick={() => copyPromoCode(deal.promoCode!)}
+                                className="text-xs"
+                              >
+                                {copiedCode === deal.promoCode ? (
+                                  <CheckCircle className="w-4 h-4 text-green-600" />
+                                ) : (
+                                  <Copy className="w-4 h-4" />
+                                )}
+                              </Button>
+                            </div>
+                          )}
+                          {!deal.promoCode && (
+                            <p className="text-xs text-gray-500">No code needed - applied automatically</p>
+                          )}
+                        </>
                       )}
                     </div>
-                    <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
-                      <span>
-                        <Calendar className="w-4 h-4 inline mr-1" />
-                        {deal.startDate} - {deal.endDate}
-                      </span>
-                    </div>
+                    {!deal.comingSoon && (
+                      <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+                        <span>
+                          <Calendar className="w-4 h-4 inline mr-1" />
+                          {deal.startDate} - {deal.endDate}
+                        </span>
+                      </div>
+                    )}
                     <a href={deal.url} target="_blank" rel="noopener noreferrer sponsored">
-                      <Button className="w-full bg-green-600 hover:bg-green-700">
-                        View Deal
+                      <Button className={`w-full ${deal.comingSoon ? "bg-gray-500 hover:bg-gray-600" : "bg-green-600 hover:bg-green-700"}`}>
+                        {deal.comingSoon ? "Visit Site" : "View Deal"}
                         <ExternalLink className="w-4 h-4 ml-2" />
                       </Button>
                     </a>
@@ -379,29 +411,39 @@ export default function Page420DealsCanada() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 text-sm mb-3">{deal.description}</p>
-                    <div className="bg-green-50 rounded-lg p-3 mb-3">
-                      <p className="font-semibold text-green-700">{deal.offer}</p>
-                      {deal.promoCode && (
-                        <div className="flex items-center gap-2 mt-2">
-                          <code className="bg-white px-2 py-1 rounded text-xs font-mono border">
-                            {deal.promoCode}
-                          </code>
-                          <button
-                            onClick={() => copyPromoCode(deal.promoCode!)}
-                            className="text-xs text-green-600 hover:text-green-700"
-                          >
-                            {copiedCode === deal.promoCode ? "Copied!" : "Copy"}
-                          </button>
+                    <div className={`rounded-lg p-3 mb-3 ${deal.comingSoon ? "bg-gray-50" : "bg-green-50"}`}>
+                      {deal.comingSoon ? (
+                        <div className="text-center">
+                          <Badge className="bg-amber-500 text-white">Coming Soon</Badge>
                         </div>
+                      ) : (
+                        <>
+                          <p className="font-semibold text-green-700">{deal.offer}</p>
+                          {deal.promoCode && (
+                            <div className="flex items-center gap-2 mt-2">
+                              <code className="bg-white px-2 py-1 rounded text-xs font-mono border">
+                                {deal.promoCode}
+                              </code>
+                              <button
+                                onClick={() => copyPromoCode(deal.promoCode!)}
+                                className="text-xs text-green-600 hover:text-green-700"
+                              >
+                                {copiedCode === deal.promoCode ? "Copied!" : "Copy"}
+                              </button>
+                            </div>
+                          )}
+                        </>
                       )}
                     </div>
-                    <p className="text-xs text-gray-500 mb-3">
-                      <Calendar className="w-3 h-3 inline mr-1" />
-                      {deal.startDate} - {deal.endDate}
-                    </p>
+                    {!deal.comingSoon && (
+                      <p className="text-xs text-gray-500 mb-3">
+                        <Calendar className="w-3 h-3 inline mr-1" />
+                        {deal.startDate} - {deal.endDate}
+                      </p>
+                    )}
                     <a href={deal.url} target="_blank" rel="noopener noreferrer sponsored">
                       <Button variant="outline" className="w-full">
-                        View Deal
+                        {deal.comingSoon ? "Visit Site" : "View Deal"}
                         <ExternalLink className="w-4 h-4 ml-2" />
                       </Button>
                     </a>
