@@ -28,7 +28,7 @@ export function Footer() {
     { name: "Top Cannabis Breeders", href: "/top-cannabis-breeders-canada" },
     { name: "Best Autoflower Seeds", href: "/best-autoflower-seeds-canada" },
     { name: "Best Outdoor Strains", href: "/best-outdoor-strains-canada" },
-    { name: "Buy Cannabis Clones", href: "/buy-cannabis-clones-canada" },
+    { name: "420 Seed Deals", href: "/420-seed-bank-deals-canada" },
     { name: "Free Seeds Canada", href: "/free-seeds-canada" },
   ]
 
